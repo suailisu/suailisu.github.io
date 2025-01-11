@@ -13,4 +13,4 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-我素爱力酥，你努？
+吾素爱力酥，哩喏？
