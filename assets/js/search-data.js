@@ -156,6 +156,181 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A5%B3%E6%80%A7%E4%B8%BB%E4%B9%89/";
+            },},{id: "movies-心灵奇旅",
+          title: '心灵奇旅',
+          description: "典型“迪皮”动画片，类似但不如《寻梦环游记》。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%BF%83%E7%81%B5%E5%A5%87%E6%97%85/";
+            },},{id: "movies-温暖的抱抱",
+          title: '温暖的抱抱',
+          description: "我一定是太无聊了才来电影院看这个。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%B8%A9%E6%9A%96%E7%9A%84%E6%8A%B1%E6%8A%B1/";
+            },},{id: "movies-送你一朵小红花",
+          title: '送你一朵小红花',
+          description: "一个区别于《小时代》的另一平行宇宙，绝症派导演韩延力作。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E9%80%81%E4%BD%A0%E4%B8%80%E6%9C%B5%E5%B0%8F%E7%BA%A2%E8%8A%B1/";
+            },},{id: "movies-万圣街",
+          title: '万圣街',
+          description: "因为我老婆当时的头像来看的...",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E4%B8%87%E5%9C%A3%E8%A1%97/";
+            },},{id: "movies-无名之辈",
+          title: '无名之辈',
+          description: "黑色幽默喜剧，喜欢任素汐唱的《胡广生》。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%97%A0%E5%90%8D%E4%B9%8B%E8%BE%88/";
+            },},{id: "movies-重庆森林",
+          title: '重庆森林',
+          description: "因为当时我老婆说这是她最喜欢的电影而去看的...",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E9%87%8D%E5%BA%86%E6%A3%AE%E6%9E%97/";
+            },},{id: "movies-色-戒",
+          title: '色，戒',
+          description: "还行。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E8%89%B2-%E6%88%92/";
+            },},{id: "movies-叫我第一名",
+          title: '叫我第一名',
+          description: "过了爱看美式励志片的年纪。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%8F%AB%E6%88%91%E7%AC%AC%E4%B8%80%E5%90%8D/";
+            },},{id: "movies-小姐",
+          title: '小姐',
+          description: "难得不催眠的韩国女同性恋电影。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%B0%8F%E5%A7%90/";
+            },},{id: "movies-无问西东",
+          title: '无问西东',
+          description: "正是爱看中式励志片的年纪。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%97%A0%E9%97%AE%E8%A5%BF%E4%B8%9C/";
+            },},{id: "movies-波西米亚狂想曲",
+          title: '波西米亚狂想曲',
+          description: "挺好看的，喜欢歌。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%B3%A2%E8%A5%BF%E7%B1%B3%E4%BA%9A%E7%8B%82%E6%83%B3%E6%9B%B2/";
+            },},{id: "movies-狗十三",
+          title: '狗十三',
+          description: "慕名而来，失望而归。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%8B%97%E5%8D%81%E4%B8%89/";
+            },},{id: "movies-小伟",
+          title: '小伟',
+          description: "一部挺冷门的院线电影，手法很质朴...",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%B0%8F%E4%BC%9F/";
+            },},{id: "movies-你好-李焕英",
+          title: '你好，李焕英',
+          description: "好有新意、好有心意的电影，有泪有笑的剧情，直到结尾那段跑车镜头看得我眼泪狂飞。“我这一辈子过得挺幸福的，怎么不相信呢。”想重温了。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E4%BD%A0%E5%A5%BD-%E6%9D%8E%E7%84%95%E8%8B%B1/";
+            },},{id: "movies-唐人街探案-1-3部",
+          title: '唐人街探案（1-3部）',
+          description: "别再拍了。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%94%90%E4%BA%BA%E8%A1%97%E6%8E%A2%E6%A1%88/";
+            },},{id: "movies-利刃出鞘",
+          title: '利刃出鞘',
+          description: "挺有意思的悬疑片。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%88%A9%E5%88%83%E5%87%BA%E9%9E%98/";
+            },},{id: "movies-娜娜",
+          title: '娜娜',
+          description: "因为当时我老婆说这是她最喜欢的动画来看的...",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%A8%9C%E5%A8%9C/";
+            },},{id: "movies-我和我的家乡",
+          title: '我和我的家乡',
+          description: "还是有点儿搞笑的。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%88%91%E5%92%8C%E6%88%91%E7%9A%84%E5%AE%B6%E4%B9%A1/";
+            },},{id: "movies-我的姐姐",
+          title: '我的姐姐',
+          description: "令人无语。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%88%91%E7%9A%84%E5%A7%90%E5%A7%90/";
+            },},{id: "movies-第十一回",
+          title: '第十一回',
+          description: "看得一头雾水但是有点儿意思。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%AC%AC%E5%8D%81%E4%B8%80%E5%9B%9E/";
+            },},{id: "movies-悬崖之上",
+          title: '悬崖之上',
+          description: "剧情没有什么出彩的地方，总体的感觉是冗长的无聊中透露着些许好笑。也许是因为我本身对谍战片难以信服，从头至尾都无法代入其中，也很难有情绪上的强烈波动。观影过程缺乏紧张感和意料之外的反转，仓促的结尾加上通过人物对话的强行煽情和升华简直是败笔。 倪大红看起来呆呆的，不适合角色。刘浩存挺漂亮的，但是气质与角色不合，演技相形见绌，虽美但尬。其他几位演员没啥挑剔的，但是几个男性角色外形和人设过于相似，以至于我看了几十分钟之后依然脸盲。 唯一欣赏的是画面的美感，喜欢复古的建筑、车辆、服饰，看得想穿越到三四十年代飘着雪的哈尔滨（虽然是在影视城拍的）。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%82%AC%E5%B4%96%E4%B9%8B%E4%B8%8A/";
+            },},{id: "movies-夺冠",
+          title: '夺冠',
+          description: "还可以。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%A4%BA%E5%86%A0/";
+            },},{id: "movies-归来",
+          title: '归来',
+          description: "挺好看的，令人唏嘘。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%BD%92%E6%9D%A5/";
+            },},{id: "movies-少年的你",
+          title: '少年的你',
+          description: "易烊千玺真的很喜欢演这种仿佛架空平行宇宙的电影。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%B0%91%E5%B9%B4%E7%9A%84%E4%BD%A0/";
+            },},{id: "movies-情书",
+          title: '情书',
+          description: "很催眠...",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%83%85%E4%B9%A6/";
+            },},{id: "movies-泰坦尼克号",
+          title: '泰坦尼克号',
+          description: "很美。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%B3%B0%E5%9D%A6%E5%B0%BC%E5%85%8B%E5%8F%B7/";
+            },},{id: "movies-你好世界",
+          title: '你好世界',
+          description: "日本的动画 x 穿越 x 爱情系列作品之一。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/";
+            },},{id: "movies-黑白魔女库伊拉",
+          title: '黑白魔女库伊拉',
+          description: "挺有意思的。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E9%BB%91%E7%99%BD%E9%AD%94%E5%A5%B3%E5%BA%93%E4%BC%8A%E6%8B%89/";
+            },},{id: "movies-肖申克的救赎",
+          title: '肖申克的救赎',
+          description: "以前看过，只记得了海报后面藏着个男主挖的地道。今天第二次看了，发现了很多之前遗忘掉的情节。真的很励志，看完了感觉热血沸腾恨不得立马再做300题。道阻且长，行则将至。很多台词美得像散文诗，值得品味。最后一个镜头太美了，太平洋的海水真蓝呀！",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E8%82%96%E7%94%B3%E5%85%8B%E7%9A%84%E6%95%91%E8%B5%8E/";
+            },},{id: "movies-燃野少年的天空",
+          title: '燃野少年的天空',
+          description: "追星的时候看的...",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%87%83%E9%87%8E%E5%B0%91%E5%B9%B4%E7%9A%84%E5%A4%A9%E7%A9%BA/";
+            },},{id: "movies-双镜",
+          title: '双镜',
+          description: "“双女主”，懂自懂。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%8F%8C%E9%95%9C/";
+            },},{id: "movies-了不起的女孩",
+          title: '了不起的女孩',
+          description: "当时饿得什么都吃...",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%E5%A5%B3%E5%AD%A9/";
+            },},{id: "movies-失控玩家",
+          title: '失控玩家',
+          description: "挺有趣的搞笑科幻片。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%A4%B1%E6%8E%A7%E7%8E%A9%E5%AE%B6/";
+            },},{id: "movies-第一次遇见花香的那刻",
+          title: '第一次遇见花香的那刻',
+          description: "不催眠的女同性恋剧集，支技。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%81%87%E8%A7%81%E8%8A%B1%E9%A6%99%E7%9A%84%E9%82%A3%E5%88%BB/";
+            },},{id: "movies-第一炉香",
+          title: '第一炉香',
+          description: "因为当时我老婆说她在看而去看的，不知道是什么一坨。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%AC%AC%E4%B8%80%E7%82%89%E9%A6%99/";
             },},{id: "movies-爱情神话",
           title: '爱情神话',
           description: "邵艺辉不错。",
