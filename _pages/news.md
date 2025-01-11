@@ -1,6 +1,6 @@
 ---
 layout: page
-title: news
+title: 爱乐府大事记
 permalink: /news/
 ---
 
