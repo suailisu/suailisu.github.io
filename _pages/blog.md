@@ -1,14 +1,14 @@
 ---
 layout: default
 permalink: /blog/
-title: blog
+title: 人在楼上
 nav: true
 nav_order: 1
 pagination:
   enabled: true
   collection: posts
   permalink: /page/:num/
-  per_page: 5
+  per_page: 10
   sort_field: date
   sort_reverse: true
   trail:
@@ -125,7 +125,10 @@ pagination:
 {% if post.thumbnail %}
 
 <div class="row">
-          <div class="col-sm-9">
+  <div class="col-sm-5">
+    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: cover; height: 90%" alt="image" zoomable="true">
+  </div>
+          <div class="col-sm-7">
 {% endif %}
         <h3>
         {% if post.redirect == blank %}
@@ -141,11 +144,8 @@ pagination:
       </h3>
       <p>{{ post.description }}</p>
       <p class="post-meta">
-        {{ read_time }} min read &nbsp; &middot; &nbsp;
-        {{ post.date | date: '%B %d, %Y' }}
-        {% if post.external_source %}
-        &nbsp; &middot; &nbsp; {{ post.external_source }}
-        {% endif %}
+        {{ post.date | date: '%Y年%-m月%d日' }} &nbsp; &middot; &nbsp;
+        阅读约需要 {{ read_time }} 分钟
       </p>
       <p class="post-tags">
         <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
@@ -177,10 +177,6 @@ pagination:
 {% if post.thumbnail %}
 
 </div>
-
-  <div class="col-sm-3">
-    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: cover; height: 90%" alt="image">
-  </div>
 </div>
 {% endif %}
     </li>
