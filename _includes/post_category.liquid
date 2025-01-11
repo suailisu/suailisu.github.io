@@ -1,5 +1,4 @@
   {% assign category=include.category %}
-  <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
   {% case include.category %}
     {% when '忆旧游' %}
     <i class="fa-solid fa-earth-americas"></i>
@@ -12,5 +11,3 @@
     {% when '寿南山' %}
     <i class="fa-solid fa-heart-pulse"></i>
   {% endcase %}
-
-{{ category }}</a>

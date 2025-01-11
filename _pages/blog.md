@@ -24,7 +24,11 @@ pagination:
 {% if blog_name_size > 0 or blog_description_size > 0 %}
 
   <div class="header-bar">
-    <h1>{{ site.blog_name }}</h1>
+    <h1>
+    <a href="{{ '/blog/' | prepend: site.baseurl}}">
+    {{ site.blog_name }}
+    </a>
+    </h1>
     <h2>{{ site.blog_description }}</h2>
   </div>
   {% endif %}
@@ -44,17 +48,16 @@ pagination:
       {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
         <p>&bull;</p>
       {% endif %}
-        <li>
-          {% include post_category.liquid category='忆旧游' %}
-          <p>&bull;</p>
-          {% include post_category.liquid category='掷金钱' %}
-          <p>&bull;</p>
-           {% include post_category.liquid category='好时光' %}
-          <p>&bull;</p>
-           {% include post_category.liquid category='叨叨令' %}
-          <p>&bull;</p>
-           {% include post_category.liquid category='寿南山' %}
+      {% for category in site.display_categories %}
+        <li class="category-item {% if page.title == category %}active{% endif %}">
+          <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
+          {% include post_category.liquid category=category %}
+           {{ category }}</a>
         </li>
+        {% unless forloop.last %}
+          <p>&bull;</p>
+        {% endunless %}
+      {% endfor %}
     </ul>
   </div>
   {% endif %}
@@ -155,7 +158,9 @@ pagination:
           {% if categories != "" %}
           &nbsp; &middot; &nbsp;
             {% for category in post.categories %}
-            {% include post_category.liquid category=category %}
+            <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
+          {% include post_category.liquid category=category %}
+           {{ category }}</a>
               {% unless forloop.last %}
                 &nbsp;
               {% endunless %}

@@ -555,6 +555,13 @@ footer.sticky-bottom {
   h1 {
     color: var(--global-theme-color);
     font-size: 5rem;
+
+    a {
+      text-decoration: none;
+      &:hover {
+        color: #f29105;
+      }
+    }
   }
 }
 
@@ -562,14 +569,6 @@ footer.sticky-bottom {
   border-bottom: 1px solid var(--global-divider-color);
   text-align: center;
   padding-top: 1rem;
-
-  a {
-    text-decoration: none;
-    color: var(--global-text-color-light);
-    &:hover {
-      color: var(--global-theme-color);
-    }
-  }
 
   ul {
     justify-content: center;
@@ -581,6 +580,26 @@ footer.sticky-bottom {
       display: inline-block;
       padding: 1rem 0.5rem;
       color: var(--global-text-color-light);
+    }
+
+    .category-item {
+      a {
+        text-decoration: none;
+        color: var(--global-text-color-light);
+        &:hover {
+          color: var(--global-theme-color);
+        }
+      }
+    }
+
+    .category-item.active {
+      a {
+        text-decoration: none;
+        color: var(--global-theme-color);
+        &:hover {
+          color: var(--global-theme-color);
+        }
+      }
     }
   }
 }
