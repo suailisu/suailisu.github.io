@@ -12,7 +12,7 @@ ninja.data = [
   {
     id: "nav-{{ about_title | slugify }}",
     title: "{{ about_title | truncatewords: 13 }}",
-    section: "Navigation",
+    section: "导航",
     handler: () => {
       window.location.href = "{{ '/' | relative_url }}";
     },
@@ -44,7 +44,7 @@ ninja.data = [
           id: "nav-{{ title | slugify }}",
           title: "{{ title | truncatewords: 13 }}",
           description: "{{ p.description | strip_html | strip_newlines | escape | strip }}",
-          section: "Navigation",
+          section: "导航",
           handler: () => {
             window.location.href = "{{ url | relative_url }}";
           },
@@ -64,7 +64,7 @@ ninja.data = [
         title: "{{ title | truncatewords: 13 }}",
       {% endif %}
       description: "{{ post.description | strip_html | strip_newlines | escape | strip }}",
-      section: "Posts",
+      section: "文章",
       handler: () => {
         {% if post.redirect == blank %}
           window.location.href = "{{ post.url | relative_url }}";
