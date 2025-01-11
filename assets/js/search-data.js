@@ -9,363 +9,132 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "blog",
+  },{id: "nav-人在楼上",
+          title: "人在楼上",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-a-post-with-image-galleries",
+        },{id: "post-2025-新年好",
       
-        title: "a post with image galleries",
-      
-      description: "this is what included image galleries could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/photo-gallery/";
-        
-      },
-    },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
-      
-        title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
-        
-      },
-    },{id: "post-a-post-with-tabs",
-      
-        title: "a post with tabs",
-      
-      description: "this is what included tabs in a post could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/tabs/";
-        
-      },
-    },{id: "post-a-post-with-typograms",
-      
-        title: "a post with typograms",
-      
-      description: "this is what included typograms code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/typograms/";
-        
-      },
-    },{id: "post-a-post-that-can-be-cited",
-      
-        title: "a post that can be cited",
-      
-      description: "this is what a post that can be cited looks like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/post-citation/";
-        
-      },
-    },{id: "post-a-post-with-pseudo-code",
-      
-        title: "a post with pseudo code",
-      
-      description: "this is what included pseudo code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/pseudocode/";
-        
-      },
-    },{id: "post-a-post-with-code-diff",
-      
-        title: "a post with code diff",
-      
-      description: "this is how you can display code diffs",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/code-diff/";
-        
-      },
-    },{id: "post-a-post-with-advanced-image-components",
-      
-        title: "a post with advanced image components",
-      
-      description: "this is what advanced image components could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/advanced-images/";
-        
-      },
-    },{id: "post-a-post-with-vega-lite",
-      
-        title: "a post with vega lite",
-      
-      description: "this is what included vega lite code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/vega-lite/";
-        
-      },
-    },{id: "post-a-post-with-geojson",
-      
-        title: "a post with geojson",
-      
-      description: "this is what included geojson code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/geojson-map/";
-        
-      },
-    },{id: "post-a-post-with-echarts",
-      
-        title: "a post with echarts",
-      
-      description: "this is what included echarts code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/echarts/";
-        
-      },
-    },{id: "post-a-post-with-chart-js",
-      
-        title: "a post with chart.js",
-      
-      description: "this is what included chart.js code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/chartjs/";
-        
-      },
-    },{id: "post-a-post-with-tikzjax",
-      
-        title: "a post with TikZJax",
-      
-      description: "this is what included TikZ code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/tikzjax/";
-        
-      },
-    },{id: "post-a-post-with-bibliography",
-      
-        title: "a post with bibliography",
-      
-      description: "an example of a blog post with bibliography",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/post-bibliography/";
-        
-      },
-    },{id: "post-a-post-with-jupyter-notebook",
-      
-        title: "a post with jupyter notebook",
-      
-      description: "an example of a blog post with jupyter notebook",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/jupyter-notebook/";
-        
-      },
-    },{id: "post-a-post-with-custom-blockquotes",
-      
-        title: "a post with custom blockquotes",
-      
-      description: "an example of a blog post with custom blockquotes",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/custom-blockquotes/";
-        
-      },
-    },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
-      
-        title: "a post with table of contents on a sidebar",
-      
-      description: "an example of a blog post with table of contents on a sidebar",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/sidebar-table-of-contents/";
-        
-      },
-    },{id: "post-a-post-with-audios",
-      
-        title: "a post with audios",
-      
-      description: "this is what included audios could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/audios/";
-        
-      },
-    },{id: "post-a-post-with-videos",
-      
-        title: "a post with videos",
-      
-      description: "this is what included videos could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/videos/";
-        
-      },
-    },{id: "post-displaying-beautiful-tables-with-bootstrap-tables",
-      
-        title: "displaying beautiful tables with Bootstrap Tables",
-      
-      description: "an example of how to use Bootstrap Tables",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/tables/";
-        
-      },
-    },{id: "post-a-post-with-table-of-contents",
-      
-        title: "a post with table of contents",
-      
-      description: "an example of a blog post with table of contents",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/table-of-contents/";
-        
-      },
-    },{id: "post-a-post-with-giscus-comments",
-      
-        title: "a post with giscus comments",
-      
-      description: "an example of a blog post with giscus comments",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2022/giscus-comments/";
-        
-      },
-    },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-      
-        title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        title: "2025 新年好",
       
       description: "",
       section: "Posts",
       handler: () => {
         
-          window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
+          window.location.href = "/blog/%E5%AF%BF%E5%8D%97%E5%B1%B1/2025/happy-new-year/";
         
       },
-    },{id: "post-a-post-with-redirect",
+    },{id: "post-简易税务计算器",
       
-        title: "a post with redirect",
+        title: "简易税务计算器",
       
-      description: "you can also redirect to assets like pdf",
+      description: "",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/assets/pdf/example_pdf.pdf";
+          window.location.href = "/blog/%E6%8E%B7%E9%87%91%E9%92%B1/2024/tax-calculator/";
         
       },
-    },{id: "post-a-post-with-diagrams",
+    },{id: "post-2024年投资回顾与展望",
       
-        title: "a post with diagrams",
+        title: "2024年投资回顾与展望",
       
-      description: "an example of a blog post with diagrams",
+      description: "",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2021/diagrams/";
+          window.location.href = "/blog/%E6%8E%B7%E9%87%91%E9%92%B1/2024/investment-lookback-and-outlook/";
         
       },
-    },{id: "post-a-distill-style-blog-post",
+    },{id: "post-美国-fica-税详解",
       
-        title: "a distill-style blog post",
+        title: "美国 FICA 税详解",
       
-      description: "an example of a distill-style blog post and main elements",
+      description: "",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2021/distill/";
+          window.location.href = "/blog/%E6%8E%B7%E9%87%91%E9%92%B1/2024/what-is-fica/";
         
       },
-    },{id: "post-a-post-with-twitter",
+    },{id: "post-美国税收优惠投资账户总结",
       
-        title: "a post with twitter",
+        title: "美国税收优惠投资账户总结",
       
-      description: "an example of a blog post with twitter",
+      description: "",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2020/twitter/";
+          window.location.href = "/blog/%E6%8E%B7%E9%87%91%E9%92%B1/2024/tax-advantaged-accounts-in-us/";
         
       },
-    },{id: "post-a-post-with-disqus-comments",
+    },{id: "post-买鞋记",
       
-        title: "a post with disqus comments",
+        title: "买鞋记",
       
-      description: "an example of a blog post with disqus comments",
+      description: "",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2015/disqus-comments/";
+          window.location.href = "/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2024/shoes/";
         
       },
-    },{id: "post-a-post-with-math",
+    },{id: "post-悠闲假日",
       
-        title: "a post with math",
+        title: "悠闲假日",
       
-      description: "an example of a blog post with some math",
+      description: "",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2015/math/";
+          window.location.href = "/blog/%E5%A5%BD%E6%97%B6%E5%85%89/2024/holiday/";
         
       },
-    },{id: "post-a-post-with-code",
+    },{id: "post-东京游记",
       
-        title: "a post with code",
+        title: "东京游记",
       
-      description: "an example of a blog post with some code",
+      description: "在东京铁塔（对面）第一次眺望",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2015/code/";
+          window.location.href = "/blog/%E5%BF%86%E6%97%A7%E6%B8%B8/2024/Tokyo/";
         
       },
-    },{id: "post-a-post-with-images",
+    },{id: "post-山城重庆-重游",
       
-        title: "a post with images",
+        title: "山城重庆 - 重游",
       
-      description: "this is what included images could look like",
+      description: "让人走到脚痛的8D城市",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2015/images/";
+          window.location.href = "/blog/%E5%BF%86%E6%97%A7%E6%B8%B8/2023/Chongqing/";
         
       },
-    },{id: "post-a-post-with-formatting-and-links",
+    },{id: "post-爽爽贵阳-真的爽",
       
-        title: "a post with formatting and links",
+        title: "爽爽贵阳 - 真的爽",
       
-      description: "march &amp; april, looking forward to summer",
+      description: "离开贵阳想贵阳",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2015/formatting-and-links/";
+          window.location.href = "/blog/%E5%BF%86%E6%97%A7%E6%B8%B8/2023/Guiyang/";
+        
+      },
+    },{id: "post-长沙",
+      
+        title: "长沙",
+      
+      description: "长沙的“长”也是长久的“长”",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/%E5%BF%86%E6%97%A7%E6%B8%B8/2023/Changsha/";
         
       },
     },{id: "books-从零开始的女性主义",
