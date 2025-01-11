@@ -40,8 +40,8 @@ table.table a {
   color: var(--global-theme-color);
 
   &:hover {
-    color: var(--global-theme-color);
-    text-decoration: underline;
+    color: #b7d12a;
+    text-decoration: none;
   }
 
   &:hover:after :not(.nav-item.dropdown) {
@@ -595,7 +595,7 @@ footer.sticky-bottom {
     a {
       text-decoration: none;
       &:hover {
-        color: #f29105;
+        color: #b7d12a;
       }
     }
   }

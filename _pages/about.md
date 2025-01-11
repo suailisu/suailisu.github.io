@@ -1,8 +1,8 @@
 ---
 layout: about
-title: 爱乐府欧
+title: 粟爱力酥
 permalink: /
-subtitle: 
+subtitle: 吾素爱力酥，哩噜？
 profile:
   align: right
   image: 
@@ -13,4 +13,4 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-吾素爱力酥，哩噜？
+
