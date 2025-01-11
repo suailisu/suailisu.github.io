@@ -29,7 +29,6 @@ pagination:
     {{ site.blog_name }}
     </a>
     </h1>
-    <h2>{{ site.blog_description }}</h2>
   </div>
   {% endif %}
 
