@@ -1,6 +1,6 @@
 ---
 layout: about
-title: 素爱力酥
+title: 爱乐府欧
 permalink: /
 subtitle: 
 profile:

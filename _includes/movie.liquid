@@ -1,8 +1,13 @@
 <div class="grid-item">
     <a href="{{ movie.url | relative_url }}">
-        <img 
-            src="{{ movie.img | relative_url }}"
-            width="100%"
-        />
+        <div>
+            {%
+            include figure.liquid
+            loading="lazy"
+            path=movie.img
+            alt="project thumbnail"
+            class="card-img-top"
+            %}
+        </div>
     </a>
 </div>
