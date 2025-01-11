@@ -5,14 +5,14 @@ const ninja = document.querySelector('ninja-keys');
 ninja.data = [{
     id: "nav-alfo",
     title: "ALFO",
-    section: "Navigation",
+    section: "导航",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-人在楼上",
           title: "人在楼上",
           description: "",
-          section: "Navigation",
+          section: "导航",
           handler: () => {
             window.location.href = "/blog/";
           },
@@ -21,7 +21,7 @@ ninja.data = [{
         title: "2025 新年好",
       
       description: "",
-      section: "Posts",
+      section: "文章",
       handler: () => {
         
           window.location.href = "/blog/%E5%AF%BF%E5%8D%97%E5%B1%B1/2025/happy-new-year/";
@@ -32,7 +32,7 @@ ninja.data = [{
         title: "简易税务计算器",
       
       description: "",
-      section: "Posts",
+      section: "文章",
       handler: () => {
         
           window.location.href = "/blog/%E6%8E%B7%E9%87%91%E9%92%B1/2024/tax-calculator/";
@@ -43,7 +43,7 @@ ninja.data = [{
         title: "2024年投资回顾与展望",
       
       description: "",
-      section: "Posts",
+      section: "文章",
       handler: () => {
         
           window.location.href = "/blog/%E6%8E%B7%E9%87%91%E9%92%B1/2024/investment-lookback-and-outlook/";
@@ -54,7 +54,7 @@ ninja.data = [{
         title: "美国 FICA 税详解",
       
       description: "",
-      section: "Posts",
+      section: "文章",
       handler: () => {
         
           window.location.href = "/blog/%E6%8E%B7%E9%87%91%E9%92%B1/2024/what-is-fica/";
@@ -65,7 +65,7 @@ ninja.data = [{
         title: "美国税收优惠投资账户总结",
       
       description: "",
-      section: "Posts",
+      section: "文章",
       handler: () => {
         
           window.location.href = "/blog/%E6%8E%B7%E9%87%91%E9%92%B1/2024/tax-advantaged-accounts-in-us/";
@@ -76,7 +76,7 @@ ninja.data = [{
         title: "买鞋记",
       
       description: "",
-      section: "Posts",
+      section: "文章",
       handler: () => {
         
           window.location.href = "/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2024/shoes/";
@@ -87,7 +87,7 @@ ninja.data = [{
         title: "悠闲假日",
       
       description: "",
-      section: "Posts",
+      section: "文章",
       handler: () => {
         
           window.location.href = "/blog/%E5%A5%BD%E6%97%B6%E5%85%89/2024/holiday/";
@@ -98,7 +98,7 @@ ninja.data = [{
         title: "东京游记",
       
       description: "在东京铁塔（对面）第一次眺望",
-      section: "Posts",
+      section: "文章",
       handler: () => {
         
           window.location.href = "/blog/%E5%BF%86%E6%97%A7%E6%B8%B8/2024/Tokyo/";
@@ -109,7 +109,7 @@ ninja.data = [{
         title: "山城重庆 - 重游",
       
       description: "让人走到脚痛的8D城市",
-      section: "Posts",
+      section: "文章",
       handler: () => {
         
           window.location.href = "/blog/%E5%BF%86%E6%97%A7%E6%B8%B8/2023/Chongqing/";
@@ -120,7 +120,7 @@ ninja.data = [{
         title: "爽爽贵阳 - 真的爽",
       
       description: "离开贵阳想贵阳",
-      section: "Posts",
+      section: "文章",
       handler: () => {
         
           window.location.href = "/blog/%E5%BF%86%E6%97%A7%E6%B8%B8/2023/Guiyang/";
@@ -131,7 +131,7 @@ ninja.data = [{
         title: "长沙",
       
       description: "长沙的“长”也是长久的“长”",
-      section: "Posts",
+      section: "文章",
       handler: () => {
         
           window.location.href = "/blog/%E5%BF%86%E6%97%A7%E6%B8%B8/2023/Changsha/";
@@ -233,30 +233,4 @@ ninja.data = [{
         handler: () => {
           window.open("https://www.alberteinstein.com/", "_blank");
         },
-      },{
-      id: 'light-theme',
-      title: 'Change theme to light',
-      description: 'Change the theme of the site to Light',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("light");
-      },
-    },
-    {
-      id: 'dark-theme',
-      title: 'Change theme to dark',
-      description: 'Change the theme of the site to Dark',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("dark");
-      },
-    },
-    {
-      id: 'system-theme',
-      title: 'Use system default theme',
-      description: 'Change the theme of the site to System Default',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("system");
-      },
-    },];
+      },];
