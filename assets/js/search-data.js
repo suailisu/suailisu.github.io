@@ -156,6 +156,91 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A5%B3%E6%80%A7%E4%B8%BB%E4%B9%89/";
+            },},{id: "movies-爱情神话",
+          title: '爱情神话',
+          description: "邵艺辉不错。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%88%B1%E6%83%85%E7%A5%9E%E8%AF%9D/";
+            },},{id: "movies-盛夏未来",
+          title: '盛夏未来',
+          description: "倍速看完的。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%9B%9B%E5%A4%8F%E6%9C%AA%E6%9D%A5/";
+            },},{id: "movies-想见你",
+          title: '想见你',
+          description: "神作。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%83%B3%E8%A7%81%E4%BD%A0/";
+            },},{id: "movies-江照黎明",
+          title: '江照黎明',
+          description: "",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%B1%9F%E7%85%A7%E9%BB%8E%E6%98%8E/";
+            },},{id: "movies-一一",
+          title: '一一',
+          description: "",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E4%B8%80%E4%B8%80/";
+            },},{id: "movies-喜剧之王",
+          title: '喜剧之王',
+          description: "意外地觉得还不错。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%96%9C%E5%89%A7%E4%B9%8B%E7%8E%8B/";
+            },},{id: "movies-阳光灿烂的日子",
+          title: '阳光灿烂的日子',
+          description: "比《西西里岛的美丽传说》还恶心的北京版。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E9%98%B3%E5%85%89%E7%81%BF%E7%83%82%E7%9A%84%E6%97%A5%E5%AD%90/";
+            },},{id: "movies-海蒂和爷爷",
+          title: '海蒂和爷爷',
+          description: "剧情没什么意思，画面还不错吧...",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%B5%B7%E8%92%82%E5%92%8C%E7%88%B7%E7%88%B7/";
+            },},{id: "movies-心灵捕手",
+          title: '心灵捕手',
+          description: "",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%BF%83%E7%81%B5%E6%8D%95%E6%89%8B/";
+            },},{id: "movies-超脱",
+          title: '超脱',
+          description: "头痛类瞌睡电影...",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E8%B6%85%E8%84%B1/";
+            },},{id: "movies-喜宴",
+          title: '喜宴',
+          description: "结局恶心得像吃了屎。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%96%9C%E5%AE%B4/";
+            },},{id: "movies-天堂电影院",
+          title: '天堂电影院',
+          description: "有点儿催眠。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%A4%A9%E5%A0%82%E7%94%B5%E5%BD%B1%E9%99%A2/";
+            },},{id: "movies-布达佩斯大饭店",
+          title: '布达佩斯大饭店',
+          description: "属于让我不是很摸得着头脑的有意思类型。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97/";
+            },},{id: "movies-白日梦想家",
+          title: '白日梦想家',
+          description: "有点儿意思。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%99%BD%E6%97%A5%E6%A2%A6%E6%83%B3%E5%AE%B6/";
+            },},{id: "movies-神探",
+          title: '神探',
+          description: "挺反转的。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%A5%9E%E6%8E%A2/";
+            },},{id: "movies-爱乐之城",
+          title: '爱乐之城',
+          description: "",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E/";
+            },},{id: "movies-万神殿-第一季",
+          title: '万神殿 第一季',
+          description: "我心中的科幻动画剧集封神之作。上载智能——人死了以后竟然以0/1信号的形式活在无限的代码世界中，新奇且令人振奋。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E4%B8%87%E7%A5%9E%E6%AE%BF1/";
             },},{id: "movies-想见你",
           title: '想见你',
           description: "",
