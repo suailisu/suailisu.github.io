@@ -165,7 +165,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 .grid-item { 
-  width: 155px;
+  width: 175px;
 }
 
 // Card
@@ -714,6 +714,32 @@ footer.sticky-bottom {
   a:hover {
     border-bottom-color: var(--global-theme-color);
     text-decoration: none;
+  }
+}
+
+// Books
+
+.books {
+  h2.year {
+    color: var(--global-text-color-light);
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: right;
+    font-size: 1.5rem;
+  }
+}
+
+.movies {
+  h2.year {
+    color: var(--global-text-color-light);
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 1.5rem;
   }
 }
 
