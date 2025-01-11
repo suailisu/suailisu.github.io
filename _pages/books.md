@@ -2,7 +2,7 @@
 layout: page
 title: Book思议
 permalink: /books/
-nav: true
+nav: false
 nav_order: 2
 ---
 
