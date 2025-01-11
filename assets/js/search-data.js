@@ -1556,50 +1556,16 @@ ninja.data = [{
           description: "以宋朝为背景的古装悬疑剧。比较雷人的是时常出现的一眼假的虚拟背景，个别演员令人出戏的台词，以及时而令人沉默的剧情。连环案的设计还可以，但是其精巧程度一般，没有什么出人意料的出彩地方。作为下饭剧还可以，有点儿搞笑和意思，吃得下饭。看到后面只想着快点儿看完，比起这种26集，更喜欢8到12集的长度。",
           section: "Movies",handler: () => {
               window.location.href = "/movies/%E6%B8%85%E6%98%8E%E4%B8%8A%E6%B2%B3%E5%9B%BE%E5%AF%86%E7%A0%81/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+            },},{id: "news-又给我的博客搬家噜",
+          title: '😄 又给我的博客搬家噜',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{
-        id: 'social-email',
-        title: 'email',
-        section: 'Socials',
-        handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
-        },
-      },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
-        },
-      },{
+              window.location.href = "/news/%E5%8F%88%E7%BB%99%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AC%E5%AE%B6%E5%99%9C/";
+            },},{
         id: 'social-rss',
         title: 'RSS Feed',
         section: 'Socials',
         handler: () => {
           window.open("/feed.xml", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
         },
       },];
