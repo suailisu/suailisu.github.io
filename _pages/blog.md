@@ -44,14 +44,17 @@ pagination:
       {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
         <p>&bull;</p>
       {% endif %}
-      {% for category in site.display_categories %}
         <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
-        </li>
-        {% unless forloop.last %}
+          {% include post_category.liquid category='忆旧游' %}
           <p>&bull;</p>
-        {% endunless %}
-      {% endfor %}
+          {% include post_category.liquid category='掷金钱' %}
+          <p>&bull;</p>
+           {% include post_category.liquid category='好时光' %}
+          <p>&bull;</p>
+           {% include post_category.liquid category='叨叨令' %}
+          <p>&bull;</p>
+           {% include post_category.liquid category='寿南山' %}
+        </li>
     </ul>
   </div>
   {% endif %}
@@ -144,29 +147,26 @@ pagination:
       </h3>
       <p>{{ post.description }}</p>
       <p class="post-meta">
-        {{ post.date | date: '%Y年%-m月%d日' }} &nbsp; &middot; &nbsp;
-        阅读约需要 {{ read_time }} 分钟
-      </p>
+        {{ post.date | date: '%Y年%-m月%-d日' }} &nbsp; &middot; &nbsp;
+        阅读约需要 {{ read_time }} 分钟 </p>
       <p class="post-tags">
         <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
-          <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
-
-          {% if tags != "" %}
+          <i class="fa-regular fa-folder-open"></i> {{ year }} </a>
+          {% if categories != "" %}
           &nbsp; &middot; &nbsp;
-            {% for tag in post.tags %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
-              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
+            {% for category in post.categories %}
+            {% include post_category.liquid category=category %}
               {% unless forloop.last %}
                 &nbsp;
               {% endunless %}
               {% endfor %}
           {% endif %}
 
-          {% if categories != "" %}
+          {% if tags != "" %}
           &nbsp; &middot; &nbsp;
-            {% for category in post.categories %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
+            {% for tag in post.tags %}
+            <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
+              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
               {% unless forloop.last %}
                 &nbsp;
               {% endunless %}

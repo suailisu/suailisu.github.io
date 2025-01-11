@@ -563,6 +563,14 @@ footer.sticky-bottom {
   text-align: center;
   padding-top: 1rem;
 
+  a {
+    text-decoration: none;
+    color: var(--global-text-color-light);
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+
   ul {
     justify-content: center;
     display: flow-root;
