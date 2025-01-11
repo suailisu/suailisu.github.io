@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Book思议
+title: 字字锦
 permalink: /books/
 nav: false
-nav_order: 2
 ---
 
 {% assign books_by_year = site.books | group_by_exp: "book", "book.date | date: '%Y'" %}
@@ -16,7 +15,7 @@ nav_order: 2
         <div class="container">
             <div class="row">
             {% for book in books %}
-                {% include books.liquid book=book %}
+                {% include book.liquid book=book %}
             {% endfor %}
         </div>
     {% endfor %}

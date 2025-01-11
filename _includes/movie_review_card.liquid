@@ -1,0 +1,38 @@
+<div class="col-md-10">
+  {% if page.long_content %}
+  <a href="{% if page.redirect %}{{ page.redirect }}{% else %}{{ page.url | relative_url }}{% endif %}">
+  {% endif %}  
+    <div class="card h-100 {% if page.long_content %}hoverable{% endif %}">
+      <div class="row no-gutters">
+        {% if page.img %}
+          <div class="col-md-5">
+            {% include figure.liquid loading="eager" path=page.img sizes="(min-width: 768px) 156px, 50vw" alt="page thumbnail" class="card-img" zoomable=true %}
+          </div>
+        {% endif %}
+        <div class="{% if page.img %}col-md-7{% else %}col-md-12{% endif %}">
+          <div class="card-body">
+            <h3 class="card-title">{{ page.title }}</h3>
+            <div class="card-subtitle">
+            {% for i in (1..5) %}
+              {% if i <= page.star %}
+                <span class="full">★</span>
+              {% else %}
+                <span class="empty">★</span>
+              {% endif %}
+            {% endfor %}
+            {% if page.star == 6 %}
+              <span class="overflow">❤</span>
+            {% endif %}
+            </div>
+            <p class="card-text">{{ page.description }}</p>
+            <div class="card-footer">
+              {{ page.date | date: '%Y.%-m.%-d'}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% if page.long_content %}
+  </a>
+  {% endif %}  
+</div>
