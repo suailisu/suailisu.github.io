@@ -5,6 +5,8 @@ permalink: /movies/
 description:
 nav: false
 display_categories: ["电影", "剧集", "纪录片"]
+toc:
+  sidebar: right
 ---
 
 {% assign movies_by_year = site.movies | group_by_exp: "movie", "movie.date | date: '%Y'" %}
