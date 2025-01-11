@@ -156,6 +156,396 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A5%B3%E6%80%A7%E4%B8%BB%E4%B9%89/";
+            },},{id: "movies-罗马假日",
+          title: '罗马假日',
+          description: "初中音乐课上播的，对我来说像古董一样……",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%BD%97%E9%A9%AC%E5%81%87%E6%97%A5/";
+            },},{id: "movies-天空之城",
+          title: '天空之城',
+          description: "一点儿印象也没有了的宫崎骏古董代表作之一，曲子出名。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E/";
+            },},{id: "movies-霸王别姬",
+          title: '霸王别姬',
+          description: "应该是我看过的第一部同性片，还是高中一次历史课上老师放给我们看的，当时看完的感受就是精彩、震撼。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E9%9C%B8%E7%8E%8B%E5%88%AB%E5%A7%AC/";
+            },},{id: "movies-辛德勒的名单",
+          title: '辛德勒的名单',
+          description: "初中音乐课上播的，记得全片黑白只有一个小女孩的衣服是红色的。意义大于内容吧，反对战争，珍爱和平。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E8%BE%9B%E5%BE%B7%E5%8B%92%E7%9A%84%E5%90%8D%E5%8D%95/";
+            },},{id: "movies-狮子王",
+          title: '狮子王',
+          description: "经典古董。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%8B%AE%E5%AD%90%E7%8E%8B/";
+            },},{id: "movies-活着",
+          title: '活着',
+          description: "有时候，活着是一种特权。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%B4%BB%E7%9D%80/";
+            },},{id: "movies-阿甘正传",
+          title: '阿甘正传',
+          description: "好美好甜的美国梦，一个似乎仅凭借天赋和运气就可以顺遂的人生。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E9%98%BF%E7%94%98%E6%AD%A3%E4%BC%A0/";
+            },},{id: "movies-大话西游之月光宝盒",
+          title: '大话西游之月光宝盒',
+          description: "对周星驰的电影的印象就是屎尿屁、浮夸杂乱、令我头疼。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%A4%A7%E8%AF%9D%E8%A5%BF%E6%B8%B8%E4%B9%8B%E6%9C%88%E5%85%89%E5%AE%9D%E7%9B%92/";
+            },},{id: "movies-大话西游之大圣娶亲",
+          title: '大话西游之大圣娶亲',
+          description: "印象中似乎一些台词和剧照广为流传，当时被朱茵的剧照吸引去看的。没看明白什么，不懂被吹捧的原因，只记得朱茵美翻了。现在想来大概是因为受众是“压抑啊”“苦啊”“愤怒啊”的“男人”们吧（笑）。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%A4%A7%E8%AF%9D%E8%A5%BF%E6%B8%B8%E4%B9%8B%E5%A4%A7%E5%9C%A3%E5%A8%B6%E4%BA%B2/";
+            },},{id: "movies-美丽人生",
+          title: '美丽人生',
+          description: "名垂千古。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%BE%8E%E4%B8%BD%E4%BA%BA%E7%94%9F/";
+            },},{id: "movies-楚门的世界",
+          title: '楚门的世界',
+          description: "神作，颠覆认知、突破想象，而这竟是1998年的电影。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%A5%9A%E9%97%A8%E7%9A%84%E4%B8%96%E7%95%8C/";
+            },},{id: "movies-菊次郎的夏天",
+          title: '菊次郎的夏天',
+          description: "剧情一般，喜欢摄影和主题曲，好有夏天的感觉啊！",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E8%8F%8A%E6%AC%A1%E9%83%8E%E7%9A%84%E5%A4%8F%E5%A4%A9/";
+            },},{id: "movies-西西里的美丽传说",
+          title: '西西里的美丽传说',
+          description: "原来一个未成年男的的意淫都可以拍成100多分钟的电影。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E8%A5%BF%E8%A5%BF%E9%87%8C%E7%9A%84%E7%BE%8E%E4%B8%BD%E4%BC%A0%E8%AF%B4/";
+            },},{id: "movies-千与千寻",
+          title: '千与千寻',
+          description: "一部我不是很理解为什么如此高分的电影（也许是因为比较奇幻吧），不过画风不错。小时候看的时候真的有被汤婆婆吓到。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB/";
+            },},{id: "movies-美丽心灵",
+          title: '美丽心灵',
+          description: "记不得内容了...致敬天才。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%BE%8E%E4%B8%BD%E5%BF%83%E7%81%B5/";
+            },},{id: "movies-放牛班的春天",
+          title: '放牛班的春天',
+          description: "说实话不记得什么了，大概还不错吧...",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%94%BE%E7%89%9B%E7%8F%AD%E7%9A%84%E6%98%A5%E5%A4%A9/";
+            },},{id: "movies-指匠情挑",
+          title: '指匠情挑',
+          description: "难以超越的顶级剧集。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%8C%87%E5%8C%A0%E6%83%85%E6%8C%91/";
+            },},{id: "movies-查理和巧克力工厂",
+          title: '查理和巧克力工厂',
+          description: "初中时候看的，儿童电影。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%9F%A5%E7%90%86%E5%92%8C%E5%B7%A7%E5%85%8B%E5%8A%9B%E5%B7%A5%E5%8E%82/";
+            },},{id: "movies-武林外传",
+          title: '武林外传',
+          description: "童年时期为之着迷，至今仍未确定自己是否看完了全集。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%AD%A6%E6%9E%97%E5%A4%96%E4%BC%A0/";
+            },},{id: "movies-假如爱有天意",
+          title: '假如爱有天意',
+          description: "小时候看的时候挺感动的，喜欢主题曲。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%81%87%E5%A6%82%E7%88%B1%E6%9C%89%E5%A4%A9%E6%84%8F/";
+            },},{id: "movies-被嫌弃的松子的一生",
+          title: '被嫌弃的松子的一生',
+          description: "不理解。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E8%A2%AB%E5%AB%8C%E5%BC%83%E7%9A%84%E6%9D%BE%E5%AD%90%E7%9A%84%E4%B8%80%E7%94%9F/";
+            },},{id: "movies-穿越时空的少女",
+          title: '穿越时空的少女',
+          description: "初中时候看的，那个时候这种题材对我来说有点儿新颖。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%A9%BF%E8%B6%8A%E6%97%B6%E7%A9%BA%E7%9A%84%E5%B0%91%E5%A5%B3/";
+            },},{id: "movies-红辣椒",
+          title: '红辣椒',
+          description: "没怎么看懂，但是脑洞很大、很精彩。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%BA%A2%E8%BE%A3%E6%A4%92/";
+            },},{id: "movies-当幸福来敲门",
+          title: '当幸福来敲门',
+          description: "挺励志的，听说老家的县中很爱放这个。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%BD%93%E5%B9%B8%E7%A6%8F%E6%9D%A5%E6%95%B2%E9%97%A8/";
+            },},{id: "movies-追风筝的人",
+          title: '追风筝的人',
+          description: "关于阶级、战争、人性的电影，给年幼的我带来的冲击还是挺大的。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E8%BF%BD%E9%A3%8E%E7%AD%9D%E7%9A%84%E4%BA%BA/";
+            },},{id: "movies-机器人总动员",
+          title: '机器人总动员',
+          description: "又一部被“总动员”式命名残害的佳作，听起来像是什么中二的大动作战争片，实则是搞笑且温情的科幻动画片。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%80%BB%E5%8A%A8%E5%91%98/";
+            },},{id: "movies-三傻大闹宝莱坞",
+          title: '三傻大闹宝莱坞',
+          description: "一部被译名耽误了的印度电影，结局十分反转且励志，年轻时喜欢。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E4%B8%89%E5%82%BB%E5%A4%A7%E9%97%B9%E5%AE%9D%E8%8E%B1%E5%9D%9E/";
+            },},{id: "movies-神偷奶爸",
+          title: '神偷奶爸',
+          description: "想看看小黄人的出处来看的。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%A5%9E%E5%81%B7%E5%A5%B6%E7%88%B8/";
+            },},{id: "movies-怦然心动",
+          title: '怦然心动',
+          description: "我上初高中时广为流传的神作，一个高中秋游的日子在大巴车上看完的。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%80%A6%E7%84%B6%E5%BF%83%E5%8A%A8/";
+            },},{id: "movies-让子弹飞",
+          title: '让子弹飞',
+          description: "初中历史课上老师放的，没看明白一点儿。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E8%AE%A9%E5%AD%90%E5%BC%B9%E9%A3%9E/";
+            },},{id: "movies-哈利-波特-1-8部",
+          title: '哈利·波特（1-8部）',
+          description: "魔法世界的大门从此打开。 哈利·波特与魔法石 哈利·波特与密室 哈利·波特与阿兹卡班的囚徒 哈利·波特与火焰杯 哈利·波特与凤凰社 哈利·波特与混血王子 哈利·波特与死亡圣器(上) 哈利·波特与死亡圣器(下)",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%93%88%E5%88%A9%E6%B3%A2%E7%89%B9/";
+            },},{id: "movies-那些年-我们一起追的女孩",
+          title: '那些年，我们一起追的女孩',
+          description: "也许是当时狠狠收割初中生的电影。时至今日，我依然不懂标题里的“一起追”是什么意思。建议以后这种打着“青春”旗号的厌女+男凝电影注明“青春（男）”。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E9%82%A3%E4%BA%9B%E5%B9%B4-%E6%88%91%E4%BB%AC%E4%B8%80%E8%B5%B7%E8%BF%BD%E7%9A%84%E5%A5%B3%E5%AD%A9/";
+            },},{id: "movies-初恋这件小事",
+          title: '初恋这件小事',
+          description: "收割初中生的泰国“青春”片，我也是初中时看的...",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%88%9D%E6%81%8B%E8%BF%99%E4%BB%B6%E5%B0%8F%E4%BA%8B/";
+            },},{id: "movies-了不起的盖茨比",
+          title: '了不起的盖茨比',
+          description: "美版《小时代》。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%E7%9B%96%E8%8C%A8%E6%AF%94/";
+            },},{id: "movies-起风了",
+          title: '起风了',
+          description: "“起风了，唯有努力生存。”这句话曾经鼓励过我很长一段时间。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E8%B5%B7%E9%A3%8E%E4%BA%86/";
+            },},{id: "movies-素媛",
+          title: '素媛',
+          description: "小时候看的，到现在还记得“最孤独的人最亲切，受过伤的人笑得最灿烂。”",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%B4%A0%E5%AA%9B/";
+            },},{id: "movies-冰雪奇缘",
+          title: '冰雪奇缘',
+          description: "看之前：这也有人嗑？ 看之后：我嗑。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%86%B0%E9%9B%AA%E5%A5%87%E7%BC%98/";
+            },},{id: "movies-星际穿越",
+          title: '星际穿越',
+          description: "神作，成为我后来评判科幻片的基准。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%98%9F%E9%99%85%E7%A9%BF%E8%B6%8A/";
+            },},{id: "movies-火星救援",
+          title: '火星救援',
+          description: "高中时候在学校看的，挺无聊的一个灾难片。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%81%AB%E6%98%9F%E6%95%91%E6%8F%B4/";
+            },},{id: "movies-头脑特工队",
+          title: '头脑特工队',
+          description: "喜欢一些有创意和想象力、幽默且有意义的作品。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%A4%B4%E8%84%91%E7%89%B9%E5%B7%A5%E9%98%9F/";
+            },},{id: "movies-疯狂动物城",
+          title: '疯狂动物城',
+          description: "神作，幽默可爱。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%96%AF%E7%8B%82%E5%8A%A8%E7%89%A9%E5%9F%8E/";
+            },},{id: "movies-最好的我们",
+          title: '最好的我们',
+          description: "时常怀疑拍“青春片”的人到底上没上过高中。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%9C%80%E5%A5%BD%E7%9A%84%E6%88%91%E4%BB%AC/";
+            },},{id: "movies-大鱼海棠",
+          title: '大鱼海棠',
+          description: "当时很火，歌也很火。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%A4%A7%E9%B1%BC%E6%B5%B7%E6%A3%A0/";
+            },},{id: "movies-你的名字",
+          title: '你的名字。',
+          description: "新海诚式除了画风和穿越以外乏善可陈的青春男女爱情动画片系列作品之一。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97/";
+            },},{id: "movies-摔跤吧-爸爸",
+          title: '摔跤吧！爸爸',
+          description: "印度家挺励志片，热血、感动。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%91%94%E8%B7%A4%E5%90%A7-%E7%88%B8%E7%88%B8/";
+            },},{id: "movies-侧耳倾听",
+          title: '侧耳倾听',
+          description: "一点儿印象也没有了的宫崎骏古董代表作之一。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E4%BE%A7%E8%80%B3%E5%80%BE%E5%90%AC/";
+            },},{id: "movies-神探夏洛克-1-4季",
+          title: '神探夏洛克（1-4季）',
+          description: "还是很有意思的。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%A5%9E%E6%8E%A2%E5%A4%8F%E6%B4%9B%E5%85%8B/";
+            },},{id: "movies-二十二",
+          title: '二十二',
+          description: "关于“慰安妇”的纪录片，意义大于内容。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E4%BA%8C%E5%8D%81%E4%BA%8C/";
+            },},{id: "movies-天才枪手",
+          title: '天才枪手',
+          description: "本科的时候和室友去看的，挺赤激的。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%A4%A9%E6%89%8D%E6%9E%AA%E6%89%8B/";
+            },},{id: "movies-寻梦环游记",
+          title: '寻梦环游记',
+          description: "神作，愿意 N 刷的电影。想象力一流，画面配乐绝佳。“死亡不是生命的终点，遗忘才是”，温情、幽默又有转折的剧情，别具一格的想象和令人耳目一新的设定，堪称教科书级别的动画电影。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%AF%BB%E6%A2%A6%E7%8E%AF%E6%B8%B8%E8%AE%B0/";
+            },},{id: "movies-神秘巨星",
+          title: '神秘巨星',
+          description: "类似但不如《摔跤吧爸爸》。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%A5%9E%E7%A7%98%E5%B7%A8%E6%98%9F/";
+            },},{id: "movies-牵牛花与加濑同学",
+          title: '牵牛花与加濑同学。',
+          description: "还不错的真百合。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%89%B5%E7%89%9B%E8%8A%B1%E4%B8%8E%E5%8A%A0%E6%BF%91%E5%90%8C%E5%AD%A6/";
+            },},{id: "movies-生活大爆炸-1-12季",
+          title: '生活大爆炸（1-12季）',
+          description: "从初中看到大学，泪目。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%94%9F%E6%B4%BB%E5%A4%A7%E7%88%86%E7%82%B8/";
+            },},{id: "movies-无敌破坏王2-大闹互联网",
+          title: '无敌破坏王2：大闹互联网',
+          description: "有意思的搞笑动画片。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%97%A0%E6%95%8C%E7%A0%B4%E5%9D%8F%E7%8E%8B2/";
+            },},{id: "movies-蜘蛛侠-平行宇宙",
+          title: '蜘蛛侠：平行宇宙',
+          description: "原本对“超英”电影不是很感兴趣，有些惊喜。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E8%9C%98%E8%9B%9B%E4%BE%A0-%E5%B9%B3%E8%A1%8C%E5%AE%87%E5%AE%99/";
+            },},{id: "movies-流浪地球",
+          title: '流浪地球',
+          description: "大概是很反感某些价值观吧。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%B5%81%E6%B5%AA%E5%9C%B0%E7%90%83/";
+            },},{id: "movies-朝花夕誓",
+          title: '朝花夕誓',
+          description: "全名《朝花夕誓：于离别之朝束起约定之花》",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%9C%9D%E8%8A%B1%E5%A4%95%E8%AA%93/";
+            },},{id: "movies-何以为家",
+          title: '何以为家',
+          description: "佳作。香港译名《星仔打官司》笑薯我了。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E4%BD%95%E4%BB%A5%E4%B8%BA%E5%AE%B6/";
+            },},{id: "movies-哪吒之魔童降世",
+          title: '哪吒之魔童降世',
+          description: "挺不错的中国动画片，当时在电影院感觉耳目一新。“自来水”一词源自于此。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%93%AA%E5%90%92%E4%B9%8B%E9%AD%94%E7%AB%A5%E9%99%8D%E4%B8%96/";
+            },},{id: "movies-摩登家庭-1-11季",
+          title: '摩登家庭（1-11季）',
+          description: "最好看的美式家庭剧。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%91%A9%E7%99%BB%E5%AE%B6%E5%BA%AD/";
+            },},{id: "movies-沉睡魔咒2",
+          title: '沉睡魔咒2',
+          description: "挺有意思的。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%B2%89%E7%9D%A1%E9%AD%94%E5%92%922/";
+            },},{id: "movies-了不起的麦瑟尔夫人-1-3季",
+          title: '了不起的麦瑟尔夫人（1-3季）',
+          description: "还可以，只看了前3季。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%E9%BA%A6%E7%91%9F%E5%B0%94%E5%A4%AB%E4%BA%BA/";
+            },},{id: "movies-小时代-1-4",
+          title: '小时代 1-4',
+          description: "狠狠收割初中生的电影，从此郭敬明在导演界自成一派，电影里的人活在郭敬明架空宇宙。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%B0%8F%E6%97%B6%E4%BB%A3/";
+            },},{id: "movies-面子",
+          title: '面子',
+          description: "不知道这种“正常”的女同性恋电影有多难得，伍思薇是神。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E9%9D%A2%E5%AD%90/";
+            },},{id: "movies-信条",
+          title: '信条',
+          description: "在电影院看的，挺有意思的。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E4%BF%A1%E6%9D%A1/";
+            },},{id: "movies-熟女强人",
+          title: '熟女强人',
+          description: "为了剧中一对女同性恋去看的，还可以。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%86%9F%E5%A5%B3%E5%BC%BA%E4%BA%BA/";
+            },},{id: "movies-我和我的祖国",
+          title: '我和我的祖国',
+          description: "样板戏串烧，“我和”宇宙开山之作。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%88%91%E5%92%8C%E6%88%91%E7%9A%84%E7%A5%96%E5%9B%BD/";
+            },},{id: "movies-无敌破坏王",
+          title: '无敌破坏王',
+          description: "经典动画片，卖点就是脑洞、搞笑和成长教育。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%97%A0%E6%95%8C%E7%A0%B4%E5%9D%8F%E7%8E%8B/";
+            },},{id: "movies-我不是药神",
+          title: '我不是药神',
+          description: "难得一见的上映的现实主义题材国产片。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%88%91%E4%B8%8D%E6%98%AF%E8%8D%AF%E7%A5%9E/";
+            },},{id: "movies-盗梦空间",
+          title: '盗梦空间',
+          description: "科幻片代表作，设计上有新鲜感，剧情较为薄弱。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%9B%97%E6%A2%A6%E7%A9%BA%E9%97%B4/";
+            },},{id: "movies-真心半解",
+          title: '真心半解',
+          description: "难评，伍思薇在我心中跌落神坛。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E7%9C%9F%E5%BF%83%E5%8D%8A%E8%A7%A3/";
+            },},{id: "movies-夏洛特烦恼",
+          title: '夏洛特烦恼',
+          description: "有病。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%A4%8F%E6%B4%9B%E7%89%B9%E7%83%A6%E6%81%BC/";
+            },},{id: "movies-李米的猜想",
+          title: '李米的猜想',
+          description: "不是我喜欢的类型。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%9D%8E%E7%B1%B3%E7%9A%84%E7%8C%9C%E6%83%B3/";
+            },},{id: "movies-菊石",
+          title: '菊石',
+          description: "催眠流派的女同电影，谁来救救我…",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E8%8F%8A%E7%9F%B3/";
+            },},{id: "movies-悲惨世界",
+          title: '悲惨世界',
+          description: "好看，喜欢歌。Do you hear the people sing? Singing the songs of angry men? It is the music of the people who will not be slaves again! When the beating of your heart echoes the beating of the drums, there is a life about to start when tomorrow comes!",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%82%B2%E6%83%A8%E4%B8%96%E7%95%8C/";
+            },},{id: "movies-后翼弃兵",
+          title: '后翼弃兵',
+          description: "算是爽剧吧。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%90%8E%E7%BF%BC%E5%BC%83%E5%85%B5/";
+            },},{id: "movies-小谢尔顿-1-5季",
+          title: '小谢尔顿（1 - 5季）',
+          description: "《生活大爆炸》的衍生剧，很有趣的美式家庭喜剧。相对原剧，更喜欢这个剧。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%B0%8F%E8%B0%A2%E5%B0%94%E9%A1%BF/";
+            },},{id: "movies-我们这一天-1-5季",
+          title: '我们这一天（1 - 5季）',
+          description: "经典美剧，看到后面有些无聊了。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E6%88%91%E4%BB%AC%E8%BF%99%E4%B8%80%E5%A4%A9/";
             },},{id: "movies-心灵奇旅",
           title: '心灵奇旅',
           description: "典型“迪皮”动画片，类似但不如《寻梦环游记》。",
