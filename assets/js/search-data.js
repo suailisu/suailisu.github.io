@@ -1556,6 +1556,11 @@ ninja.data = [{
           description: "以宋朝为背景的古装悬疑剧。比较雷人的是时常出现的一眼假的虚拟背景，个别演员令人出戏的台词，以及时而令人沉默的剧情。连环案的设计还可以，但是其精巧程度一般，没有什么出人意料的出彩地方。作为下饭剧还可以，有点儿搞笑和意思，吃得下饭。看到后面只想着快点儿看完，比起这种26集，更喜欢8到12集的长度。",
           section: "Movies",handler: () => {
               window.location.href = "/movies/%E6%B8%85%E6%98%8E%E4%B8%8A%E6%B2%B3%E5%9B%BE%E5%AF%86%E7%A0%81/";
+            },},{id: "movies-唐朝诡事录之西行",
+          title: '唐朝诡事录之西行',
+          description: "所谓的“双男主”剧果然臭气熏天。漫漫 40 集可算是看完了，作为悬疑剧用来下饭还是挺有意思的。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%94%90%E6%9C%9D%E8%AF%A1%E4%BA%8B%E5%BD%95%E4%B9%8B%E8%A5%BF%E8%A1%8C/";
             },},{id: "news-乐府周记第-1-期",
           title: '乐府周记第 1 期',
           description: "",

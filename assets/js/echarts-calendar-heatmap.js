@@ -3518,6 +3518,18 @@ var dataMap = new Map();
     value.push({title, url});
   }
 
+  
+  var key = '2025-01-09';
+  var title = '唐朝诡事录之西行'
+  var url = '/movies/%E5%94%90%E6%9C%9D%E8%AF%A1%E4%BA%8B%E5%BD%95%E4%B9%8B%E8%A5%BF%E8%A1%8C/'
+  console.log(url);
+  var value = dataMap.get(key);
+  if (value == null) {
+    dataMap.set(key, [{title, url}]);
+  } else {
+    value.push({title, url});
+  }
+
 
 var chartDom = document.getElementById('heatmap');
 var myChart = echarts.init(chartDom, null, { locale: "ZH"});
