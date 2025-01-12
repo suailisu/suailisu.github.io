@@ -136,8 +136,8 @@ var dataMap = new Map();
 
   
   var key = '2025-01-11';
-  var title = '又给我的博客搬家噜'
-  var url = '/news/%E5%8F%88%E7%BB%99%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AC%E5%AE%B6%E5%99%9C/'
+  var title = '乐府周记第 1 期'
+  var url = '/news/%E7%AC%AC1%E6%9C%9F/'
   console.log(url);
   var value = dataMap.get(key);
   if (value == null) {
