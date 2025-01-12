@@ -56,7 +56,6 @@ option = {
     orient: 'horizontal',
     left: 'right',
     inRange: {
-      //  [floor color, ceiling color]
       color: ['#7aa8744c', '#7AA874' ] 
     },
     showLabel: false,
@@ -72,7 +71,10 @@ option = {
       borderWidth: 0.5,
       borderColor: '#fff',
     },
-    yearLabel: { show: false },
+    yearLabel: { 
+      show: true,
+      position: "bottom" 
+    },
     splitLine: {
       lineStyle: {
         color: '#b7d12a',
