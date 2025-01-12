@@ -6,58 +6,35 @@ description:
 categories: 寿南山
 languages: ["zh"]
 thumbnail: assets/img/life/2025/01-01-cover.jpg
+toc:
+  beginning: true
 ---
+
+## 2025年1月1日 原文
 
 因受“丁香医生”公众号的推送[《暗示的力量真的无穷大！2025 年第一天，强烈建议你做这一件事》](https://news.qq.com/rain/a/20250101A04FVN00?suid=&media_id=)启发，决定在这里写下我的新年~~愿望~~计划。
 
 - 身体健康
   - 每周至少健身 3 次
-    - [x] 第 1 周
-      - [x] 2025-01-02，15:09 - 15:37，推：卧推+肩推+飞鸟+颈后臂屈伸
-      - [x] 2025-01-03，15:44 - 16:18，拉：高位下拉+俯身划船+二头弯举+面拉
-      - [x] 2025-01-05，20:47 - 21:26，腿：深蹲+硬拉+臀推
-    - [x] 第 2 周
-      - [ ] 2025-01-09，推：卧推+肩推+飞鸟+颈后臂屈伸
   - 每个月至少减重 1 千克
-    - [ ] 1 月
   - 能够做到尽量 23 点前睡觉
-    - 达成天数： `3`/7 天
   - 每天至少喝一杯 xb 水杯的水
-    - 达成天数：`7`/7 天
   - 每天至多连续坐 2 小时
-    - 达成天数：`7`/7 天
   - 上班时间不憋尿
-    - 达成天数：`3`/3 天
 - 精神富有
   - 一年至少读完 3 本非本专业书籍
-    - [x] 第 1 本： <a href="{{ '从零开始的女性主义' | prepend: '/books/' | prepend: site.baseurl}}">从零开始的女性主义</a>，读完于 2025-01-03.
-    - [ ] 第 2 本：`1984`
-    - [ ] 第 3 本
   - 每周最多浏览 1 次美卡论坛，控制在 30 分钟内
-    - [ ] 第 1 周：暂无浏览计划
 - 财富增长
   - 工作日专心工作 6 小时，不多不少
-    - 达成天数：`2`/3 天
   - 完成 401(k) 的定投计划，不增不减
-    - [x] 2025-01-01，因休市，改为 2024-12-31
-    - [ ] 2025-01-15
 - 专业提升
   - 每日做 LeetCode 每日一题
-    - 达成天数：`8` 天
   - 一年至少读完 1 本专业书籍
-    - [ ] 第 1 本：`Designing Data-Intensive Applications`
-      - [x] Ch 1: Reliable, Scalable, and Maintainable Applications，读完于 2025-01-03
   - 一年至少学习完 2 门专业课程
-    - [ ] 第 1 门：[CS224N: Natural Language Processing with Deep Learning](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/index.html#schedule)
-    - [ ] 第 2 门：[Coursera: Algorithms I & II](https://www.coursera.org/my-learning?myLearningTab=IN_PROGRESS)
   - 一年至少阅读完 1 篇论文
-    - [ ] 第 1 篇：[The Llama 3 Herd of Models.](https://arxiv.org/pdf/2407.21783)
-- 家庭合睦
+- 家庭和睦
   - 每天和小b贴贴，语言表达喜欢
-    - 达成天数：`7`/7 天
   - 每周至少和晴云淡定沫儿联系 1 次
-    - [x] 第 1 周
-    - [x] 第 2 周
 - 能力增强
   - 有能力减少对 ChatGPT 等产品的依赖
   - 有能力管理好时间
@@ -70,3 +47,100 @@ thumbnail: assets/img/life/2025/01-01-cover.jpg
   - 工作
     - 积极面对，寻求方法而非借口
     - 目光长远，赢得尊重而非关注
+
+<br>
+
+## 2025年1月12日 更新
+经过一周的实践和复盘，我发现用 bullet point 来更新执行情况的方式实在是很不方便，所以做了下面的表格模版。
+
+### 模版1 每日追踪
+
+这里是一些日常相关的 check list。
+
+|||01-06 一|01-07 二|01-08 三|01-09 四|01-10 五|01-11 六|01-12 日|
+|<br> `身体健康`| <br> 多喝水 <br> 少久坐 <br> 不憋尿 <br> 早睡觉 <br> 勤健身|<br> ✅ <br> ✅ <br> ✅ <br> ❎ <br> ❎|||||||
+|<br> `财富增长`| <br> 真工作 |<br> ✅ |||||||
+|<br> `专业提升`| <br> 日刷题 | <br> ✅ |||||||
+|<br> `家庭和睦`| <br> 贴小b |<br> ✅ |||||||
+|<br> `生活愉快`| <br> 不厌工| <br> ✅ |||||||
+
+<br>
+
+### 模版2 每周复盘
+
+用于每周末反思总结，拨乱反正。
+
+- `身体健康`
+  - 减体重
+
+- `精神富有`
+  - 戒泥潭
+
+- `家庭和睦`
+  - 话家人
+
+- `能力增强`
+  - 少智能
+  - 管时间
+  - 好人际
+
+### 模版3 长期计划
+
+只要最终完成即可，无需记录到每日/周追踪。
+
+- `精神富有`
+  - 一年至少读完 3 本非本专业书籍
+    - [x] 第 1 本： <a href="{{ '从零开始的女性主义' | prepend: '/books/' | prepend: site.baseurl}}">从零开始的女性主义</a>，读完于 2025-01-03.
+    - [ ] 第 2 本：`1984`
+    - [ ] 第 3 本
+
+- `财富增长`
+  - 完成定投计划
+
+- `专业提升`
+  - 一年至少读完 1 本专业书籍
+    - [ ] 第 1 本：`Designing Data-Intensive Applications`
+      - [x] Ch 1: Reliable, Scalable, and Maintainable Applications，读完于 2025-01-03
+  - 一年至少学习完 2 门专业课程
+    - [ ] 第 1 门：[CS224N: Natural Language Processing with Deep Learning](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/index.html#schedule)
+    - [ ] 第 2 门：[Coursera: Algorithms I & II](https://www.coursera.org/my-learning?myLearningTab=IN_PROGRESS)
+  - 一年至少阅读完 1 篇论文
+    - [ ] 第 1 篇：[The Llama 3 Herd of Models.](https://arxiv.org/pdf/2407.21783)
+
+- `生活愉快`
+  - 旅游
+    - 我想去温哥华旅游 1 次
+    - 我想去台湾旅游 1 次
+    - 我想去新加坡旅游 1 次
+
+<br>
+
+## 每周记录
+
+### 第 3 周：01-13 - 01-19
+
+#### Daily
+
+|||01-13 一|01-14 二|01-15 三|01-16 四|01-17 五|01-18 六|01-19 日|
+|<br> `身体健康`| <br> 多喝水 <br> 少久坐 <br> 不憋尿 <br> 早睡觉 <br> 勤健身|||||||
+|<br> `财富增长`| <br> 真工作 ||||||||
+|<br> `专业提升`| <br> 日刷题 ||||||||
+|<br> `家庭和睦`| <br> 贴小b ||||||||
+|<br> `生活愉快`| <br> 不厌工||||||||
+
+<br>
+
+#### Weekly
+- `身体健康`
+  - 减体重
+
+- `精神富有`
+  - 戒泥潭
+
+- `家庭和睦`
+  - 话家人
+
+- `能力增强`
+  - 少智能
+  - 管时间
+  - 好人际
