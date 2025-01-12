@@ -1557,7 +1557,7 @@ ninja.data = [{
           section: "Movies",handler: () => {
               window.location.href = "/movies/%E6%B8%85%E6%98%8E%E4%B8%8A%E6%B2%B3%E5%9B%BE%E5%AF%86%E7%A0%81/";
             },},{id: "news-又给我的博客搬家噜",
-          title: '😄 又给我的博客搬家噜',
+          title: '又给我的博客搬家噜',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/%E5%8F%88%E7%BB%99%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AC%E5%AE%B6%E5%99%9C/";
