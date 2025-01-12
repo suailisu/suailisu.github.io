@@ -8,11 +8,14 @@ var dataMap = new Map();
 {% for item in items %}
   {% assign date = item.date | date: '%Y-%m-%d' %}
   var key = '{{ date }}';
+  var title = '{{ item.title }}'
+  var url = '{{ item.url }}'
+  console.log(url);
   var value = dataMap.get(key);
   if (value == null) {
-    dataMap.set(key, 1);
+    dataMap.set(key, [{title, url}]);
   } else {
-    dataMap.set(key, value + 1);
+    value.push({title, url});
   }
 {% endfor %}
 
@@ -23,7 +26,7 @@ var option;
 function getData(year) {
   const data = [];
   for (const [key, value] of dataMap.entries()) {
-    data.push([key, value]);
+    data.push([key, value.length]);
   }
   return data;
 }
@@ -40,12 +43,23 @@ function getDateRange() {
 }
 
 option = {
-  title: {
-    top: 30,
-    left: 'center',
-    text: '更新统计'
+  title: {},
+  tooltip: {
+    hideDelay: 1000,
+    enterable: true,
+    formatter: function (p) {
+      const date = p.data[0];
+      const items = dataMap.get(date);
+      var content = `${date}`;
+      for (const [i, item] of items.entries()) {
+          content += "<br>";
+          var title = item.title;
+          var url = item.url;
+          content += `<a href="${url}">${title}</a>`
+      }
+      return content;
+    }
   },
-  tooltip: {},
   visualMap: {
     show: false,
     type: 'piecewise',   
@@ -61,19 +75,20 @@ option = {
     showLabel: false,
   },
   calendar: {
-    top: 90,
+    top: 30,
     left: 30,
     right: 30,
     cellSize: ['auto', 13],
     range: getDateRange(),
     itemStyle: {
-      color: '#F1F1F1',
+      color: ' #F8F8F8',
       borderWidth: 0.5,
       borderColor: '#fff',
     },
-    yearLabel: { 
+    yearLabel: {
       show: true,
-      position: "bottom" 
+      position: "bottom",
+      fontSize: 14,
     },
     splitLine: {
       lineStyle: {
