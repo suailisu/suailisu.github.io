@@ -136,8 +136,20 @@ var dataMap = new Map();
 
   
   var key = '2025-01-12';
-  var title = '乐府周记第 1 期'
+  var title = '乐府周报第 1 期'
   var url = '/news/%E7%AC%AC1%E6%9C%9F/'
+  console.log(url);
+  var value = dataMap.get(key);
+  if (value == null) {
+    dataMap.set(key, [{title, url}]);
+  } else {
+    value.push({title, url});
+  }
+
+  
+  var key = '2025-01-13';
+  var title = '乐府周报第 2 期'
+  var url = '/news/%E7%AC%AC2%E6%9C%9F/'
   console.log(url);
   var value = dataMap.get(key);
   if (value == null) {

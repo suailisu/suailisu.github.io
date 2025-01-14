@@ -1561,11 +1561,16 @@ ninja.data = [{
           description: "所谓的“双男主”剧果然臭气熏天。漫漫 40 集可算是看完了，作为悬疑剧用来下饭还是挺有意思的。",
           section: "Movies",handler: () => {
               window.location.href = "/movies/%E5%94%90%E6%9C%9D%E8%AF%A1%E4%BA%8B%E5%BD%95%E4%B9%8B%E8%A5%BF%E8%A1%8C/";
-            },},{id: "news-乐府周记第-1-期",
-          title: '乐府周记第 1 期',
+            },},{id: "news-乐府周报第-1-期",
+          title: '乐府周报第 1 期',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/%E7%AC%AC1%E6%9C%9F/";
+            },},{id: "news-乐府周报第-2-期",
+          title: '乐府周报第 2 期',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/%E7%AC%AC2%E6%9C%9F/";
             },},{
         id: 'social-rss',
         title: 'RSS Feed',
