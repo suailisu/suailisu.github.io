@@ -30,7 +30,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "";
               },
-            },{id: "post-2025-新年好",
+            },{id: "post-我的赛博编年史",
+      
+        title: "我的赛博编年史",
+      
+      description: "",
+      section: "文章",
+      handler: () => {
+        
+          window.location.href = "/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2025/the-internet/";
+        
+      },
+    },{id: "post-2025-新年好",
       
         title: "2025 新年好",
       

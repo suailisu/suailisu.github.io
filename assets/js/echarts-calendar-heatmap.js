@@ -3,6 +3,18 @@
 var dataMap = new Map();
 
   
+  var key = '2025-01-13';
+  var title = '我的赛博编年史'
+  var url = '/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2025/the-internet/'
+  console.log(url);
+  var value = dataMap.get(key);
+  if (value == null) {
+    dataMap.set(key, [{title, url}]);
+  } else {
+    value.push({title, url});
+  }
+
+  
   var key = '2025-01-01';
   var title = '2025 新年好'
   var url = '/blog/%E5%AF%BF%E5%8D%97%E5%B1%B1/2025/happy-new-year/'
