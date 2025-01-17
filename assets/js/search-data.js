@@ -1572,6 +1572,11 @@ ninja.data = [{
           description: "所谓的“双男主”剧果然臭气熏天。漫漫 40 集可算是看完了，作为悬疑剧用来下饭还是挺有意思的。",
           section: "Movies",handler: () => {
               window.location.href = "/movies/%E5%94%90%E6%9C%9D%E8%AF%A1%E4%BA%8B%E5%BD%95%E4%B9%8B%E8%A5%BF%E8%A1%8C/";
+            },},{id: "movies-梦境制片厂",
+          title: '梦境制片厂',
+          description: "“头脑特工队”的衍生剧集，有趣，只恨太短了不够看。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%94%90%E6%9C%9D%E8%AF%A1%E4%BA%8B%E5%BD%95%E4%B9%8B%E8%A5%BF%E8%A1%8C-copy/";
             },},{id: "news-乐府周报第-1-期",
           title: '乐府周报第 1 期',
           description: "",
