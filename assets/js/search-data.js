@@ -1576,7 +1576,12 @@ ninja.data = [{
           title: '梦境制片厂',
           description: "“头脑特工队”的衍生剧集，有趣，只恨太短了不够看。",
           section: "Movies",handler: () => {
-              window.location.href = "/movies/%E5%94%90%E6%9C%9D%E8%AF%A1%E4%BA%8B%E5%BD%95%E4%B9%8B%E8%A5%BF%E8%A1%8C-copy/";
+              window.location.href = "/movies/%E6%A2%A6%E5%A2%83%E5%88%B6%E7%89%87%E5%8E%82/";
+            },},{id: "movies-好东西",
+          title: '好东西',
+          description: "终于看上噜。我的评价是：舒适。从画面到配乐，从剧情到台词，爱死这种女性叙事了。有点儿“芭比”的影子，但立意更明确、情节更好看、感情更动人。邵艺辉这人行，能处。",
+          section: "Movies",handler: () => {
+              window.location.href = "/movies/%E5%A5%BD%E4%B8%9C%E8%A5%BF/";
             },},{id: "news-乐府周报第-1-期",
           title: '乐府周报第 1 期',
           description: "",

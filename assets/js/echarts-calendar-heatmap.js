@@ -3557,7 +3557,19 @@ var dataMap = new Map();
   
   var key = '2025-01-15';
   var title = '梦境制片厂'
-  var url = '/movies/%E5%94%90%E6%9C%9D%E8%AF%A1%E4%BA%8B%E5%BD%95%E4%B9%8B%E8%A5%BF%E8%A1%8C-copy/'
+  var url = '/movies/%E6%A2%A6%E5%A2%83%E5%88%B6%E7%89%87%E5%8E%82/'
+  console.log(url);
+  var value = dataMap.get(key);
+  if (value == null) {
+    dataMap.set(key, [{title, url}]);
+  } else {
+    value.push({title, url});
+  }
+
+  
+  var key = '2025-01-17';
+  var title = '好东西'
+  var url = '/movies/%E5%A5%BD%E4%B8%9C%E8%A5%BF/'
   console.log(url);
   var value = dataMap.get(key);
   if (value == null) {
