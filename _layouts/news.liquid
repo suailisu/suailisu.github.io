@@ -19,7 +19,7 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
       {{ page.start-date | date: '%Y年%-m月%-d日' }} - 
-      {{ page.end-date | date: '%Y年%-m月%-d日' }}
+      {{ page.date | date: '%Y年%-m月%-d日' }}
     </p>
     <p class="post-tags">
       {% if page.categories != "" %}
