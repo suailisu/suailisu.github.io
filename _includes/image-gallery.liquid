@@ -1,0 +1,22 @@
+<style>
+    .image-gallery {overflow: auto; margin-left: -1%!important;}
+    .image-gallery img {width: 100%; float: left; display: block; margin: 0 0 1% 1%; width: 19%; text-align: center; text-decoration: none!important;}
+  </style>
+  
+  <div class="grid">
+  {% for file in site.static_files %}
+    {% if file.path contains include.folder %}
+      {% if file.extname == '.jpg' or 
+        file.extname == '.jpeg' or 
+        file.extname == '.JPG' or 
+        file.extname == '.JPEG' %}
+  
+        {% assign filenameparts = file.path | split: "/" %}
+        {% assign filename = filenameparts | last | replace: file.extname,"" %}
+        <div class="grid-item">
+        <img src="{{ file.path }}" alt="{{ filename }}" data-zoomable width="100%" loading="lazy"/>
+        </div>  
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  </div>

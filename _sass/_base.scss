@@ -19,6 +19,12 @@ strong {
   color: var(--global-text-color);
 }
 
+hr.dotted {
+  border-top: 3px dotted var(--global-divider-color);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
