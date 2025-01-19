@@ -1582,13 +1582,13 @@ ninja.data = [{
           description: "终于看上噜。我的评价是：舒适。从画面到配乐，从剧情到台词，爱死这种女性叙事了。有点儿“芭比”的影子，但立意更明确、情节更好看、感情更动人。邵艺辉这人行，能处。",
           section: "Movies",handler: () => {
               window.location.href = "/movies/%E5%A5%BD%E4%B8%9C%E8%A5%BF/";
-            },},{id: "news-乐府周报第-1-期",
-          title: '乐府周报第 1 期',
+            },},{id: "news-乐府周刊第-1-期",
+          title: '乐府周刊第 1 期',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/%E7%AC%AC1%E6%9C%9F/";
-            },},{id: "news-乐府周报第-2-期",
-          title: '乐府周报第 2 期',
+            },},{id: "news-乐府周刊第-2-期",
+          title: '乐府周刊第 2 期',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/%E7%AC%AC2%E6%9C%9F/";
