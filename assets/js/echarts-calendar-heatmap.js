@@ -183,6 +183,18 @@ var dataMap = new Map();
   }
 
   
+  var key = '2025-01-20';
+  var title = '人间值得'
+  var url = '/books/%E4%BA%BA%E9%97%B4%E5%80%BC%E5%BE%97/'
+  console.log(url);
+  var value = dataMap.get(key);
+  if (value == null) {
+    dataMap.set(key, [{title, url}]);
+  } else {
+    value.push({title, url});
+  }
+
+  
   var key = '1953-09-02';
   var title = '罗马假日'
   var url = '/movies/%E7%BD%97%E9%A9%AC%E5%81%87%E6%97%A5/'

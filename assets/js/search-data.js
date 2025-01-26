@@ -167,6 +167,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A5%B3%E6%80%A7%E4%B8%BB%E4%B9%89/";
+            },},{id: "books-人间值得",
+          title: '人间值得',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/%E4%BA%BA%E9%97%B4%E5%80%BC%E5%BE%97/";
             },},{id: "movies-罗马假日",
           title: '罗马假日',
           description: "初中音乐课上播的，对我来说像古董一样……",
