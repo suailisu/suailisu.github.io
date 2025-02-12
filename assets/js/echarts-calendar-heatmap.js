@@ -195,6 +195,18 @@ var dataMap = new Map();
   }
 
   
+  var key = '2025-02-08';
+  var title = '乐府周刊第 5 期'
+  var url = '/news/%E7%AC%AC5%E6%9C%9F/'
+  console.log(url);
+  var value = dataMap.get(key);
+  if (value == null) {
+    dataMap.set(key, [{title, url}]);
+  } else {
+    value.push({title, url});
+  }
+
+  
   var key = '2025-01-03';
   var title = '从零开始的女性主义'
   var url = '/books/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A5%B3%E6%80%A7%E4%B8%BB%E4%B9%89/'
