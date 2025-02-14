@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-人在楼上",
+  },{id: "nav-乐府周刊",
+          title: "乐府周刊",
+          description: "",
+          section: "导航",
+          handler: () => {
+            window.location.href = "/news/";
+          },
+        },{id: "nav-人在楼上",
           title: "人在楼上",
           description: "",
           section: "导航",
