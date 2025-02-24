@@ -1624,6 +1624,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/%E7%AC%AC6%E6%9C%9F/";
+            },},{id: "news-乐府周刊第-7-期",
+          title: '乐府周刊第 7 期',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/%E7%AC%AC7%E6%9C%9F/";
             },},{
         id: 'social-rss',
         title: 'RSS Feed',
