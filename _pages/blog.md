@@ -9,14 +9,12 @@ extra_css:
 <div class="post">
   <ul class="post-list">
     {% assign postlist = paginator.posts | default: site.posts %}
-    {% for post in postlist %}
-      <!-- {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %} -->
-      
+    {% for post in postlist %}      
       <li>
         <div class="row">
           {% if post.thumbnail %}
             <div class="col-sm-5">
-              <img class="card-img" src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" style="object-fit: cover; height: 90%" zoomable="true">
+              <img class="card-img" src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" style="object-fit: cover; width: 100%; height: auto;">
             </div>
           {% endif %} 
                    
@@ -27,7 +25,6 @@ extra_css:
             <p>{{ post.description }}</p>
             <div class="post-meta">
               {{ post.date | date: '%Y年%-m月%-d日' }} &nbsp; &middot; &nbsp;
-              <!-- 阅读约 {{ read_time }} 分钟 -->
               {% if post.categories.size > 0 %}
                 {% for cat in post.categories %}
                   {{ cat }}
