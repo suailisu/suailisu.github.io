@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-01-04T10:30:04-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">素爱力酥</title><entry><title type="html">我的赛博编年史</title><link href="http://localhost:4000/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2025/the-internet/" rel="alternate" type="text/html" title="我的赛博编年史" /><published>2025-01-13T00:00:00-08:00</published><updated>2025-01-13T00:00:00-08:00</updated><id>http://localhost:4000/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2025/the-internet</id><content type="html" xml:base="http://localhost:4000/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2025/the-internet/"><![CDATA[<blockquote>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-01-04T11:35:54-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">素爱力酥</title><entry><title type="html">我的赛博编年史</title><link href="http://localhost:4000/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2025/the-internet/" rel="alternate" type="text/html" title="我的赛博编年史" /><published>2025-01-13T00:00:00-08:00</published><updated>2025-01-13T00:00:00-08:00</updated><id>http://localhost:4000/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2025/the-internet</id><content type="html" xml:base="http://localhost:4000/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2025/the-internet/"><![CDATA[<blockquote>
   <p>“赛博”，是 Cyber 的音译，在这里我用来泛指网络。</p>
 </blockquote>
 
@@ -159,7 +159,340 @@
 
 <h2 id="工作2023年">工作（2023年——）</h2>
 
-<p>时间来到了2023年5月，我开始正式工作了。</p>]]></content><author><name></name></author><category term="叨叨令" /><summary type="html"><![CDATA[“赛博”，是 Cyber 的音译，在这里我用来泛指网络。]]></summary></entry><entry><title type="html">买鞋记</title><link href="http://localhost:4000/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2024/shoes/" rel="alternate" type="text/html" title="买鞋记" /><published>2024-12-24T01:41:00-08:00</published><updated>2024-12-24T01:41:00-08:00</updated><id>http://localhost:4000/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2024/shoes</id><content type="html" xml:base="http://localhost:4000/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2024/shoes/"><![CDATA[<p>今天在早上 8:00 的闹钟响起前便醒了，小b仍在睡。</p>
+<p>时间来到了2023年5月，我开始正式工作了。</p>]]></content><author><name></name></author><category term="叨叨令" /><summary type="html"><![CDATA[“赛博”，是 Cyber 的音译，在这里我用来泛指网络。]]></summary></entry><entry><title type="html">美国 FICA 税详解</title><link href="http://localhost:4000/blog/%E6%8E%B7%E9%87%91%E9%92%B1/2024/what-is-fica/" rel="alternate" type="text/html" title="美国 FICA 税详解" /><published>2024-12-29T07:36:00-08:00</published><updated>2024-12-29T07:36:00-08:00</updated><id>http://localhost:4000/blog/%E6%8E%B7%E9%87%91%E9%92%B1/2024/what-is-fica</id><content type="html" xml:base="http://localhost:4000/blog/%E6%8E%B7%E9%87%91%E9%92%B1/2024/what-is-fica/"><![CDATA[<h2 id="什么是-fica-税">什么是 FICA 税？</h2>
+
+<p>FICA 全称为 Federal Insurance Contributions Act（联邦保险供款法案），是美国联邦工资税的重要组成部分。其内容有两部分，即“社保”（社会保障）和“医保”（医疗保险）：</p>
+<ol>
+  <li>Social Security taxes，更常见的名字为 OASDI (Old-Age, Survivors, and Disability Insurance) tax</li>
+  <li>Medicare taxes</li>
+</ol>
+
+<p>法律要求雇主从雇员工资中扣留一定比例，以资助“社保”和“医保”。</p>
+<ul>
+  <li>注：若税务身份为 NRA，则免除 FICA 税。</li>
+</ul>
+
+<h2 id="税率">税率</h2>
+<h3 id="social-security">Social Security</h3>
+<p>公司和员工各缴纳 6.2%。但是，应缴税的工资收入是有上限的。</p>
+<ul>
+  <li>2025年：$176,100，即最多缴纳 $10,918.2</li>
+  <li>2024年：$168,600，即最多缴纳 $10,453.2</li>
+</ul>
+
+<h3 id="medicare">Medicare</h3>
+<p>公司和员工各缴纳 1.45%。但是，超过一定金额的工资还将继续缴纳额外的税，即 additional medicare tax，税率为 0.9%，基准如下：</p>
+<ul>
+  <li>$250,000 for married filing jointly;</li>
+  <li>$125,000 for married filing separately; and</li>
+  <li>$200,000 for all other taxpayers.</li>
+</ul>
+
+<p>假设共同报税，且总年收入为 x（x &gt; 25万），则<strong>员工</strong>缴纳医保的金额为</p>
+<ul>
+  <li>$250,000 * 1.45% + (x - $250,000) * (1.45% + 0.9%) = x * 2.35% - $2,250</li>
+</ul>
+
+<p>即等效税率 y = 2.35% - 2,250 / x。例如，当 x 为 $300,000，等效税率是 1.6%。</p>
+
+<h3 id="总结">总结</h3>
+<table id="table" data-toggle="table">
+  <thead>
+    <tr>
+      <th data-field="id"></th>
+      <th data-field="employee">员工支付</th>
+      <th data-field="employer">雇主支付</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>社会保障税（又称 OASDI）</td>
+        <td>
+            6.2% <br /><br />
+            <i>仅限 2024 年的前 168,600 美元和 2025 年的前 176,100 美元。</i>
+        </td>
+        <td>
+            6.2% <br /><br />
+            <i>仅限 2024 年的前 168,600 美元和 2025 年的前 176,100 美元。</i>
+        </td>
+    </tr>
+    <tr>
+        <td>医疗保险税</td>
+          <td>1.45%</td>
+          <td>1.45%</td>
+    </tr>
+    <tr>
+        <td>全部</td>
+          <td>7.65%</td>
+          <td>7.65%</td>
+    </tr>
+    <tr>
+        <td>额外的医疗保险税</td>
+        <td>
+            0.9％ <br /><br />
+            <i>仅限单身申报者收入超过 200,000 美元的部分；联合申报者收入超过 250,000 美元的部分；已婚单独申报者收入超过 125,000 美元的部分。</i>
+        </td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+
+<p></p>
+
+<h3 id="旁注">旁注</h3>
+<ol>
+  <li>税收优惠账户中，员工自己存入 pre-tax 401(k) 的本金不能免去 FICA（<a href="https://www.irs.gov/retirement-plans/retirement-plan-faqs-regarding-contributions-are-retirement-plan-contributions-subject-to-withholding-for-fica-medicare-or-federal-income-tax">IRS 说明</a>）；通过 paycheck 存入 HSA 的本金可以免 FICA，但自己直接存的不能。</li>
+</ol>
+
+<h2 id="福利">福利</h2>
+<p>需要 40 分才能享受福利，每年最多积攒 4 分，规则如下：</p>
+<ul>
+  <li>每 $1,730 工资 = 1 分</li>
+  <li>达到 $6,920 工资即拿满该年的 4 分</li>
+</ul>
+
+<p>可以在 <a href="https://www.ssa.gov/myaccount/">my Social Security</a> 注册账号查看自己的积分。</p>
+
+<h2 id="参考">参考</h2>
+<ul>
+  <li><a href="https://www.ssa.gov/marketing/assets/materials/CH-S-05-10297.pdf">SSA： 什么是 FICA？</a></li>
+  <li><a href="https://www.nerdwallet.com/article/taxes/fica-tax-withholding">NerdWallet: FICA Tax: Definition and How It Works in 2024-2025</a></li>
+  <li><a href="https://www.irs.gov/taxtopics/tc751">IRS: Topic no. 751, Social Security and Medicare withholding rates</a></li>
+  <li><a href="https://www.irs.gov/taxtopics/tc560">IRS: Topic no. 560, Additional Medicare tax</a></li>
+</ul>]]></content><author><name></name></author><category term="掷金钱" /><category term="税务" /><summary type="html"><![CDATA[什么是 FICA 税？]]></summary></entry><entry><title type="html">美国税收优惠投资账户总结</title><link href="http://localhost:4000/blog/%E6%8E%B7%E9%87%91%E9%92%B1/2024/tax-advantaged-accounts-in-us/" rel="alternate" type="text/html" title="美国税收优惠投资账户总结" /><published>2024-12-24T03:26:00-08:00</published><updated>2024-12-24T03:26:00-08:00</updated><id>http://localhost:4000/blog/%E6%8E%B7%E9%87%91%E9%92%B1/2024/tax-advantaged-accounts-in-us</id><content type="html" xml:base="http://localhost:4000/blog/%E6%8E%B7%E9%87%91%E9%92%B1/2024/tax-advantaged-accounts-in-us/"><![CDATA[<blockquote class="block-warning">
+  <p><strong>DISCLAIMER（声明）</strong>
+I am not a financial expert and the infomation I provide is for infomational purposes only. It should not be taken as investment or tax advice.
+本人非金融专家，此处所包含的信息仅供参考，而非投资或税收建议。</p>
+</blockquote>
+
+<h2 id="401k">401(k)</h2>
+
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">401(k)</code> 一词源自于 IRC (Internal Revenue Code) <a href="https://uscode.house.gov/view.xhtml?hl=false&amp;edition=prelim&amp;req=granuleid%3AUSC-prelim-title26-section401&amp;num=0&amp;saved=%7CZ3JhbnVsZWlkOlVTQy1wcmVsaW0tdGl0bGUyNi1zZWN0aW9uNDAx%7C%7C%7C0%7Cfalse%7Cprelim">Section 401 Qualified pension, profit-sharing, and stock bonus plans</a> 中的条款 <a href="https://bradfordtaxinstitute.com/Endnotes/IRC_Section_401k.pdf">(k) Cash or deferred arrangements</a>.</p>
+</blockquote>
+
+<p>401(k)以创建它的税法部分命名，是一项雇主资助的退休储蓄计划，具有特殊的税收优惠。具体的税收优惠取决于所缴纳的401(k)类型。</p>
+
+<h3 id="子账户类型">子账户类型</h3>
+<h4 id="pre-tax">Pre-tax</h4>
+<ul>
+  <li><strong>存</strong>：当年存入的钱可以从“可税收入”（taxable income）中减去</li>
+  <li><strong>取</strong>：本金和收益都将计入该年普通类型 taxable income</li>
+  <li><strong>罚</strong>：不<u>符合条件</u>*的取钱操作将有额外10%的“早取”（early distribution）税</li>
+</ul>
+
+<h4 id="roth">Roth</h4>
+<ul>
+  <li><strong>存</strong>：无税收优惠</li>
+  <li><strong>取</strong>：本金无税；<u>符合条件</u>*取出的收益无税，否则计入该年普通类型 taxable income</li>
+  <li><strong>罚</strong>：不<u>符合条件</u>*的取钱操作将把本金和收益按照等比例取出，其中本金无税，收益有额外10%的 early distribution 税</li>
+</ul>
+
+<h4 id="after-tax">After-tax</h4>
+<ul>
+  <li><strong>存</strong>：无税收优惠</li>
+  <li><strong>取</strong>：本金无税；收益计入该年普通类型 taxable income</li>
+  <li><strong>罚</strong>：不<u>符合条件</u>*的取钱操作将把本金和收益按照等比例取出，其中本金无税，收益有额外10%的 early distribution 税</li>
+</ul>
+
+<p>*符合条件的解释：取钱时持有人满足59.5岁，如果是 Roth 账户还需满足账户已持有至少5年。<a href="https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions">这些情况</a>可以免除额外 10% early distribution 税。</p>
+
+<p>综上所述：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"> </th>
+      <th style="text-align: left">Pre-tax</th>
+      <th style="text-align: left">Roth</th>
+      <th style="text-align: left">After-tax</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">本金</td>
+      <td style="text-align: left">延迟交税</td>
+      <td style="text-align: left">当下交税</td>
+      <td style="text-align: left">当下交税</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">收益</td>
+      <td style="text-align: left">延迟交税</td>
+      <td style="text-align: left">符合条件免税</td>
+      <td style="text-align: left">延迟交税</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">罚金</td>
+      <td style="text-align: left">10%*(本金+收益)</td>
+      <td style="text-align: left">10%*收益</td>
+      <td style="text-align: left">10%*收益</td>
+    </tr>
+  </tbody>
+</table>
+
+<p></p>
+
+<p>如此看来，After-tax 在本金上不如 Pre-tax，在收益上不如 Roth，为什么还会存在呢？这就要说到 401(k) 的缴纳上限。</p>
+
+<h3 id="缴纳上限">缴纳上限</h3>
+<p>401(k)计划是跟着雇主走的，一对雇佣关系对应一个401(k)计划；而存放至401(k)计划的钱既可以来自员工的 paycheck，也可以来自雇主的 match。</p>
+<ul>
+  <li><strong>Elective Deferral</strong>: 401(k)最开始是一个延税计划，elective deferral（选择性延期）指的是员工自愿缴纳的延税款。IRC Sec. 402(g) 规定了 elective deferral 的限额，即 402(g) limit。Pre-tax 和 Roth 共享此限额。</li>
+  <li><strong>Annual Addition</strong>：整个401(k)的存入金额称为 annual addition（年度增量），首先不能超过这份工作的总收入，其次 IRC Sec. 415(c) 规定了 annual addition 的限额，即 415(c) limit。</li>
+  <li><strong>Catch Up</strong>：50岁以上的员工可以额外存的钱，不受制于上面两种限额。</li>
+</ul>
+
+<p>因此，402(g) limit 规定了一位员工<code class="language-plaintext highlighter-rouge">本人</code>每年可以存的 Pre-tax + Roth 额度，而 415(c) limit 规定了<code class="language-plaintext highlighter-rouge">每个401(k)计划</code>每年可以存的额度。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th style="text-align: left">Elective Deferral</th>
+      <th style="text-align: left">Annual Addition</th>
+      <th style="text-align: left">Catch Up</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025</td>
+      <td style="text-align: left">$23,500</td>
+      <td style="text-align: left">$70,000</td>
+      <td style="text-align: left">$1,000</td>
+    </tr>
+    <tr>
+      <td>2024</td>
+      <td style="text-align: left">$23,000</td>
+      <td style="text-align: left">$69,000</td>
+      <td style="text-align: left">$1,000</td>
+    </tr>
+  </tbody>
+</table>
+
+<p></p>
+
+<p>因此，After-tax 的优势在于可以突破 Elective Deferral 的限制，使得一部分（未来）收益达到延税的目的。不过，其好处远不止于此，那就是 Mega backdoor Roth（Roth大后门）。</p>
+
+<h3 id="mega-backdoor-roth">Mega backdoor Roth</h3>
+<blockquote class="block-warning">
+  <p>并非所有 401(k) 计划都提供 Mega backdoor Roth，并且这个方法随时有可能被废止。</p>
+</blockquote>
+
+<p>简单来说，Mega backdoor Roth 就是先存 After-tax，然后将其转化为 Roth 的策略。</p>
+<ul>
+  <li><strong>In-plan Roth conversion</strong>：即将 After-tax 401(k) 转为 Roth 401(k)。</li>
+  <li><strong>Roll over to Roth IRA</strong>：即将 After-tax 401(k) 转入 Roth IRA。</li>
+</ul>
+
+<p>若 After-tax 401(k) 中存在收益，则收益部分在转化当年需要交税。</p>
+
+<h3 id="取钱要求">取钱要求</h3>
+<ul>
+  <li>Elective Deferral 的部分在 Sec. 401(k)(2)(B)(i)统一限制了取出条件（没达到条件，即使愿意付罚金也无法取出）：
+    <ul>
+      <li>员工离职/去世/残疾，或</li>
+      <li>员工年龄达到59.5岁，或</li>
+      <li>其他一些困难条件等</li>
+    </ul>
+  </li>
+  <li>59.5岁是最常见的qualified distribution条件，不达该年龄从401(k)中取钱，计算收入税的部分会有10%的罚金。</li>
+  <li>RMD（Required Minimal Distribution）：在持有人年龄超过72岁时，须按照 IRS 提供的预期寿命表格计算每年最低取出的比例，少取部分有50%的罚金。</li>
+</ul>
+
+<h3 id="推荐阅读">推荐阅读</h3>
+<h4 id="fidelity">Fidelity</h4>
+<ul>
+  <li><a href="https://www.fidelity.com/learning-center/smart-money/what-is-a-401k">What’s a 401(k)?</a></li>
+  <li><a href="https://www.fidelity.com/viewpoints/retirement/spender-or-saver">Traditional or Roth account? 2 tips to help you choose </a></li>
+  <li><a href="https://www.fidelity.com/viewpoints/retirement/401k-contributions">What to do with after-tax 401(k) contributions</a></li>
+  <li><a href="https://www.fidelity.com/learning-center/personal-finance/mega-backdoor-roth">What is a “mega backdoor Roth”?</a></li>
+</ul>
+
+<h2 id="ira">IRA</h2>
+<p>IRA 全称 Individual Retirement Account（个人退休账户），是与 401(k) 类似的税收优惠投资账户，无需雇主提供。其类型主要分为 Traditional 和 Roth，对比如下：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th style="text-align: left">Traditional</th>
+      <th style="text-align: left">Roth</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>谁可以存？</td>
+      <td style="text-align: left">本人或配偶（在联合报税的前提下）有可税收入。</td>
+      <td style="text-align: left">本人或配偶（在联合报税的前提下）有可税收入，且 MAGI（Modified Adjusted Gross Income）低于指定要求。</td>
+    </tr>
+    <tr>
+      <td>存入本金否减税？</td>
+      <td style="text-align: left"><a href="https://www.irs.gov/retirement-plans/ira-deduction-limits">满足要求</a>可减</td>
+      <td style="text-align: left">否</td>
+    </tr>
+    <tr>
+      <td>取钱顺序</td>
+      <td style="text-align: left">本金和收益按比例取出</td>
+      <td style="text-align: left">先取本金，再取收益</td>
+    </tr>
+    <tr>
+      <td>取钱如何交税？</td>
+      <td style="text-align: left">任何存入时免税的本金和收益都要交税。</td>
+      <td style="text-align: left">本金随时无税取走，收益在<a href="https://www.irs.gov/publications/p590b#en_US_2023_publink100089543">满足条件</a>的情况下无税。</td>
+    </tr>
+    <tr>
+      <td>早取税</td>
+      <td style="text-align: left">若不满足59.5岁，需付额外10%早取税（除非满足<a href="https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions">这些情况</a>）</td>
+      <td style="text-align: left">同左</td>
+    </tr>
+    <tr>
+      <td>RMD</td>
+      <td style="text-align: left">同401(k)</td>
+      <td style="text-align: left">无</td>
+    </tr>
+  </tbody>
+</table>
+
+<p></p>
+
+<h3 id="缴纳上限-1">缴纳上限</h3>
+
+<p>2024年和2025年均为 $7,000。</p>
+
+<h3 id="backdoor-roth">Backdoor Roth</h3>
+<p>因为 Roth IRA 有收入限制，所以收入超出范围的人无法直接存 Roth IRA，但可以通过先存 Traditional IRA 再将其转入 Roth IRA，即 Backdoor Roth（Roth后门）。</p>
+
+<h3 id="roth-ira-vs-roth-401k">Roth IRA vs Roth 401(k)</h3>
+<p>Roth IRA 具有本金随时可取，且取出顺序为先本金后收益的优势，因此将 Roth 401(k) 转入 Roth IRA 不失为一种选择。这个操作是免税的。</p>
+
+<h2 id="hsa">HSA</h2>
+<p>HSA 全程 Health Savings Account（健康储蓄账户），存入时可减税，中间的资本利得不用交税，取出时也免税（用于报销医疗支出的前提下）。报销医疗支出没有任何时间限制。若到 65 岁时还没有足够的医疗帐单需要报销，依然可以从中取钱，不过需按当年收入交税。</p>
+
+<p>存 HSA 的条件是保险为 HDHP（High Deductible Health Plan，高自负额保险）。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th style="text-align: left">个人</th>
+      <th style="text-align: left">家庭</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025</td>
+      <td style="text-align: left">$4,300</td>
+      <td style="text-align: left">$8,550</td>
+    </tr>
+    <tr>
+      <td>2024</td>
+      <td style="text-align: left">$4,150</td>
+      <td style="text-align: left">$8,300</td>
+    </tr>
+  </tbody>
+</table>
+
+<p></p>]]></content><author><name></name></author><category term="掷金钱" /><summary type="html"><![CDATA[DISCLAIMER（声明） I am not a financial expert and the infomation I provide is for infomational purposes only. It should not be taken as investment or tax advice. 本人非金融专家，此处所包含的信息仅供参考，而非投资或税收建议。]]></summary></entry><entry><title type="html">买鞋记</title><link href="http://localhost:4000/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2024/shoes/" rel="alternate" type="text/html" title="买鞋记" /><published>2024-12-24T01:41:00-08:00</published><updated>2024-12-24T01:41:00-08:00</updated><id>http://localhost:4000/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2024/shoes</id><content type="html" xml:base="http://localhost:4000/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2024/shoes/"><![CDATA[<p>今天在早上 8:00 的闹钟响起前便醒了，小b仍在睡。</p>
 
 <p>此时我坐在电脑前浏览耐克官网，打算把剩余的报销额度（$230）给用掉。想起那日我和小b说，感觉耐克的鞋子好像这么多年都没涨价，我记得我上初中时就是这个价格，现在还是这个价格，怪不得我那个时候觉得很贵。</p>
 

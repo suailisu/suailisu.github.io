@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美国 FICA 税详解 - 素爱力酥</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+</head>
+<body>
+    <nav class="container mt-3">
+        <a href="/" class="me-3">首页</a>
+        <a href="/blog/" class="me-3">文心雕龙</a>
+        <a href="/screen/" class="me-3">苏幕遮</a>
+        <a href="/moments/">相见欢</a>  
+    </nav>
+    
+    <hr>
+    
+    <main class="container">
+        <link rel="stylesheet" href="/assets/css/post.css">
+
+<article class="post-main">
+  <header class="post-header" style="margin-bottom: 40px;">
+    <h1 style="font-size: 2.5rem; font-weight: 800;">美国 FICA 税详解</h1>
+    <div class="post-meta" style="color: #999;">
+      2024年12月29日 &nbsp;&middot;&nbsp; 
+    </div>
+  </header>
+
+  <div class="post-content-body">
+    <h2 id="什么是-fica-税">什么是 FICA 税？</h2>
+
+<p>FICA 全称为 Federal Insurance Contributions Act（联邦保险供款法案），是美国联邦工资税的重要组成部分。其内容有两部分，即“社保”（社会保障）和“医保”（医疗保险）：</p>
+<ol>
+  <li>Social Security taxes，更常见的名字为 OASDI (Old-Age, Survivors, and Disability Insurance) tax</li>
+  <li>Medicare taxes</li>
+</ol>
+
+<p>法律要求雇主从雇员工资中扣留一定比例，以资助“社保”和“医保”。</p>
+<ul>
+  <li>注：若税务身份为 NRA，则免除 FICA 税。</li>
+</ul>
+
+<h2 id="税率">税率</h2>
+<h3 id="social-security">Social Security</h3>
+<p>公司和员工各缴纳 6.2%。但是，应缴税的工资收入是有上限的。</p>
+<ul>
+  <li>2025年：$176,100，即最多缴纳 $10,918.2</li>
+  <li>2024年：$168,600，即最多缴纳 $10,453.2</li>
+</ul>
+
+<h3 id="medicare">Medicare</h3>
+<p>公司和员工各缴纳 1.45%。但是，超过一定金额的工资还将继续缴纳额外的税，即 additional medicare tax，税率为 0.9%，基准如下：</p>
+<ul>
+  <li>$250,000 for married filing jointly;</li>
+  <li>$125,000 for married filing separately; and</li>
+  <li>$200,000 for all other taxpayers.</li>
+</ul>
+
+<p>假设共同报税，且总年收入为 x（x &gt; 25万），则<strong>员工</strong>缴纳医保的金额为</p>
+<ul>
+  <li>$250,000 * 1.45% + (x - $250,000) * (1.45% + 0.9%) = x * 2.35% - $2,250</li>
+</ul>
+
+<p>即等效税率 y = 2.35% - 2,250 / x。例如，当 x 为 $300,000，等效税率是 1.6%。</p>
+
+<h3 id="总结">总结</h3>
+<table id="table" data-toggle="table">
+  <thead>
+    <tr>
+      <th data-field="id"></th>
+      <th data-field="employee">员工支付</th>
+      <th data-field="employer">雇主支付</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>社会保障税（又称 OASDI）</td>
+        <td>
+            6.2% <br /><br />
+            <i>仅限 2024 年的前 168,600 美元和 2025 年的前 176,100 美元。</i>
+        </td>
+        <td>
+            6.2% <br /><br />
+            <i>仅限 2024 年的前 168,600 美元和 2025 年的前 176,100 美元。</i>
+        </td>
+    </tr>
+    <tr>
+        <td>医疗保险税</td>
+          <td>1.45%</td>
+          <td>1.45%</td>
+    </tr>
+    <tr>
+        <td>全部</td>
+          <td>7.65%</td>
+          <td>7.65%</td>
+    </tr>
+    <tr>
+        <td>额外的医疗保险税</td>
+        <td>
+            0.9％ <br /><br />
+            <i>仅限单身申报者收入超过 200,000 美元的部分；联合申报者收入超过 250,000 美元的部分；已婚单独申报者收入超过 125,000 美元的部分。</i>
+        </td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+
+<p></p>
+
+<h3 id="旁注">旁注</h3>
+<ol>
+  <li>税收优惠账户中，员工自己存入 pre-tax 401(k) 的本金不能免去 FICA（<a href="https://www.irs.gov/retirement-plans/retirement-plan-faqs-regarding-contributions-are-retirement-plan-contributions-subject-to-withholding-for-fica-medicare-or-federal-income-tax">IRS 说明</a>）；通过 paycheck 存入 HSA 的本金可以免 FICA，但自己直接存的不能。</li>
+</ol>
+
+<h2 id="福利">福利</h2>
+<p>需要 40 分才能享受福利，每年最多积攒 4 分，规则如下：</p>
+<ul>
+  <li>每 $1,730 工资 = 1 分</li>
+  <li>达到 $6,920 工资即拿满该年的 4 分</li>
+</ul>
+
+<p>可以在 <a href="https://www.ssa.gov/myaccount/">my Social Security</a> 注册账号查看自己的积分。</p>
+
+<h2 id="参考">参考</h2>
+<ul>
+  <li><a href="https://www.ssa.gov/marketing/assets/materials/CH-S-05-10297.pdf">SSA： 什么是 FICA？</a></li>
+  <li><a href="https://www.nerdwallet.com/article/taxes/fica-tax-withholding">NerdWallet: FICA Tax: Definition and How It Works in 2024-2025</a></li>
+  <li><a href="https://www.irs.gov/taxtopics/tc751">IRS: Topic no. 751, Social Security and Medicare withholding rates</a></li>
+  <li><a href="https://www.irs.gov/taxtopics/tc560">IRS: Topic no. 560, Additional Medicare tax</a></li>
+</ul>
+
+  </div>
+
+  <hr>
+  <div class="giscus-container">
+    <script src="https://giscus.app/client.js"
+        data-repo="suailisu/suailisu.github.io"
+        data-repo-id="R_kgDOQzPkfA"
+        data-category="General"
+        data-category-id="DIC_kwDOQzPkfM4C0jAt"
+        data-mapping="pathname"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous" async>
+    </script>
+  </div>
+</article>
+    </main>
+
+    <footer class="container" style="margin-top: 50px; color: #999; font-size: 0.8em; padding-bottom: 30px;">
+        &copy; 2026 素爱力酥
+    </footer>
+</body>
+</html>

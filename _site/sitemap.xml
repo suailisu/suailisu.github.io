@@ -21,6 +21,14 @@
 <lastmod>2024-12-24T01:41:00-08:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/blog/%E6%8E%B7%E9%87%91%E9%92%B1/2024/tax-advantaged-accounts-in-us/</loc>
+<lastmod>2024-12-24T03:26:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/%E6%8E%B7%E9%87%91%E9%92%B1/2024/what-is-fica/</loc>
+<lastmod>2024-12-29T07:36:00-08:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2025/the-internet/</loc>
 <lastmod>2025-01-13T00:00:00-08:00</lastmod>
 </url>
@@ -1258,6 +1266,12 @@
 </url>
 <url>
 <loc>http://localhost:4000/_posts/thoughts/2024-12-24-shoes/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/_posts/finance/2024-12-24-tax-advantaged-accounts-in-us/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/_posts/finance/2024-12-29-what-is-fica/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/_posts/thoughts/2025-01-13-the-internet/</loc>
