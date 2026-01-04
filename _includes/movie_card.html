@@ -1,0 +1,21 @@
+{% assign item = include.item %}
+{% assign is_legacy = include.is_legacy %}
+
+<div class="movie-card">
+  <a href="{{ item.url | relative_url }}">
+    <div class="poster-wrapper">
+      <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" loading="lazy">
+      {% if item.rating > 0 %}
+        <div class="rating-badge">⭐ {{ item.rating }}</div>
+      {% endif %}
+    </div>
+  </a>
+  <div class="movie-info">
+    <h3>{{ item.title }}</h3>
+    {% if is_legacy %}
+      <span class="legacy-date"></span>
+    {% else %}
+      <time>{{ item.date | date: "%m-%d" }}</time>
+    {% endif %}
+  </div>
+</div>

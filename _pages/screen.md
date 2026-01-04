@@ -6,42 +6,58 @@ extra_css:
   - screen
 ---
 
-{% assign movies_by_year = site.screen | group_by_exp: "item", "item.date | date: '%Y'" %}
-{% assign sorted_years = movies_by_year | sort: "name" | reverse %}
+{% assign modern_groups = site.screen | group_by_exp: "item", "item.date | date: '%Y'" | sort: "name" | reverse %}
 
 <div class="screen-layout">
   <nav class="year-nav">
     <div class="nav-title">时光机</div>
     <ul>
-      {% for year_group in sorted_years %}
-        <li><a href="#year-{{ year_group.name }}">{{ year_group.name }}</a></li>
+      {% for group in modern_groups %}
+        {% assign year_num = group.name | plus: 0 %}
+        {% if year_num >= 2016 %}
+          <li><a href="#year-{{ group.name }}">{{ group.name }}</a></li>
+        {% endif %}
       {% endfor %}
+      <li><a href="#year-Archive">2015-</a></li>
     </ul>
   </nav>
 
   <div class="screen-content">
-    {% for year_group in sorted_years %}
-      <section id="year-{{ year_group.name }}" class="year-section">
-        <h2 class="year-sticky-title">{{ year_group.name }}</h2>
-        <div class="movie-grid">
-          {% comment %} 
-          3. 对年内的影片按日期进行倒序，让最近看的在最前面 
-          {% endcomment %}
-          {% assign sorted_items = year_group.items | sort: 'date' | reverse %}
-          {% for item in sorted_items %}
-            <a href="{{ item.url | relative_url }}" class="movie-card">
-              <div class="poster-wrapper">
-                <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" loading="lazy">
-                <div class="rating-badge">⭐ {{ item.rating }}</div>
-              </div>
-              <div class="movie-info">
-                <h3>{{ item.title }}</h3>
-                <time>{{ item.date | date: "%m-%d" }}</time>
-              </div>
-            </a>
-          {% endfor %}
-        </div>
-      </section>
+    {% comment %} 
+       第一部分：渲染 2016 及以后的年份 
+    {% endcomment %}
+    {% for group in modern_groups %}
+      {% assign year_num = group.name | plus: 0 %}
+      {% if year_num >= 2016 %}
+        <section id="year-{{ group.name }}" class="year-section">
+          <h2 class="year-sticky-title">{{ group.name }}</h2>
+          <div class="movie-grid">
+            {% assign sorted_items = group.items | sort: 'date' | reverse %}
+            {% for item in sorted_items %}
+              {% include movie_card.html item=item is_legacy=false %}
+            {% endfor %}
+          </div>
+        </section>
+      {% endif %}
     {% endfor %}
+
+    {% comment %} 
+       第二部分：汇总渲染所有 2015 及以前的电影 
+    {% endcomment %}
+    <section id="year-Archive" class="year-section">
+      <h2 class="year-sticky-title">2015-</h2>
+      <div class="movie-grid">
+        {% comment %} 
+           从全量数据中筛选出年份 <= 2015 的电影
+        {% endcomment %}
+        {% assign all_sorted = site.screen | sort: 'date' | reverse %}
+        {% for item in all_sorted %}
+          {% assign item_year = item.date | date: "%Y" | plus: 0 %}
+          {% if item_year <= 2015 %}
+            {% include movie_card.html item=item is_legacy=true %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
   </div>
 </div>
