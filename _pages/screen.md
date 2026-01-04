@@ -4,6 +4,8 @@ title: 苏幕遮
 permalink: /screen/
 extra_css: 
   - screen
+extra_js:
+  - screen
 ---
 
 {% assign modern_groups = site.screen | group_by_exp: "item", "item.date | date: '%Y'" | sort: "name" | reverse %}

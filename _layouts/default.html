@@ -12,6 +12,12 @@
         <link rel="stylesheet" href="{{ '/assets/css/' | append: css_name | append: '.css' | relative_url }}">
       {% endfor %}
     {% endif %}
+
+    {% if page.extra_js %}
+        {% for js in page.extra_js %}
+            <script src="{{ '/assets/js/' | append: js | append: '.js' | relative_url }}"></script>
+        {% endfor %}
+    {% endif %}
 </head>
 <body>
     <nav>
