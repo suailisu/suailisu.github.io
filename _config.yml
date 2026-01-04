@@ -47,3 +47,23 @@ giscus:
   theme: preferred_color_scheme
   emit_metadata: 0
   lang: zh-CN
+
+plugins:
+  - jekyll-archives
+
+pagination:
+  enabled: true
+  collection: 'posts'
+  per_page: 10
+  permalink: '/page/:num/'
+  categories: true
+  category_layout: 'blog'
+  category_permalink: '/blog/category/:name/'
+  sort_field: 'date'
+  sort_reverse: true
+
+jekyll-archives:
+  enabled: ['categories']
+  layout: 'blog'
+  permalinks:
+    category: '/blog/category/:name/'

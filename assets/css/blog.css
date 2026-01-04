@@ -56,12 +56,12 @@ blockquote {
   font-size: 4rem; /* 稍微缩小原版的 5rem，更协调 */
 }
 
-/* 2. 分类导航条 */
+/* 2. 分类导航条 - 药丸风格重构 */
 .tag-category-list {
-  border-bottom: 1px solid var(--global-divider-color);
+  border-bottom: none;       /* 去掉沉重的底边线 */
   text-align: center;
-  padding: 1rem 0;
-  margin-bottom: 2rem;
+  padding: 1.5rem 0;
+  margin-bottom: 1.5rem;
 }
 
 .tag-category-list ul {
@@ -71,19 +71,34 @@ blockquote {
   list-style: none;
   padding: 0;
   margin: 0;
+  gap: 12px;                /* 使用 gap 控制标签间距 */
 }
 
 .tag-category-list li {
-  padding: 0.5rem 0.8rem;
+  padding: 0;               /* 间距由 gap 和 a 标签控制 */
 }
 
 .tag-category-list a {
-  color: var(--global-text-color-light);
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;       /* 圆角药丸形状 */
+  background: #f4f4f4;       /* 极简的灰色背景 */
+  color: #666 !important;
+  font-size: 0.85rem;        /* 稍微缩小字号，拉开与主导航的距离 */
+  transition: all 0.3s ease;
 }
 
+.tag-category-list a:hover {
+  background: #e0e0e0;
+  color: var(--global-theme-color) !important;
+}
+
+/* 选中状态的高亮 */
 .tag-category-list .active a {
-  color: var(--global-theme-color);
-  font-weight: bold;
+  background: var(--global-theme-color);
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(87, 107, 149, 0.3); /* 增加一点点悬浮感 */
+  font-weight: 500;
 }
 
 /* 3. 置顶文章卡片 (Featured Posts) */

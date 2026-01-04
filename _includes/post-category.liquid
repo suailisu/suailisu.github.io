@@ -1,0 +1,4 @@
+{% assign cat_name = include.category %}
+{% assign icon = site.data.post-categories[cat_name] | default: "fa-tag" %}
+
+<i class="fa-solid {{ icon }} fa-sm"></i>
