@@ -29,34 +29,72 @@
     <hr>
     
     <main class="container">
-        <article class="review-wrapper">
-  <header class="review-header">
-    <h1 class="review-title">都是她的错</h1>
-    <div class="review-meta">
-      <time>2025年11月17日</time>
-      
-        <span class="review-rating">⭐ 6</span>
-      
-    </div>
-  </header>
+        <link rel="stylesheet" href="/assets/css/screen-review.css">
 
-  <div class="review-container">
-    
-      <div class="review-poster">
-        <img src="/assets/images/screen/2025/%E9%83%BD%E6%98%AF%E5%A5%B9%E7%9A%84%E9%94%99.webp" alt="都是她的错">
+<article class="container screen-review-container">
+  <div class="row justify-content-center">
+    <div class="col-md-11 col-lg-10">
+      
+      <div class="douban-subject-header d-flex flex-column flex-md-row">
+      <div class="subject-poster me-md-5 mb-4 mb-md-0">
+        <img 
+          src="/assets/images/screen/2025/%E9%83%BD%E6%98%AF%E5%A5%B9%E7%9A%84%E9%94%99.webp" 
+          alt="都是她的错" 
+          class="img-fluid rounded shadow-sm clickable-poster"
+          data-zoomable
+        >
       </div>
-    
 
-    <div class="review-content">
-      <p>Marisa演得太好了，开场看到我几乎焦虑症要发作。好久没看过这么过瘾的悬疑片了，短小精悍，令人回味。好久没看过这么直白的女性叙事了，刀刀见血，锋芒毕露。最后的结局真是大快人心，以后都这样搞，好吗？好的。</p>
+        <div class="subject-info flex-grow-1">
+          <h1 class="subject-title mb-3">都是她的错</h1>
+          
+          <div class="subject-meta">
+            <div class="meta-line"><span class="label">类型:</span> 剧集</div>
+            <div class="meta-line"><span class="label">日期:</span> 2025-11-17</div>
+            
+            
+            <div class="meta-line d-flex align-items-center mt-3">
+              <span class="label me-2">评分:</span>
+              <span class="star-rating">
+                
+                
+                  <i class="fas fa-star" style="color: #ff4d4f;"></i><i class="fas fa-star" style="color: #ff4d4f;"></i><i class="fas fa-star" style="color: #ff4d4f;"></i><i class="fas fa-star" style="color: #ff4d4f;"></i><i class="fas fa-star" style="color: #ff4d4f;"></i>
+                  <span class="badge-liked ms-2">LIKED</span>
+                
+              </span>
+              <!-- <span class="ms-2 rating-num text-liked">
+                6.0
+              </span> -->
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="subject-content mt-5 pt-4 border-top">
+        <div class="comment-text-large">
+          <p>Marisa演得太好了，开场看到我几乎焦虑症要发作。好久没看过这么过瘾的悬疑片了，短小精悍，令人回味。好久没看过这么直白的女性叙事了，刀刀见血，锋芒毕露。最后的结局真是大快人心，以后都这样搞，好吗？好的。</p>
+
+        </div>
+      </div>
+
+      <div class="text-end mt-5 pt-5">
+        <a href="/screen/" class="back-link">← 返回苏幕遮时光机</a>
+      </div>
 
     </div>
   </div>
-
-  <footer class="review-footer">
-    <a href="/screen/">&larr; 返回苏幕遮</a>
-  </footer>
 </article>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    mediumZoom('[data-zoomable]', {
+      margin: 24,
+      background: 'rgba(255, 255, 255, 0.9)',
+      scrollOffset: 0,
+    })
+  })
+</script>
     </main>
 
     <footer class="container" style="margin-top: 50px; color: #999; font-size: 0.8em; padding-bottom: 30px;">

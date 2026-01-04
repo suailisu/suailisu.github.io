@@ -1,51 +1,109 @@
 /* assets/css/screen-review.css */
-
-.review-header {
-    text-align: center;
-    margin: 3rem 0;
+:root {
+    --theme-blue: #0076df;
+    --theme-green: #b7d12a;
+    --liked-red: #ff4d4f;
 }
 
-.review-title {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
+.screen-review-container {
+    margin-top: 60px;
+    margin-bottom: 100px;
 }
 
-.review-meta {
-    color: #888;
-    font-size: 0.9rem;
+/* 增大海报尺寸 */
+.subject-poster {
+    width: 260px; /* 从 160px 增加到 260px */
+    flex-shrink: 0;
 }
 
-.review-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
-.review-poster img {
-    max-width: 320px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.review-content {
+.subject-poster img {
     width: 100%;
-    max-width: 700px;
-    line-height: 1.8;
-    font-size: 1.1rem;
+    height: auto;
+    border: 1px solid #eee;
+    display: block;
+}
+
+/* 标题样式 */
+.subject-title {
+    font-size: 2.2rem;
+    font-weight: 800;
     color: #333;
 }
 
-.review-content blockquote {
-    border-left: 3px solid #007bff;
-    margin: 2rem 0;
-    padding-left: 1.5rem;
-    color: #666;
-    font-style: italic;
+.subject-meta .meta-line {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #444;
 }
 
-.review-footer {
-    margin-top: 5rem;
-    padding-top: 2rem;
-    border-top: 1px solid #eee;
+.subject-meta .label {
+    color: #999;
+}
+
+/* LIKED 状态 */
+.badge-liked {
+    background-color: var(--liked-red);
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-weight: 800;
+}
+
+.text-liked {
+    color: var(--liked-red) !important;
+}
+
+.rating-num {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #ffb400;
+}
+
+/* 评论正文 */
+.comment-text-large {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.back-link {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.back-link:hover {
+    color: var(--theme-green);
+}
+
+.text-end .back-link {
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.text-end .back-link:hover {
+    border-bottom-color: var(--theme-green);
+    transform: translateX(-5px); /* 悬停时轻微左移，呼应箭头的指向 */
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+    .subject-poster {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 30px;
+    }
+    .subject-title {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .subject-info {
+        text-align: center;
+    }
+    .meta-line {
+        justify-content: center;
+    }
 }

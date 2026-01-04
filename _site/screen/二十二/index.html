@@ -29,35 +29,87 @@
     <hr>
     
     <main class="container">
-        <article class="review-wrapper">
-  <header class="review-header">
-    <h1 class="review-title">二十二</h1>
-    <div class="review-meta">
-      <time>2017年08月14日</time>
-      
-        <span class="review-rating">⭐ 5</span>
-      
-    </div>
-  </header>
+        <link rel="stylesheet" href="/assets/css/screen-review.css">
 
-  <div class="review-container">
-    
-      <div class="review-poster">
-        <img src="/assets/images/screen/2017/%E4%BA%8C%E5%8D%81%E4%BA%8C.webp" alt="二十二">
+<article class="container screen-review-container">
+  <div class="row justify-content-center">
+    <div class="col-md-11 col-lg-10">
+      
+      <div class="douban-subject-header d-flex flex-column flex-md-row">
+      <div class="subject-poster me-md-5 mb-4 mb-md-0">
+        <img 
+          src="/assets/images/screen/2017/%E4%BA%8C%E5%8D%81%E4%BA%8C.webp" 
+          alt="二十二" 
+          class="img-fluid rounded shadow-sm clickable-poster"
+          data-zoomable
+        >
       </div>
-    
 
-    <div class="review-content">
-      <p>关于“慰安妇”的纪录片，意义大于内容。</p>
+        <div class="subject-info flex-grow-1">
+          <h1 class="subject-title mb-3">二十二</h1>
+          
+          <div class="subject-meta">
+            <div class="meta-line"><span class="label">类型:</span> 电影</div>
+            <div class="meta-line"><span class="label">日期:</span> 2017-08-14</div>
+            
+            
+            <div class="meta-line d-flex align-items-center mt-3">
+              <span class="label me-2">评分:</span>
+              <span class="star-rating">
+                
+                
+                  
+                    <i class="fas fa-star" style="color: #ffb400;"></i>
+                    
+                  
+                    <i class="fas fa-star" style="color: #ffb400;"></i>
+                    
+                  
+                    <i class="fas fa-star" style="color: #ffb400;"></i>
+                    
+                  
+                    <i class="fas fa-star" style="color: #ffb400;"></i>
+                    
+                  
+                    <i class="fas fa-star" style="color: #ffb400;"></i>
+                    
+                  
+                
+              </span>
+              <!-- <span class="ms-2 rating-num ">
+                5.0
+              </span> -->
+            </div>
+            
+          </div>
+        </div>
+      </div>
 
+      <div class="subject-content mt-5 pt-4 border-top">
+        <div class="comment-text-large">
+          <p>关于“慰安妇”的纪录片，意义大于内容。</p>
+
+
+        </div>
+      </div>
+
+      <div class="text-end mt-5 pt-5">
+        <a href="/screen/" class="back-link">← 返回苏幕遮时光机</a>
+      </div>
 
     </div>
   </div>
-
-  <footer class="review-footer">
-    <a href="/screen/">&larr; 返回苏幕遮</a>
-  </footer>
 </article>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    mediumZoom('[data-zoomable]', {
+      margin: 24,
+      background: 'rgba(255, 255, 255, 0.9)',
+      scrollOffset: 0,
+    })
+  })
+</script>
     </main>
 
     <footer class="container" style="margin-top: 50px; color: #999; font-size: 0.8em; padding-bottom: 30px;">

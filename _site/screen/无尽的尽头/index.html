@@ -29,34 +29,85 @@
     <hr>
     
     <main class="container">
-        <article class="review-wrapper">
-  <header class="review-header">
-    <h1 class="review-title">无尽的尽头</h1>
-    <div class="review-meta">
-      <time>2025年05月10日</time>
-      
-        <span class="review-rating">⭐ 4</span>
-      
-    </div>
-  </header>
+        <link rel="stylesheet" href="/assets/css/screen-review.css">
 
-  <div class="review-container">
-    
-      <div class="review-poster">
-        <img src="/assets/images/screen/2025/%E6%97%A0%E5%B0%BD%E7%9A%84%E5%B0%BD%E5%A4%B4.webp" alt="无尽的尽头">
+<article class="container screen-review-container">
+  <div class="row justify-content-center">
+    <div class="col-md-11 col-lg-10">
+      
+      <div class="douban-subject-header d-flex flex-column flex-md-row">
+      <div class="subject-poster me-md-5 mb-4 mb-md-0">
+        <img 
+          src="/assets/images/screen/2025/%E6%97%A0%E5%B0%BD%E7%9A%84%E5%B0%BD%E5%A4%B4.webp" 
+          alt="无尽的尽头" 
+          class="img-fluid rounded shadow-sm clickable-poster"
+          data-zoomable
+        >
       </div>
-    
 
-    <div class="review-content">
-      <p>一部聚焦未成年人犯罪和针对未成年人犯罪的国产电视剧。剧情有些悬疑的色彩，引人入胜；同时不乏搞笑诙谐的片段，使得整体的氛围不至于过于凝重。任素汐扮演的检察官太帅了，张小婉扮演的书记员简直跟她本人一样搞笑。看了这部剧之后最大的感触是，能平安长大真好。</p>
+        <div class="subject-info flex-grow-1">
+          <h1 class="subject-title mb-3">无尽的尽头</h1>
+          
+          <div class="subject-meta">
+            <div class="meta-line"><span class="label">类型:</span> 剧集</div>
+            <div class="meta-line"><span class="label">日期:</span> 2025-05-10</div>
+            
+            
+            <div class="meta-line d-flex align-items-center mt-3">
+              <span class="label me-2">评分:</span>
+              <span class="star-rating">
+                
+                
+                  
+                    <i class="fas fa-star" style="color: #ffb400;"></i>
+                    
+                  
+                    <i class="fas fa-star" style="color: #ffb400;"></i>
+                    
+                  
+                    <i class="fas fa-star" style="color: #ffb400;"></i>
+                    
+                  
+                    <i class="fas fa-star" style="color: #ffb400;"></i>
+                    
+                  
+                    <i class="far fa-star text-muted"></i>
+                  
+                
+              </span>
+              <!-- <span class="ms-2 rating-num ">
+                4.0
+              </span> -->
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="subject-content mt-5 pt-4 border-top">
+        <div class="comment-text-large">
+          <p>一部聚焦未成年人犯罪和针对未成年人犯罪的国产电视剧。剧情有些悬疑的色彩，引人入胜；同时不乏搞笑诙谐的片段，使得整体的氛围不至于过于凝重。任素汐扮演的检察官太帅了，张小婉扮演的书记员简直跟她本人一样搞笑。看了这部剧之后最大的感触是，能平安长大真好。</p>
+
+        </div>
+      </div>
+
+      <div class="text-end mt-5 pt-5">
+        <a href="/screen/" class="back-link">← 返回苏幕遮时光机</a>
+      </div>
 
     </div>
   </div>
-
-  <footer class="review-footer">
-    <a href="/screen/">&larr; 返回苏幕遮</a>
-  </footer>
 </article>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    mediumZoom('[data-zoomable]', {
+      margin: 24,
+      background: 'rgba(255, 255, 255, 0.9)',
+      scrollOffset: 0,
+    })
+  })
+</script>
     </main>
 
     <footer class="container" style="margin-top: 50px; color: #999; font-size: 0.8em; padding-bottom: 30px;">
