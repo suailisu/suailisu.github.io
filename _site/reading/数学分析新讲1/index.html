@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数学分析新讲（第一册） - 素爱力酥</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+</head>
+<body>
+    <nav class="container py-4">
+        
+        
+
+        <a href="/" class="me-4 ">首页</a>
+        <a href="/blog/" class="me-4 ">文心雕龙</a>
+        <a href="/reading/" class="me-4 active">字字锦</a>
+        <a href="/screen/" class="me-4 ">苏幕遮</a>
+        <a href="/moments/" class="me-4 ">相见欢</a>  
+    </nav>
+    
+    <hr>
+    
+    <main class="container">
+        <link rel="stylesheet" href="/assets/css/reading.css">
+
+<article class="container mt-5 mb-5">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <div class="book-detail-header d-flex flex-column flex-md-row align-items-start mb-5 pb-5 border-bottom">
+        
+        <div class="book-detail-cover me-md-5 mb-4 mb-md-0">
+          <img src="/assets/images/reading/2025/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E6%96%B0%E8%AE%B21.jpg" alt="数学分析新讲（第一册）" class="img-fluid shadow-lg rounded">
+        </div>
+
+        <div class="book-detail-info">
+          <h1 class="display-5 fw-bold mb-3" style="color: var(--global-theme-color);">数学分析新讲（第一册）</h1>
+          
+          <div class="d-flex align-items-center mb-4">
+            <span class="fs-5 text-secondary me-3">张筑生</span>
+            <span class="badge bg-light text-dark">2025-08-30</span>
+          </div>
+
+          <div class="book-tags-list">
+            
+              <span class="me-2" style="color: var(--global-hover-color); font-weight: 600;">#数学</span>
+            
+              <span class="me-2" style="color: var(--global-hover-color); font-weight: 600;">#教材</span>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="post-content-body" style="font-size: 1.1rem; line-height: 1.8;">
+        <h2 id="预篇-准备知识">预篇 准备知识</h2>
+<ul>
+  <li><strong>二项式定理</strong>：</li>
+</ul>
+
+\[(a+b)^n = \sum_{j=0}^{n} \binom{n}{j} a^{\,j} b^{\, n-j} = \sum_{k=0}^{n} \binom{n}{k} a^{\,n-k} b^k\]
+
+<p>这里</p>
+
+\[\binom{n}{k}=\frac{n(n-1)\cdots(n-k+1)}{k!}=\frac{n!}{k!(n-k)!}\]
+
+<h2 id="第一章-实数">第一章 实数</h2>
+<h3 id="5-不等式">§5 不等式</h3>
+<p><strong>伯努利(Bernoulli)不等式</strong></p>
+
+<p>设 \(x \geq 0\)，由二项式定理</p>
+
+\[(1+x)^n = 1 + nx + \frac{n(n-1)}{2}x^2 + \cdots +x^n\]
+
+<p>可以得到</p>
+
+\[(1+x)^n \geq 1 + nx.\]
+
+<h2 id="第二章-极限">第二章 极限</h2>
+<h3 id="1-有界序列与无穷小序列">§1 有界序列与无穷小序列</h3>
+
+<p><strong>[定义 1] 有界序列</strong>：设 \(\{ x_n \}\) 是一个实数序列</p>
+<ul>
+  <li>若 \(\exists\, M \in \mathbb{R}\)，使得 \(x_n \leq M, \ \forall\, n \in \mathbb{N}\)，则称 \(\{ x_n \}\) 有上界，实数 \(M\) 是它的一个上界；</li>
+  <li>若 \(\exists\, m \in \mathbb{R}\)，使得 \(x_n \geq m, \ \forall\, n \in \mathbb{N}\)，则称 \(\{ x_n \}\) 有下界，实数 \(m\) 是它的一个下界；</li>
+  <li>若 \(\{ x_n \}\) 有上界且有下界，则称该序列有界，用符号表述为 
+  \((\exists\, K \in \mathbb{R} )(\forall\, n \in \mathbb{N})(\left| x_n \right| \leq K)\)；</li>
+  <li>无界可表述为上面陈述的否定 
+  \((\forall\, K \in \mathbb{R} )(\exists\, n \in \mathbb{N})(\left| x_n \right| \ge K)\).</li>
+</ul>
+
+<!-- **[例 1]**：  $$ x_n = \left( 1 + \frac{1}{n} \right)^n \ (n=1,2,\cdots) $$ 是有界的，因为
+
+$$
+\begin{aligned}
+0 < x_n &= \left(1+\frac{1}{n}\right)^n \\
+&= 1 + \binom{n}{1}\frac{1}{n} + \binom{n}{2}\frac{1}{n^2} + \binom{n}{3}\frac{1}{n^3} + \cdots + \binom{n}{k}\frac{1}{n^k} + \cdots + \binom{n}{n}\frac{1}{n^n} \\
+&= 1 + n \frac{1}{n} + \frac{n(n-1)}{2}\frac{1}{n^2}+ \frac{n(n-1)(n-2)}{3!}\frac{1}{n^3} + \cdots + \frac{n(n-1)\cdots(n-k+1)}{k!}\frac{1}{n^k} + \cdots + \frac{1}{n^n} \\
+&=1 + 1 + \frac{1}{2} (1-\frac{1}{n^2}) + \frac{1}{3!} (1-\frac{1}{n})(1-\frac{2}{n}) + \cdots +  \frac{1}{k!} (1-\frac{1}{n})(1-\frac{2}{n})\cdots(1-\frac{k-1}{n}) + \cdots + \frac{1}{n^n} \\
+&< 1 + 1 + \frac{1}{2} + \frac{1}{3!} + \cdots + \frac{1}{k!} + \cdots + \frac{1}{n!} \\
+&< 1 + 1 + \frac{1}{2} + \frac{1}{2^2} +  \cdots + \frac{1}{2^{k-1}} + \cdots + \frac{1}{2^{n-1}} \\
+&= 1 + \frac{1-\left(\frac{1}{2}\right)^n}{1-\frac{1}{2}} < 1 + \frac{1}{1-\frac{1}{2}} = 3.
+\end{aligned}
+$$
+
+**[例 2]**：$$ x_n = 1 + \frac{1}{2} + \cdots + \frac{1}{n} \ (n=1,2,\cdots) $$ 是无界的，因为对于任意的 $$ N \in \mathbb{N} $$，只要取 $$ n = 2^{2N} $$，就有
+
+$$
+\begin{aligned}
+x_n &= 1 + \frac{1}{2} + (\frac{1}{3}+\frac{1}{4}) + (\frac{1}{5}+\frac{1}{6}+\frac{1}{7}+\frac{1}{8})+\cdots+ (\frac{1}{2^{k-1}+1}+\cdots+\frac{1}{2^k})+\cdots+(\frac{1}{2^{2N-1}}+\cdots+\frac{1}{2^{2N}}) \\
+&> 1 + \frac{1}{2} + 2\frac{1}{2^2} + 2^2\frac{1}{2^3} + \cdots + 2^{k-1}\frac{1}{2^k}  + \cdots + 2^{2N-1}\frac{1}{2^{2N}}\\
+&> \underbrace{\frac{1}{2} + \frac{1}{2} + \cdots + \frac{1}{2}}_{\text{2N项}} = N.
+\end{aligned}
+$$ -->
+
+<p><strong>[定义 2] 无穷小序列</strong>：设 \(\{ x_n \}\) 是一个实数序列，若对任意实数 \(\varepsilon &gt; 0\)，都存在自然数 \(N\)，使得只要 \(n &gt; N\)，就有 
+\(\left| x_n \right| &lt;  \varepsilon,\) 则称\(\{ x_n \}\)为无穷小序列. 用符号可以写成
+\((\forall\, \varepsilon &gt; 0)(\exists\, N \in \mathbb{N})(\forall n &gt; N)(\left| x_n \right| &lt;  \varepsilon)\).</p>
+
+<p><strong>引理</strong>：如果 \(\{ \alpha_n \}\) 是无穷小序列，那么它也是有界序列.</p>
+
+<p><strong>[定理 1] 有界序列和无穷小序列的性质</strong></p>
+
+<p>(1) 如果 \(\{ x_n \},\,  \{ y_n \}\) 都是有界序列，那么 \(\{ x_n + y_n \}\) 和 \(\{ x_n  y_n \}\) 都是有界序列.</p>
+
+<p>(2) 如果 \(\{ \alpha_n \},\,  \{ \beta_n \}\) 都是无穷小序列，那么 \(\{ \alpha_n + \beta_n \}\) 也是无穷小序列.</p>
+
+<p>(3) 无穷小序列 \(\{ \alpha_n \}\) 和有界序列 \(\{ x_n \}\) 的乘积 \(\{ \alpha_n x_n \}\) 是无穷小序列.</p>
+
+<p>(4) \(\{ \alpha_n \}\) 是无穷小序列  \(\iff\)  \(\{\, \lvert \alpha_n \rvert \,\}\) 是无穷小序列.</p>
+
+      </div>
+
+      <div class="mt-5 pt-4">
+        <a href="/reading/" class="text-decoration-none" style="color: var(--global-dim-color);">
+          ← 返回字字锦
+        </a>
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+  /* 针对详情页的额外微调 */
+  .book-detail-cover {
+    width: 200px;
+    flex-shrink: 0;
+  }
+  .book-detail-cover img {
+    border: 1px solid #eee;
+    transition: transform 0.5s ease;
+  }
+  .book-detail-cover img:hover {
+    transform: rotate(-2deg) scale(1.02);
+  }
+  .post-content-body h2 {
+    margin-top: 2rem;
+    font-weight: 700;
+    color: #333;
+    border-left: 4px solid var(--global-theme-color);
+    padding-left: 15px;
+  }
+  .post-content-body blockquote {
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-left: 4px solid var(--global-hover-color);
+    font-style: italic;
+  }
+</style>
+    </main>
+
+    <footer class="container" style="margin-top: 50px; color: #999; font-size: 0.8em; padding-bottom: 30px;">
+        &copy; 2026 素爱力酥
+    </footer>
+</body>
+</html>

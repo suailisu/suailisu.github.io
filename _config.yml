@@ -12,9 +12,9 @@ collections:
   screen:            
     output: true     
     permalink: /screen/:title/
-  books:
+  reading:
     output: true
-    permalink: /books/:title/
+    permalink: /reading/:title/
   games:
     output: true
     permalink: /games/:title/
