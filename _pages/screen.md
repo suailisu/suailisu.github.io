@@ -36,7 +36,7 @@ extra_js:
           <div class="movie-grid">
             {% assign sorted_items = group.items | sort: 'date' | reverse %}
             {% for item in sorted_items %}
-              {% include movie_card.html item=item is_legacy=false %}
+              {% include movie-card.html item=item is_legacy=false %}
             {% endfor %}
           </div>
         </section>
@@ -56,7 +56,7 @@ extra_js:
         {% for item in all_sorted %}
           {% assign item_year = item.date | date: "%Y" | plus: 0 %}
           {% if item_year <= 2015 %}
-            {% include movie_card.html item=item is_legacy=true %}
+            {% include movie-card.html item=item is_legacy=true %}
           {% endif %}
         {% endfor %}
       </div>

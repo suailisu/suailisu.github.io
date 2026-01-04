@@ -1,0 +1,18 @@
+{
+  "Screen Review Frontmatter": {
+    "prefix": "mov",
+    "body": [
+      "---",
+      "layout: screen-review",
+      "title: ${1:标题}",
+      "category: ${2|电影,剧集,纪录片,综艺|}",
+      "image: /assets/images/screen/2026/${3:文件名}.webp",
+      "rating: ${4:5}",
+      "date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+      "---",
+      "",
+      "${0:短评内容...}"
+    ],
+    "description": "生成电影评论的 Front Matter"
+  }
+}
