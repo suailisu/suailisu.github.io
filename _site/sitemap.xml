@@ -17,6 +17,14 @@
 <lastmod>2024-09-12T14:03:00-07:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2024/shoes/</loc>
+<lastmod>2024-12-24T01:41:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/%E5%8F%A8%E5%8F%A8%E4%BB%A4/2025/the-internet/</loc>
+<lastmod>2025-01-13T00:00:00-08:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/screen/%E7%BD%97%E9%A9%AC%E5%81%87%E6%97%A5/</loc>
 <lastmod>1953-09-02T00:00:00-07:00</lastmod>
 </url>
@@ -1247,6 +1255,12 @@
 </url>
 <url>
 <loc>http://localhost:4000/_posts/travel/2024-09-12-Tokyo/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/_posts/thoughts/2024-12-24-shoes/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/_posts/thoughts/2025-01-13-the-internet/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/blog/</loc>

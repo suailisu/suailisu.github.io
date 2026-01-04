@@ -16,10 +16,10 @@ extra_css:
         <div class="row">
           {% if post.thumbnail %}
             <div class="col-sm-5">
-              <img class="card-img" src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}">
+              <img class="card-img" src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" style="object-fit: cover; height: 90%" zoomable="true">
             </div>
-          {% endif %}
-          
+          {% endif %} 
+                   
           <div class="{% if post.thumbnail %}col-sm-7{% else %}col-sm-12{% endif %}">
             <h3>
               <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
