@@ -1224,6 +1224,9 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/moments/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/screen/</loc>
 </url>
 <url>

@@ -1,0 +1,86 @@
+.moments-layout-wrapper { display: flex; gap: 30px; max-width: 800px; margin: 20px auto; }
+.moment-container { flex: 1; min-width: 0; }
+.moment-item { display: flex; padding: 20px 0; border-bottom: 0.5px solid var(--global-divider-color); }
+.moment-left { margin-right: 12px; flex-shrink: 0; }
+.moment-avatar { width: 42px; height: 42px; border-radius: 4px; object-fit: cover; }
+.moment-right { flex: 1; min-width: 0; }
+.moment-name { color: #576b95; font-weight: 600; font-size: 15px; margin-bottom: 4px; }
+.moment-content { font-size: 15px; line-height: 1.6; color: var(--global-text-color); }
+
+/* 宫格布局 */
+.moment-gallery { display: grid; gap: 4px; margin: 10px 0; }
+.moment-gallery figure { margin: 0 !important; }
+
+/* 单张竖图不裁剪逻辑 */
+.moment-gallery.count-1 { width: 100%; max-width: 300px; }
+.moment-gallery.count-1 .moment-img { 
+    aspect-ratio: auto; 
+    max-height: 400px; 
+    object-fit: contain; 
+}
+
+/* 多张图强制正方形 */
+.moment-gallery:not(.count-1) .moment-img { aspect-ratio: 1 / 1; object-fit: cover; }
+.moment-gallery.count-2, .moment-gallery.count-4 { grid-template-columns: repeat(2, 1fr); width: 66%; }
+.moment-gallery.count-3, .moment-gallery.count-6, .moment-gallery.count-9 { grid-template-columns: repeat(3, 1fr); width: 100%; }
+
+.moment-img { width: 100%; border-radius: 2px; cursor: zoom-in; }
+.moment-footer { display: flex; justify-content: space-between; margin-top: 15px; font-size: 12px; color: #b1b1b1; }
+.comment-btn { background: var(--global-code-bg-color); padding: 2px 8px; border-radius: 4px; color: #576b95; text-decoration: none; }
+
+
+/* 位置信息容器 */
+.moment-location {
+    font-size: 13px;          /* 比正文略小 */
+    color: #576b95;          /* 微信蓝 */
+    margin: 8px 0;           /* 与正文和底部按钮的间距 */
+    display: flex;
+    align-items: center;     /* 图标与文字对齐 */
+    gap: 4px;                /* 图标与文字的间距 */
+}
+
+/* 链接状态（如果是 Google Maps 链接） */
+.moment-location a {
+    color: #576b95;
+    text-decoration: none;   /* 移除下划线 */
+    transition: opacity 0.2s;
+}
+
+.moment-location a:hover {
+    opacity: 0.8;
+    text-decoration: underline; /* 悬停时显示下划线增强交互感 */
+}
+
+/* 如果是纯文本位置 */
+.location-text {
+    font-weight: 400;
+}
+
+/* 定位图标样式（针对 FontAwesome） */
+.moment-location i {
+    font-size: 12px;
+    color: #576b95;
+}
+
+/* 侧边栏时光机样式 */
+.moments-sidebar { width: 140px; }
+.timeline-sticky-card { position: sticky; top: 100px; border-left: 1px solid var(--global-divider-color); padding-left: 15px; }
+.timeline-title { font-size: 12px; color: #bbb; margin-bottom: 15px; }
+.timeline-list { list-style: none; padding: 0; }
+.timeline-link { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 6px 0; 
+    font-size: 13px; 
+    color: var(--global-text-color-light); 
+    text-decoration: none;
+    transition: 0.2s;
+}
+.timeline-link:hover { color: #576b95; transform: translateX(5px); }
+.timeline-link .count { font-size: 10px; opacity: 0.5; }
+
+@media (max-width: 768px) {
+    .moments-layout-wrapper { flex-direction: column; padding: 0 15px; }
+    .moments-sidebar { display: none; }
+    .moment-gallery.count-1, .moment-gallery.count-2, .moment-gallery.count-4 { width: 100%; }
+}

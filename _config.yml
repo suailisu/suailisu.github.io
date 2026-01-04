@@ -27,3 +27,16 @@ defaults:
       type: "screen"
     values:
       layout: "screen-review"
+
+giscus:
+  repo: suailisu/suailisu.github.io
+  repo_id: R_kgDOQzPkfA
+  category: General
+  category_id: DIC_kwDOQzPkfM4C0jAt 
+  mapping: specific
+  strict: 1
+  reactions_enabled: 1
+  input_position: bottom
+  theme: preferred_color_scheme
+  emit_metadata: 0
+  lang: zh-CN
