@@ -1,0 +1,29 @@
+title: "素爱力酥"
+url: "https://suailisu.github.io"
+baseurl: ""
+
+# 集合配置
+collections:
+  movies:
+    output: true
+    permalink: /screen/:title/
+  books:
+    output: true
+    permalink: /books/:title/
+  games:
+    output: true
+    permalink: /games/:title/
+  moments:
+    output: true
+    permalink: /moments/:title/
+
+# 目录包含
+include: [_pages]
+
+# 默认设置
+defaults:
+  - scope:
+      path: ""
+      type: "movies"
+    values:
+      layout: "movie" # 影剧详情页使用 movie 布局
