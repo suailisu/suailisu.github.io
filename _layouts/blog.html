@@ -3,57 +3,66 @@ layout: default
 ---
 <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
 
-<div class="post">
-  <div class="tag-category-list">
-    <ul>
-      <li class="{% unless page.type == 'category' %}active{% endunless %}">
-        <a href="{{ '/blog/' | relative_url }}">全部</a>
-      </li>
-      
-      {% for item in site.data.post-categories %}
-        {% assign name = item[0] %}
-        <li class="{% if page.title == name %}active{% endif %}">
-          <a href="{{ name | slugify | prepend: '/blog/category/' | relative_url }}">
-            {% include post-category.liquid category=name %} {{ name }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-9">
+      <ul class="post-list">
+        {% if paginator.posts %}
+          {% assign posts = paginator.posts %}
+        {% elsif page.posts %}
+          {% assign posts = page.posts %}
+        {% else %}
+          {% assign posts = site.posts %}
+        {% endif %}
+        
+        {% for post in posts %}      
+          <li>
+            <div class="row">
+              {% if post.thumbnail %}
+                <div class="col-sm-5">
+                  <img class="card-img" src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" style="object-fit: cover; width: 100%; height: auto;">
+                </div>
+              {% endif %} 
+                       
+              <div class="{% if post.thumbnail %}col-sm-7{% else %}col-sm-12{% endif %}">
+                <h3>
+                  <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                </h3>
+                <p>{{ post.description }}</p>
+                <div class="post-meta">
+                  {{ post.date | date: '%Y年%-m月%-d日' }} &nbsp; &middot; &nbsp;
+                  {% for cat in post.categories %}
+                    <span class="me-1">{% include post-category.liquid category=cat %} {{ cat }}</span>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+
+      {% if paginator.total_pages > 1 %}
+        <div class="mt-4">{% include pagination.liquid %}</div>
+      {% endif %}
+    </div>
+
+    <aside class="col-md-3 d-none d-md-block">
+      <div class="blog-sidebar-minimal">
+        <h6 class="sidebar-label">索引 / Index</h6>
+        <ul class="category-minimal-list">
+          <li class="{% unless page.type == 'category' %}active{% endunless %}">
+            <a href="{{ '/blog/' | relative_url }}">全部文章</a>
+          </li>
+          {% for item in site.data.post-categories %}
+            {% assign name = item[0] %}
+            <li class="{% if page.title == name %}active{% endif %}">
+              <a href="{{ name | slugify | prepend: '/blog/category/' | relative_url }}">
+                {{ name }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </aside>
   </div>
-
-  <ul class="post-list">
-    {% if paginator.posts %}
-      {% assign posts = paginator.posts %}
-    {% else %}
-      {% assign posts = page.posts | sort: "date" | reverse %}
-    {% endif %}
-    {% for post in posts %}      
-      <li>
-        <div class="row">
-          {% if post.thumbnail %}
-            <div class="col-sm-5">
-              <img class="card-img" src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" style="object-fit: cover; width: 100%; height: auto; border-radius: 8px;">
-            </div>
-          {% endif %} 
-                   
-          <div class="{% if post.thumbnail %}col-sm-7{% else %}col-sm-12{% endif %}">
-            <h3>
-              <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            </h3>
-            <p>{{ post.description }}</p>
-            <div class="post-meta">
-              {{ post.date | date: '%Y年%-m月%-d日' }} &nbsp; &middot; &nbsp;
-              {% for cat in post.categories %}
-                <span class="me-1">{% include post-category.liquid category=cat %} {{ cat }}</span>
-              {% endfor %}
-            </div>
-          </div>
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
-
-  {% if paginator.total_pages > 1 %}
-    {% include pagination.liquid %}
-  {% endif %}
 </div>

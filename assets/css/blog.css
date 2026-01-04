@@ -1,136 +1,103 @@
 /*******************************************************************************
- * 基础排版与变量补丁
+ * 1. 核心多巴胺变量定义
  ******************************************************************************/
 :root {
-  --global-theme-color: #576b95; /* 默认主题蓝，可修改为你喜欢的颜色 */
-  --global-hover-color: #b7d12a; /* 悬停颜色 */
+  --global-theme-color: #0076df; /* 选中的主色：深邃蓝 */
+  --global-hover-color: #b7d12a; /* Hover 的颜色：柠檬绿 */
+  --global-dim-color: #bbbbbb;   /* 普通/未选中的颜色：淡灰 */
+  
+  --text-main: #333333;
 }
 
-/* 基础文字颜色 */
-p, h1, h2, h3, h4, h5, h6, li, span, div {
-  color: var(--global-text-color);
-}
-
-/* 链接样式 */
+/* 全局链接交互 */
 a {
   color: var(--global-theme-color);
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 a:hover {
-  color: var(--global-hover-color);
-  text-decoration: none;
-}
-
-/* 引用块样式 */
-blockquote {
-  background: var(--global-bg-color);
-  border-left: 5px solid var(--global-theme-color);
-  margin: 1.5rem 0;
-  padding: 1rem;
-  font-size: 1rem;
-}
-
-/* 图片描述 (Caption) - 核心修复 */
-.caption {
-  font-size: 0.875rem;
-  margin-top: 0.75rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  color: var(--global-text-color-light);
+  color: var(--global-hover-color) !important;
 }
 
 /*******************************************************************************
- * Blog 页面组件
+ * 2. 右侧侧边栏：极简多巴胺标签 (方案 2)
  ******************************************************************************/
-
-/* 1. 顶部标题栏 (人在楼上) */
-.header-bar {
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+.blog-sidebar-minimal {
+  position: sticky;
+  top: 3rem;
+  padding-left: 1rem;
 }
 
-.header-bar h1 {
-  font-size: 4rem; /* 稍微缩小原版的 5rem，更协调 */
+.sidebar-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ddd;
+  margin-bottom: 2rem;
+  font-weight: 600;
 }
 
-/* 2. 分类导航条 - 药丸风格重构 */
-.tag-category-list {
-  border-bottom: none;       /* 去掉沉重的底边线 */
-  text-align: center;
-  padding: 1.5rem 0;
-  margin-bottom: 1.5rem;
-}
-
-.tag-category-list ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.category-minimal-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 12px;                /* 使用 gap 控制标签间距 */
 }
 
-.tag-category-list li {
-  padding: 0;               /* 间距由 gap 和 a 标签控制 */
+.category-minimal-list li {
+  margin-bottom: 1.2rem;
 }
 
-.tag-category-list a {
-  display: inline-block;
-  padding: 6px 16px;
-  border-radius: 20px;       /* 圆角药丸形状 */
-  background: #f4f4f4;       /* 极简的灰色背景 */
-  color: #666 !important;
-  font-size: 0.85rem;        /* 稍微缩小字号，拉开与主导航的距离 */
-  transition: all 0.3s ease;
-}
-
-.tag-category-list a:hover {
-  background: #e0e0e0;
-  color: var(--global-theme-color) !important;
-}
-
-/* 选中状态的高亮 */
-.tag-category-list .active a {
-  background: var(--global-theme-color);
-  color: #ffffff !important;
-  box-shadow: 0 2px 8px rgba(87, 107, 149, 0.3); /* 增加一点点悬浮感 */
+.category-minimal-list a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.95rem;
+  /* 普通状态：使用 bbb */
+  color: var(--global-dim-color) !important; 
   font-weight: 500;
 }
 
-/* 3. 置顶文章卡片 (Featured Posts) */
-.featured-posts .card {
-  border: 1px solid var(--global-divider-color);
-  transition: transform 0.2s;
+.category-minimal-list a::before {
+  content: "#";
+  font-family: monospace;
+  margin-right: 8px;
+  color: #eee; /* # 符号默认极淡 */
+  transition: all 0.25s ease;
 }
 
-.featured-posts .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+/* Hover 状态：变为柠檬绿 b7d12a */
+.category-minimal-list a:hover {
+  color: var(--global-hover-color) !important;
 }
 
-.featured-posts .card-title {
-  font-size: 1.25rem;
-  font-weight: bold;
+.category-minimal-list a:hover::before {
+  color: var(--global-hover-color);
 }
 
-/* 4. 文章列表 (Post List) */
+/* 选中态：变为蓝色 0076df */
+.category-minimal-list li.active a {
+  color: var(--global-theme-color) !important;
+  font-weight: 700;
+}
+
+.category-minimal-list li.active a::before {
+  color: var(--global-theme-color);
+}
+
+/*******************************************************************************
+ * 3. 文章列表 (维持原始排版逻辑)
+ ******************************************************************************/
 .post-list {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 .post-list li {
-  /* 使用一个非常淡的灰色，或者你自定义的变量 */
-  border-bottom: 1px solid #eeeeee; 
-  list-style: none;
-  padding: 2.5rem 0; /* 保持你想要的呼吸感 */
+  border-bottom: 1px solid #f2f2f2; 
+  padding: 2.5rem 0;
 }
 
-/* 关键：去掉最后一篇文章下方的分割线，避免和分页组件之间的间距过大 */
 .post-list li:last-child {
   border-bottom: none;
 }
@@ -138,46 +105,22 @@ blockquote {
 .post-list .post-title {
   font-size: 1.6rem;
   font-weight: 700;
-  /* 确保标题颜色在没有变量定义时也有回退值 */
-  color: var(--global-text-color, #333); 
+  color: var(--text-main);
+  display: block;
+}
+
+/* 标题悬停：也使用柠檬绿 */
+.post-list .post-title:hover {
+  color: var(--global-hover-color) !important;
 }
 
 .post-list .post-meta {
-  color: var(--global-text-color-light);
+  color: var(--global-dim-color);
   font-size: 0.875rem;
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
 }
 
-.post-list .post-tags {
-  font-size: 0.85rem;
-  margin-top: 0.5rem;
-}
-
-/*******************************************************************************
- * 分页 (Pagination)
- ******************************************************************************/
-.pagination .page-item .page-link {
-  color: var(--global-text-color);
-  border: none;
-  background: transparent;
-  padding: 0.75rem 1.2rem;
-}
-
-.pagination .page-item.active .page-link {
-  background-color: var(--global-theme-color);
-  color: #fff !important;
-  border-radius: 4px;
-}
-
-.pagination .page-item.disabled .page-link {
-  color: #ccc;
-}
-
-/*******************************************************************************
- * 移动端适配
- ******************************************************************************/
-@media (max-width: 576px) {
-  .header-bar h1 { font-size: 2.5rem; }
-  .post-list .row { flex-direction: column-reverse; } /* 手机端图在下文在上，或根据需要修改 */
-  .post-list .col-sm-5 { margin-top: 1rem; }
+/* 封面图：维持不裁剪比例 */
+.card-img {
+  object-fit: contain; 
 }

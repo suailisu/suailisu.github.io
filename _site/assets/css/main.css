@@ -20,16 +20,31 @@ body {
 }
 
 /* 导航链接样式 */
+:root {
+    --global-theme-color: #0076df; /* 选中的主色：深邃蓝 */
+    --global-hover-color: #b7d12a; /* Hover 的颜色：柠檬绿 */
+    --global-dim-color: #bbbbbb;   /* 普通/未选中的颜色：淡灰 */
+}
+
 nav a { 
     text-decoration: none; 
-    color: #576b95; /* 建议使用你 blog.css 定义的主题色 */
+    color: var(--global-dim-color); /* 默认淡灰 */
     font-weight: 500;
-    transition: color 0.2s ease;
+    padding-bottom: 4px; /* 为下划线留出空间 */
+    transition: all 0.2s ease;
+    border-bottom: 2px solid transparent; /* 预留透明边框防止抖动 */
 }
 
 nav a:hover {
-    color: #b7d12a; /* 悬停颜色 */
+    color: var(--global-hover-color); /* 悬停柠檬绿 */
     text-decoration: none;
+}
+
+/* 选中状态：显示主题色蓝 + 下划线 */
+nav a.active {
+    color: var(--global-theme-color) !important;
+    font-weight: 700;
+    border-bottom: 2px solid var(--global-theme-color);
 }
 
 /* 全局分隔线 */
