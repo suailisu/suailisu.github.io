@@ -1,0 +1,33 @@
+---
+layout: default
+extra_css: 
+  - screen-review
+---
+
+<article class="review-wrapper">
+  <header class="review-header">
+    <h1 class="review-title">{{ page.title }}</h1>
+    <div class="review-meta">
+      <time>{{ page.date | date: "%Y年%m月%d日" }}</time>
+      {% if page.rating %}
+        <span class="review-rating">⭐ {{ page.rating }}</span>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="review-container">
+    {% if page.image %}
+      <div class="review-poster">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+      </div>
+    {% endif %}
+
+    <div class="review-content">
+      {{ content }}
+    </div>
+  </div>
+
+  <footer class="review-footer">
+    <a href="/screen/">&larr; 返回苏幕遮</a>
+  </footer>
+</article>

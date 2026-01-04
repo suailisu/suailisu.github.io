@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} - {{ site.title }}</title>
-    <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-        nav a { margin-right: 15px; text-decoration: none; color: #007bff; }
-        hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
-    </style>
+    
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+    {% if page.extra_css %}
+      {% for css_name in page.extra_css %}
+        <link rel="stylesheet" href="{{ '/assets/css/' | append: css_name | append: '.css' | relative_url }}">
+      {% endfor %}
+    {% endif %}
 </head>
 <body>
     <nav>
         <a href="/">首页</a>
         <a href="/screen/">苏幕遮</a> 
-        <!-- <a href="/books/">书</a>
-        <a href="/moments/">瞬</a> -->
-    </nav>
+        </nav>
     <hr>
-    {{ content }}
+    
+    <main>
+        {{ content }}
+    </main>
+
+    <footer style="margin-top: 50px; color: #999; font-size: 0.8em;">
+        &copy; {{ "now" | date: "%Y" }} {{ site.title }}
+    </footer>
 </body>
 </html>

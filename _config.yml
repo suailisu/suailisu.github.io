@@ -4,8 +4,8 @@ baseurl: ""
 
 # 集合配置
 collections:
-  movies:
-    output: true
+  screen:            
+    output: true     
     permalink: /screen/:title/
   books:
     output: true
@@ -24,6 +24,6 @@ include: [_pages]
 defaults:
   - scope:
       path: ""
-      type: "movies"
+      type: "screen"
     values:
-      layout: "movie" # 影剧详情页使用 movie 布局
+      layout: "screen-review"
