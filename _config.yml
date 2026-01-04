@@ -2,6 +2,11 @@ title: "素爱力酥"
 url: "https://suailisu.github.io"
 baseurl: ""
 
+
+# blog
+permalink: /blog/:categories/:year/:title/
+display_categories: [忆旧游, 掷金钱, 好时光, 叨叨令, 寿南山]
+
 # 集合配置
 collections:
   screen:            
@@ -18,7 +23,9 @@ collections:
     permalink: /moments/:title/
 
 # 目录包含
-include: [_pages]
+include:
+  - _pages
+  - _posts
 
 # 默认设置
 defaults:

@@ -1,0 +1,63 @@
+/* 文章详情页主体容器 */
+.post {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* 标题与元数据 */
+.post-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.post-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* 文章正文排版 - 呼吸感的核心 */
+.post-content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: var(--global-text-color);
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+}
+
+/* 详情页里的图片与描述 (Caption) */
+figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.caption {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #888;
+  font-style: italic; /* 增加文雅感 */
+}
+
+/* 引用块还原 */
+blockquote {
+  border-left: 5px solid var(--global-theme-color);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  background: rgba(0,0,0,0.02);
+  color: var(--global-text-color-light);
+}
+
+/* 解决 Bootstrap row 在文章内的间距问题 */
+.post-content .row {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

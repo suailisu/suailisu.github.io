@@ -1,0 +1,167 @@
+/*******************************************************************************
+ * 基础排版与变量补丁
+ ******************************************************************************/
+:root {
+  --global-theme-color: #576b95; /* 默认主题蓝，可修改为你喜欢的颜色 */
+  --global-hover-color: #b7d12a; /* 悬停颜色 */
+}
+
+/* 基础文字颜色 */
+p, h1, h2, h3, h4, h5, h6, li, span, div {
+  color: var(--global-text-color);
+}
+
+/* 链接样式 */
+a {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--global-hover-color);
+  text-decoration: none;
+}
+
+/* 引用块样式 */
+blockquote {
+  background: var(--global-bg-color);
+  border-left: 5px solid var(--global-theme-color);
+  margin: 1.5rem 0;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* 图片描述 (Caption) - 核心修复 */
+.caption {
+  font-size: 0.875rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--global-text-color-light);
+}
+
+/*******************************************************************************
+ * Blog 页面组件
+ ******************************************************************************/
+
+/* 1. 顶部标题栏 (人在楼上) */
+.header-bar {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.header-bar h1 {
+  font-size: 4rem; /* 稍微缩小原版的 5rem，更协调 */
+}
+
+/* 2. 分类导航条 */
+.tag-category-list {
+  border-bottom: 1px solid var(--global-divider-color);
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.tag-category-list ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tag-category-list li {
+  padding: 0.5rem 0.8rem;
+}
+
+.tag-category-list a {
+  color: var(--global-text-color-light);
+}
+
+.tag-category-list .active a {
+  color: var(--global-theme-color);
+  font-weight: bold;
+}
+
+/* 3. 置顶文章卡片 (Featured Posts) */
+.featured-posts .card {
+  border: 1px solid var(--global-divider-color);
+  transition: transform 0.2s;
+}
+
+.featured-posts .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.featured-posts .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* 4. 文章列表 (Post List) */
+.post-list {
+  padding: 0;
+}
+
+.post-list li {
+  border-bottom: 1px solid var(--global-divider-color);
+  list-style: none;
+  padding: 2.5rem 0; /* 增加呼吸感 */
+}
+
+.post-list .post-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--global-text-color);
+}
+
+.post-list .post-meta {
+  color: var(--global-text-color-light);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.post-list .post-tags {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.post-list .card-img {
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+  max-height: 250px;
+}
+
+/*******************************************************************************
+ * 分页 (Pagination)
+ ******************************************************************************/
+.pagination .page-item .page-link {
+  color: var(--global-text-color);
+  border: none;
+  background: transparent;
+  padding: 0.75rem 1.2rem;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--global-theme-color);
+  color: #fff !important;
+  border-radius: 4px;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #ccc;
+}
+
+/*******************************************************************************
+ * 移动端适配
+ ******************************************************************************/
+@media (max-width: 576px) {
+  .header-bar h1 { font-size: 2.5rem; }
+  .post-list .row { flex-direction: column-reverse; } /* 手机端图在下文在上，或根据需要修改 */
+  .post-list .col-sm-5 { margin-top: 1rem; }
+}

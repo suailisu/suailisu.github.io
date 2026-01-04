@@ -1,17 +1,11 @@
-<figure>
-  <picture>
-    <img
-      src="{{ include.path | relative_url }}"
-      {% if include.class %}class="{{ include.class }}"{% endif %}
-      {% if include.width %}width="{{ include.width }}"{% endif %}
-      {% if include.height %}height="{{ include.height }}"{% endif %}
-      {% if include.alt %}alt="{{ include.alt }}"{% endif %}
-      {% if include.title %}title="{{ include.title }}"{% endif %}
-      {% if include.zoomable %}data-zoomable{% endif %}
-      loading="lazy"
-    >
-  </picture>
+<figure style="margin: 0;">
+  <img src="{{ include.path | relative_url }}" 
+       class="{% if include.class %}{{ include.class }}{% else %}img-fluid rounded{% endif %}"
+       style="width: 100%; height: auto; display: block;"
+       {% if include.alt %}alt="{{ include.alt }}"{% endif %}>
   {% if include.caption %}
-    <figcaption>{{ include.caption }}</figcaption>
+    <figcaption class="caption" style="margin-top: 8px; font-size: 0.85rem; color: #888; text-align: center;">
+      {{ include.caption }}
+    </figcaption>
   {% endif %}
 </figure>
