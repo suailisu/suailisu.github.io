@@ -1,83 +1,117 @@
-/* assets/css/reading.css */
-
-.reading-list {
-    margin-top: 2rem;
-}
-
-/* 年份标题：大而淡，作为背景装饰 */
-.year-indicator {
-    font-size: 3.5rem;
-    font-weight: 900;
-    color: #f5f5f5;
-    margin-bottom: -1.5rem;
-    margin-left: -5px;
-    letter-spacing: -2px;
-}
-
-/* 单个书籍条目容器 */
-.reading-entry {
+/* --- 基础布局 --- */
+.reading-container {
     display: flex;
-    align-items: center;
-    padding: 1.2rem;
-    background: #ffffff;
-    border-radius: 8px;
-    margin-bottom: 0.8rem;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border: 1px solid transparent;
+    max-width: 1100px;
+    margin: 60px auto;
+    gap: 60px;
 }
 
-/* 悬停效果：轻微浮起，背景微调 */
-.reading-entry:hover {
-    background: #fdfdfd;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    transform: translateX(10px); /* 向右滑出感 */
-    border-color: #eee;
+input[type="radio"][name="filter"] { display: none; }
+
+.reading-content { flex: 1; }
+
+/* --- 右侧导航栏 --- */
+.topic-nav.right-side {
+    width: 160px;
+    position: sticky;
+    top: 100px;
+    height: fit-content;
 }
 
-/* 书封缩略图：保持纵向比例 */
-.entry-cover-wrapper {
-    width: 50px;
-    height: 75px;
-    flex-shrink: 0;
-    margin-right: 1.5rem;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+.topic-label {
+    font-size: 0.65rem;
+    color: #bbb;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    padding-left: 15px; /* 与下方的线对齐 */
 }
 
-.entry-cover-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.filter-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-left: 1px solid #eee; /* 线在文字左边 */
 }
 
-/* 标题样式 */
-.entry-info {
-    flex-grow: 1;
+.filter-menu label {
+    display: block;
+    padding: 12px 0 12px 15px; /* 文字向右排布 */
+    color: #888;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border-left: 2px solid transparent; /* 选中时的线也在左边 */
+    margin-left: -1px; /* 覆盖引导线 */
+    transition: all 0.3s ease;
 }
 
-.entry-title {
-    font-size: 1.1rem;
+.filter-menu label span {
+    font-size: 0.7rem;
+    opacity: 0.4;
+    margin-left: 6px;
+}
+
+/* Hover & Active 状态 */
+.filter-menu label:hover {
+    color: #b7d12a;
+}
+
+#all:checked ~ .topic-nav .lab-all,
+#f-格物:checked ~ .topic-nav .lab-格物,
+#f-修身:checked ~ .topic-nav .lab-修身,
+#f-致知:checked ~ .topic-nav .lab-致知,
+#f-观世:checked ~ .topic-nav .lab-观世,
+#f-游艺:checked ~ .topic-nav .lab-游艺 {
+    color: #0076df !important;
+    font-weight: 700;
+    border-left: 2px solid #0076df !important;
+}
+
+/* --- 过滤逻辑 --- */
+#f-格物:checked ~ .reading-content .book-item:not([data-cat="格物"]),
+#f-修身:checked ~ .reading-content .book-item:not([data-cat="修身"]),
+#f-致知:checked ~ .reading-content .book-item:not([data-cat="致知"]),
+#f-观世:checked ~ .reading-content .book-item:not([data-cat="观世"]),
+#f-游艺:checked ~ .reading-content .book-item:not([data-cat="游艺"]) {
+    display: none;
+}
+
+/* --- 书架展示 (3D 卡片) --- */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 45px 35px;
+}
+
+.book-card { text-decoration: none !important; }
+
+.book-cover-wrapper {
+    position: relative;
+    aspect-ratio: 1 / 1.45;
+    background: #fff;
+    border-radius: 2px 5px 5px 2px;
+    box-shadow: inset 5px 0 8px -3px rgba(0,0,0,0.15), 6px 12px 25px rgba(0,0,0,0.06);
+    transition: all 0.4s ease;
+}
+
+.book-card:hover .book-cover-wrapper {
+    transform: perspective(1000px) rotateY(-10deg) translateX(5px);
+    box-shadow: 20px 20px 40px rgba(0,0,0,0.12);
+}
+
+.book-img { width: 100%; height: 100%; object-fit: cover; }
+
+.book-title {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.95rem;
     font-weight: 700;
     color: #333;
-    margin-bottom: 4px;
+    font-family: serif;
+}
+
+.book-author {
     display: block;
-}
-
-/* 标签列表 */
-.entry-tags {
-    display: flex;
-    gap: 10px;
-}
-
-.entry-tag {
     font-size: 0.8rem;
     color: #bbb;
-}
-
-/* 移动端适配 */
-@media (max-width: 768px) {
-    .reading-entry:hover {
-        transform: none;
-    }
+    margin-top: 4px;
 }

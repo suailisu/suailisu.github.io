@@ -4,54 +4,43 @@ title: 字字锦
 permalink: /reading/
 ---
 <link rel="stylesheet" href="{{ '/assets/css/reading.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-9">
-      {% assign reading_by_year = site.reading | group_by_exp: "item", "item.date | date: '%Y'" %}
-      {% assign sorted_years = reading_by_year | sort: "name" | reverse %}
+<div class="reading-container">
+  <input type="radio" name="filter" id="all" checked>
+  <input type="radio" name="filter" id="f-格物">
+  <input type="radio" name="filter" id="f-修身">
+  <input type="radio" name="filter" id="f-致知">
+  <input type="radio" name="filter" id="f-观世">
+  <input type="radio" name="filter" id="f-游艺">
 
-      <div class="reading-list">
-        {% for year in sorted_years %}
-          <div class="year-group mb-5">
-            <h2 class="year-indicator">{{ year.name }}</h2>
-            <div class="entry-wrapper mt-3">
-              {% assign items = year.items | sort: "date" | reverse %}
-              {% for item in items %}
-                <a href="{{ item.url | relative_url }}" class="text-decoration-none">
-                  <article class="reading-entry">
-                    <div class="entry-cover-wrapper">
-                      <img src="{{ item.thumbnail | relative_url }}" class="entry-cover-img" alt="{{ item.title }}">
-                    </div>
-                    <div class="entry-info">
-                      <span class="entry-title">{{ item.title }}</span>
-                      <div class="entry-tags">
-                        {% for tag in item.tags %}
-                          <span class="entry-tag">#{{ tag }}</span>
-                        {% endfor %}
-                      </div>
-                    </div>
-                  </article>
-                </a>
-              {% endfor %}
+  <main class="reading-content">
+    <div class="book-grid">
+      {% assign all_books = site.reading | sort: "date" | reverse %}
+      {% for item in all_books %}
+        <div class="book-item" data-cat="{{ item.category }}">
+          <a href="{{ item.url | relative_url }}" class="book-card">
+            <div class="book-cover-wrapper">
+              <img src="{{ item.thumbnail | relative_url }}" class="book-img">
             </div>
-          </div>
-        {% endfor %}
-      </div>
+            <div class="book-info-box">
+              <span class="book-title">{{ item.title }}</span>
+              <span class="book-author">{{ item.authors | join: ', ' }}</span>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
     </div>
+  </main>
 
-    <aside class="col-md-3 d-none d-md-block">
-      <div class="blog-sidebar-minimal">
-        <h6 class="sidebar-label">标签索引 / TAGS</h6>
-        <ul class="category-minimal-list">
-          <li class="active"><a href="/reading/">全部</a></li>
-          {% assign all_tags = site.reading | map: "tags" | flatten | uniq | sort %}
-          {% for tag in all_tags %}
-            <li><a href="#">{{ tag }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    </aside>
-  </div>
+  <nav class="topic-nav right-side">
+    <div class="topic-label">CATEGORIES</div>
+    <ul class="filter-menu">
+      <li><label for="all" class="lab-all">全部 <span>All</span></label></li>
+      <li><label for="f-格物" class="lab-格物">格物 <span>Science</span></label></li>
+      <li><label for="f-修身" class="lab-修身">修身 <span>Growth</span></label></li>
+      <li><label for="f-致知" class="lab-致知">致知 <span>Thinking</span></label></li>
+      <li><label for="f-观世" class="lab-观世">观世 <span>Society</span></label></li>
+      <li><label for="f-游艺" class="lab-游艺">游艺 <span>Arts</span></label></li>
+    </ul>
+  </nav>
 </div>
