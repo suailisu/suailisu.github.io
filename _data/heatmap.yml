@@ -1,0 +1,16 @@
+- id: blog
+  name: 青玉案
+  value_base: 10
+  color: "#004a8c"  # 蓝灰色 (冷静、理智)
+- id: reading
+  name: 字字锦
+  value_base: 20
+  color: "#005ea1"  # 浅灰蓝 (轻盈、通透)
+- id: screen
+  name: 苏幕遮
+  value_base: 30
+  color: "#3d96e5"  # 灰冰色 (深邃、开阔)
+- id: moments
+  name: 相见欢
+  value_base: 40
+  color: "#a6d2f5"  # 柔灰色 (温暖、干净)
