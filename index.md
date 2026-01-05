@@ -35,6 +35,10 @@ title: 爱力酥
       <span class="cn">苏幕遮</span>
       <span class="en">SCREEN</span>
     </a>
+    <a href="/games/" class="link-item">
+      <span class="cn">破阵乐</span>
+      <span class="en">GAMES</span>
+    </a>
     <a href="/moments/" class="link-item">
       <span class="cn">相见欢</span>
       <span class="en">MOMENTS</span>
