@@ -14,3 +14,7 @@
   name: 相见欢
   value_base: 40
   color: "#a6d2f5"  # 柔灰色 (温暖、干净)
+- id: games
+  name: 破阵乐
+  value_base: 50
+  color: "#0076df"  # 亮蓝色 (动态、力量)
