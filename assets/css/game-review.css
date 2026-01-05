@@ -1,0 +1,90 @@
+/* assets/css/games-review.css */
+:root {
+    --global-theme-color: #0076df;
+    --global-hover-color: #b7d12a;
+    --global-dim-color: #bbb;
+    --liked-red: #ff4d4f;
+}
+
+.game-review-container { margin-top: 60px; margin-bottom: 100px; }
+
+/* 标题与 Reading 风格统一 */
+.subject-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--global-theme-color);
+}
+
+.subject-meta .label {
+    color: var(--global-dim-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-right: 12px;
+}
+
+/* 平台 Badge 保留颜色 */
+.platform-badge {
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+.platform-badge[data-plat="switch"] { color: #e60012; background: rgba(230, 0, 18, 0.1); }
+.platform-badge[data-plat="xbox"] { color: #107c10; background: rgba(16, 124, 16, 0.1); }
+.platform-badge[data-plat="ipad"] { color: #0071e3; background: rgba(0, 113, 227, 0.1); }
+
+/* 状态指示 */
+.review-status-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 8px; }
+.status-researching { background: #27ae60; }
+.status-archived { background: var(--global-theme-color); }
+.status-perfect { background: #f1c40f; }
+.status-suspended { background: var(--global-dim-color); }
+.status-text { font-size: 0.95rem; color: #666; font-weight: 500; }
+
+/* 评分样式（无方框） */
+.star-rating i { font-size: 1.1rem; margin-right: 2px; }
+.badge-liked { background-color: var(--liked-red); color: #fff; font-size: 0.7rem; padding: 2px 8px; border-radius: 3px; font-weight: 800; vertical-align: middle; }
+
+/* 正文排版对齐 Reading */
+.comment-text-large { font-size: 1.1rem; line-height: 1.8; color: #333; }
+.comment-text-large h2 {
+    margin-top: 2.5rem;
+    font-weight: 700;
+    color: #222;
+    border-left: 4px solid var(--global-theme-color);
+    padding-left: 15px;
+}
+.comment-text-large blockquote {
+    padding: 15px 25px;
+    margin: 25px 0;
+    background-color: #f9f9f9;
+    border-left: 4px solid var(--global-hover-color);
+    font-style: italic;
+}
+
+/* 返回链接 */
+.back-link-top {
+    border-bottom: 1px solid transparent; /* 预留位置 */
+}
+
+.back-link-top a.back-link {
+    text-decoration: none;
+    color: var(--global-dim-color);
+    font-size: 0.85rem; /* 比正文稍小，显得精致 */
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    opacity: 0.7; /* 默认略显透明，不抢戏 */
+}
+
+.back-link-top a.back-link:hover {
+    color: var(--global-hover-color);
+    opacity: 1;
+    transform: translateX(-5px); /* 悬停时向左滑，暗示“回去” */
+}
+
+/* 海报效果 */
+.subject-poster { width: 240px; flex-shrink: 0; }
+.subject-poster img { transition: transform 0.5s ease; }
+.subject-poster img:hover { transform: translateY(-5px); }

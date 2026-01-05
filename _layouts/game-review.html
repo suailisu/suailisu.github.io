@@ -1,0 +1,78 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="{{ '/assets/css/game-review.css' | relative_url }}">
+
+<article class="container game-review-container">
+  <div class="row justify-content-center">
+    <div class="col-md-11 col-lg-10">
+      
+      <div class="back-link-top mb-4">
+        <a href="/games/" class="back-link">← 返回破阵乐档案</a>
+      </div>
+
+      <div class="d-flex flex-column flex-md-row align-items-start mb-5 pb-5 border-bottom">
+        <div class="subject-poster me-md-5 mb-4 mb-md-0">
+          <img src="{{ page.img | relative_url }}" alt="{{ page.title }}" class="img-fluid shadow-lg rounded" data-zoomable>
+        </div>
+
+        <div class="subject-info flex-grow-1">
+          <h1 class="subject-title">{{ page.title }}</h1>
+          
+          <div class="subject-meta">
+            <div class="meta-line">
+              <span class="label">平台:</span>
+              <span class="platform-badge" data-plat="{{ page.platform | downcase }}">{{ page.platform | upcase }}</span>
+            </div>
+            
+            <div class="meta-line">
+              <span class="label">日期:</span>
+              <span class="status-text">{{ page.date | date: "%Y-%m-%d" }}</span>
+            </div>
+            
+            <div class="meta-line">
+              <span class="label">状态:</span>
+              <span class="review-status-dot status-{{ page.status }}"></span>
+              <span class="status-text">
+                {% if page.status == "researching" %}在研{% elsif page.status == "archived" %}结项{% elsif page.status == "perfect" %}完美{% elsif page.status == "suspended" %}挂起{% endif %}
+              </span>
+            </div>
+            
+            {% if page.rating %}
+            <div class="meta-line">
+              <span class="label">评分:</span>
+              <span class="star-rating">
+                {% assign r = page.rating | plus: 0 %}
+                {% if r >= 6 %}
+                  {% for i in (1..5) %}<i class="fas fa-star" style="color: var(--liked-red);"></i>{% endfor %}
+                  <span class="badge-liked">LIKED</span>
+                {% else %}
+                  {% for i in (1..5) %}
+                    {% if i <= r %}<i class="fas fa-star" style="color: #ffb400;"></i>
+                    {% else %}<i class="far fa-star text-muted"></i>{% endif %}
+                  {% endfor %}
+                {% endif %}
+              </span>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <div class="subject-content">
+        <div class="comment-text-large">
+          {{ content }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</article>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.mediumZoom) {
+      mediumZoom('[data-zoomable]', { margin: 24, background: 'rgba(255, 255, 255, 0.9)' })
+    }
+  })
+</script>

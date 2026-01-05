@@ -1,0 +1,138 @@
+/* --- 1. 基础布局与侧边栏 (完全对齐 Reading) --- */
+.games-container { 
+    display: flex; 
+    max-width: 1100px; 
+    margin: 60px auto; 
+    gap: 60px; 
+}
+
+input[type="radio"] { display: none; }
+
+.topic-nav.right-side { 
+    width: 160px; 
+    position: sticky; 
+    top: 100px; 
+    height: fit-content; 
+}
+
+.topic-label { 
+    font-size: 0.65rem; 
+    color: #bbb; 
+    letter-spacing: 2px; 
+    margin-bottom: 20px; 
+    padding-left: 15px; 
+}
+
+.filter-menu { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    border-left: 1px solid #eee; 
+}
+
+.filter-menu label {
+    display: block; 
+    padding: 12px 0 12px 18px; 
+    color: #888; 
+    font-size: 0.9rem;
+    cursor: pointer; 
+    border-left: 2px solid transparent; 
+    margin-left: -1px; 
+    transition: all 0.3s ease;
+}
+
+.filter-menu label span { font-size: 0.7rem; opacity: 0.4; margin-left: 6px; }
+
+/* 悬停与选中状态 */
+.filter-menu label:hover { color: #b7d12a; }
+
+#all:checked ~ .topic-nav .lab-all,
+#f-action:checked ~ .topic-nav .lab-action,
+#f-strategy:checked ~ .topic-nav .lab-strategy,
+#f-narrative:checked ~ .topic-nav .lab-narrative,
+#f-coop:checked ~ .topic-nav .lab-coop {
+    color: #0076df !important; 
+    font-weight: 700; 
+    border-left: 2px solid #0076df !important;
+}
+
+/* --- 2. 状态色彩与评分同步逻辑 --- */
+.indicator-group { display: flex; align-items: center; gap: 8px; }
+.status-dot { width: 7px; height: 7px; border-radius: 50%; }
+.score-text { font-family: "JetBrains Mono", monospace; font-size: 1.1rem; font-weight: 800; }
+.status-label { font-size: 0.7rem; margin-left: 2px; }
+
+/* 在研 (Researching): 绿色 */
+.indicator-group[data-status="researching"] .status-dot { background: #27ae60; animation: pulse 2s infinite; }
+.indicator-group[data-status="researching"] .score-text,
+.indicator-group[data-status="researching"] .status-label { color: #27ae60; }
+
+/* 结项 (Archived): 蓝色 */
+.indicator-group[data-status="archived"] .status-dot { background: #0076df; }
+.indicator-group[data-status="archived"] .score-text,
+.indicator-group[data-status="archived"] .status-label { color: #0076df; }
+
+/* 完美 (Perfect): 金色 */
+.indicator-group[data-status="perfect"] .status-dot { background: #f1c40f; box-shadow: 0 0 8px #f1c40f; }
+.indicator-group[data-status="perfect"] .score-text,
+.indicator-group[data-status="perfect"] .status-label { color: #f1c40f; }
+
+/* 挂起 (Suspended): 灰色 */
+.indicator-group[data-status="suspended"] .status-dot { background: #bbb; }
+.indicator-group[data-status="suspended"] .score-text,
+.indicator-group[data-status="suspended"] .status-label { color: #999; }
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(39, 174, 96, 0.6); }
+    70% { box-shadow: 0 0 0 6px rgba(39, 174, 96, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(39, 174, 96, 0); }
+}
+
+/* --- 3. 平台标识 (Platform Badges) --- */
+.platform-badge {
+    font-size: 0.55rem;
+    font-weight: 800;
+    padding: 1px 5px;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.platform-badge[data-plat="switch"] { color: #e60012; background: rgba(230, 0, 18, 0.08); }
+.platform-badge[data-plat="xbox"] { color: #107c10; background: rgba(16, 124, 16, 0.08); }
+.platform-badge[data-plat="ipad"] { color: #0071e3; background: rgba(0, 113, 227, 0.08); }
+.platform-badge:not([data-plat]) { color: #888; background: #f0f0f0; }
+
+/* --- 4. 封面与红底爱心 Badge --- */
+.game-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 40px 30px; }
+.game-cover-wrapper { 
+    position: relative; aspect-ratio: 1 / 1.4; border-radius: 4px; 
+    overflow: hidden; background: #fdfdfd; box-shadow: 0 8px 20px rgba(0,0,0,0.05); 
+}
+.game-img { width: 100%; height: 100%; object-fit: cover; }
+
+.heart-badge-red {
+    position: absolute; bottom: 8px; right: 8px;
+    background: #ff4d4f; width: 22px; height: 22px;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 3px 8px rgba(255, 77, 79, 0.4); z-index: 2;
+}
+.heart-icon-white { width: 11px; fill: white; }
+
+/* --- 5. 信息区排版 --- */
+.game-info-box { padding: 15px 0; }
+.title-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+.game-title { font-size: 0.95rem; font-weight: 700; color: #333; }
+.meta-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.game-date { font-size: 0.7rem; color: #bbb; }
+.game-comment { 
+    font-size: 0.8rem; color: #888; line-height: 1.6; 
+    border-top: 1px solid #f9f9f9; padding-top: 10px; 
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; 
+}
+
+/* --- 6. 过滤逻辑 --- */
+#f-action:checked ~ .games-content .game-item:not([data-cat="action"]),
+#f-strategy:checked ~ .games-content .game-item:not([data-cat="strategy"]),
+#f-narrative:checked ~ .games-content .game-item:not([data-cat="narrative"]),
+#f-coop:checked ~ .games-content .game-item:not([data-cat="coop"]) { display: none; }
