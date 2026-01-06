@@ -3,8 +3,7 @@ layout: post
 title: 换组
 date: 2025-04-02 21:40:00
 description: 
-categories: 好时光
-languages: ["zh"]
+category: journal
 thumbnail: assets/images/journal/2025-04-02/IMG_4371.jpg
 ---
 

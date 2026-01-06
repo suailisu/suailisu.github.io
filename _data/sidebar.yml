@@ -1,0 +1,22 @@
+reading:
+  - 全部:All:all
+  - 格物:Science:science
+  - 修身:Growth:growth
+  - 致知:Thinking:thinking
+  - 观世:Society:society
+  - 游艺:Arts:arts
+
+games:
+  - 全部:All:all
+  - 入破:Action:action
+  - 筹海:Strategy:strategy
+  - 游仙:Narrative:narrative
+  - 合欢:Co-op:coop
+
+blog:
+  - 全部:All:all
+  - 忆旧游:Travel:travel
+  - 掷金钱:Finance:finance
+  - 好时光:Journal:journal
+  - 叨叨令:Thoughts:thoughts
+  - 寿南山:Health:health

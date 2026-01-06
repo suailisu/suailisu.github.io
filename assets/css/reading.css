@@ -1,117 +1,18 @@
-/* --- 基础布局 --- */
-.reading-container {
-    display: flex;
-    max-width: 1100px;
-    margin: 60px auto;
-    gap: 60px;
-}
-
-input[type="radio"][name="filter"] { display: none; }
-
+.reading-container { display: flex; max-width: 1100px; margin: 60px auto; gap: 60px; }
 .reading-content { flex: 1; }
-
-/* --- 右侧导航栏 --- */
-.topic-nav.right-side {
-    width: 160px;
-    position: sticky;
-    top: 100px;
-    height: fit-content;
-}
-
-.topic-label {
-    font-size: 0.65rem;
-    color: #bbb;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    padding-left: 15px; /* 与下方的线对齐 */
-}
-
-.filter-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border-left: 1px solid #eee; /* 线在文字左边 */
-}
-
-.filter-menu label {
-    display: block;
-    padding: 12px 0 12px 15px; /* 文字向右排布 */
-    color: #888;
-    font-size: 0.95rem;
-    cursor: pointer;
-    border-left: 2px solid transparent; /* 选中时的线也在左边 */
-    margin-left: -1px; /* 覆盖引导线 */
-    transition: all 0.3s ease;
-}
-
-.filter-menu label span {
-    font-size: 0.7rem;
-    opacity: 0.4;
-    margin-left: 6px;
-}
-
-/* Hover & Active 状态 */
-.filter-menu label:hover {
-    color: #b7d12a;
-}
-
-#all:checked ~ .topic-nav .lab-all,
-#f-格物:checked ~ .topic-nav .lab-格物,
-#f-修身:checked ~ .topic-nav .lab-修身,
-#f-致知:checked ~ .topic-nav .lab-致知,
-#f-观世:checked ~ .topic-nav .lab-观世,
-#f-游艺:checked ~ .topic-nav .lab-游艺 {
-    color: #0076df !important;
-    font-weight: 700;
-    border-left: 2px solid #0076df !important;
-}
-
-/* --- 过滤逻辑 --- */
-#f-格物:checked ~ .reading-content .book-item:not([data-cat="格物"]),
-#f-修身:checked ~ .reading-content .book-item:not([data-cat="修身"]),
-#f-致知:checked ~ .reading-content .book-item:not([data-cat="致知"]),
-#f-观世:checked ~ .reading-content .book-item:not([data-cat="观世"]),
-#f-游艺:checked ~ .reading-content .book-item:not([data-cat="游艺"]) {
-    display: none;
-}
-
-/* --- 书架展示 (3D 卡片) --- */
-.book-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 45px 35px;
-}
-
+.book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 45px 35px; }
 .book-card { text-decoration: none !important; }
-
-.book-cover-wrapper {
-    position: relative;
-    aspect-ratio: 1 / 1.45;
-    background: #fff;
-    border-radius: 2px 5px 5px 2px;
-    box-shadow: inset 5px 0 8px -3px rgba(0,0,0,0.15), 6px 12px 25px rgba(0,0,0,0.06);
-    transition: all 0.4s ease;
-}
-
-.book-card:hover .book-cover-wrapper {
-    transform: perspective(1000px) rotateY(-10deg) translateX(5px);
-    box-shadow: 20px 20px 40px rgba(0,0,0,0.12);
-}
-
+.book-cover-wrapper { aspect-ratio: 1/1.45; box-shadow: 5px 10px 20px rgba(0,0,0,0.08); transition: 0.4s; overflow: hidden; }
+.book-card:hover .book-cover-wrapper { transform: translateY(-8px); }
 .book-img { width: 100%; height: 100%; object-fit: cover; }
 
-.book-title {
-    display: block;
-    margin-top: 12px;
-    font-size: 0.95rem;
-    font-weight: 700;
-    color: #333;
-    font-family: serif;
-}
+/* 书名：复位为 Serif 衬线字体 */
+.book-title { display: block; margin-top: 12px; font-size: 0.95rem; font-weight: 700; color: #333; font-family: "Noto Serif SC", serif; }
+.book-author { display: block; font-size: 0.8rem; color: #bbb; margin-top: 4px; }
 
-.book-author {
-    display: block;
-    font-size: 0.8rem;
-    color: #bbb;
-    margin-top: 4px;
-}
+/* 过滤逻辑 */
+#f-science:checked ~ .reading-content .book-item:not([data-cat="science"]),
+#f-growth:checked ~ .reading-content .book-item:not([data-cat="growth"]),
+#f-thinking:checked ~ .reading-content .book-item:not([data-cat="thinking"]),
+#f-society:checked ~ .reading-content .book-item:not([data-cat="society"]),
+#f-arts:checked ~ .reading-content .book-item:not([data-cat="arts"]) { display: none; }

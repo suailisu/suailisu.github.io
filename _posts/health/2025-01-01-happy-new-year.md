@@ -3,8 +3,7 @@ layout: post
 title: 2025 新年好
 date: 2025-01-01 20:30:00
 description: 
-categories: 寿南山
-languages: ["zh"]
+category: health
 thumbnail: assets/images/health/2025/01-01-cover.jpg
 toc:
   beginning: true

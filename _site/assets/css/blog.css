@@ -1,126 +1,33 @@
-/*******************************************************************************
- * 1. 核心多巴胺变量定义
- ******************************************************************************/
-:root {
-  --global-theme-color: #0076df; /* 选中的主色：深邃蓝 */
-  --global-hover-color: #b7d12a; /* Hover 的颜色：柠檬绿 */
-  --global-dim-color: #bbbbbb;   /* 普通/未选中的颜色：淡灰 */
-  
-  --text-main: #333333;
+/* 1. 布局 */
+.blog-container { display: flex; max-width: 1100px; margin: 60px auto; gap: 60px; }
+.blog-content { flex: 1; }
+
+/* 2. 文章列表样式 */
+.post-list { list-style: none; padding: 0; margin: 0; }
+.post-item { border-bottom: 1px solid #f2f2f2; padding: 2.5rem 0; }
+.post-item:first-child { padding-top: 0; }
+.post-title { font-size: 1.6rem; font-weight: 700; color: #333; text-decoration: none; }
+.post-title:hover { color: #b7d12a !important; }
+.post-meta { color: #bbb; font-size: 0.875rem; margin-top: 1rem; }
+.card-img { width: 100%; border-radius: 4px; object-fit: cover; }
+
+/* 3. 规范化 Active 态 (响应式高亮) */
+#f-all:checked ~ .topic-nav .lab-all,
+#f-travel:checked ~ .topic-nav .lab-travel,
+#f-finance:checked ~ .topic-nav .lab-finance,
+#f-journal:checked ~ .topic-nav .lab-journal,
+#f-thoughts:checked ~ .topic-nav .lab-thoughts,
+#f-health:checked ~ .topic-nav .lab-health {
+    color: #0076df !important;
+    font-weight: 700;
+    border-left: 2px solid #0076df !important;
 }
 
-/* 全局链接交互 */
-a {
-  color: var(--global-theme-color);
-  text-decoration: none;
-  transition: all 0.25s ease-in-out;
-}
-
-a:hover {
-  color: var(--global-hover-color) !important;
-}
-
-/*******************************************************************************
- * 2. 右侧侧边栏：极简多巴胺标签 (方案 2)
- ******************************************************************************/
-.blog-sidebar-minimal {
-  position: sticky;
-  top: 3rem;
-  padding-left: 1rem;
-}
-
-.sidebar-label {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #ddd;
-  margin-bottom: 2rem;
-  font-weight: 600;
-}
-
-.category-minimal-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.category-minimal-list li {
-  margin-bottom: 1.2rem;
-}
-
-.category-minimal-list a {
-  display: inline-flex;
-  align-items: center;
-  font-size: 0.95rem;
-  /* 普通状态：使用 bbb */
-  color: var(--global-dim-color) !important; 
-  font-weight: 500;
-}
-
-.category-minimal-list a::before {
-  content: "#";
-  font-family: monospace;
-  margin-right: 8px;
-  color: #eee; /* # 符号默认极淡 */
-  transition: all 0.25s ease;
-}
-
-/* Hover 状态：变为柠檬绿 b7d12a */
-.category-minimal-list a:hover {
-  color: var(--global-hover-color) !important;
-}
-
-.category-minimal-list a:hover::before {
-  color: var(--global-hover-color);
-}
-
-/* 选中态：变为蓝色 0076df */
-.category-minimal-list li.active a {
-  color: var(--global-theme-color) !important;
-  font-weight: 700;
-}
-
-.category-minimal-list li.active a::before {
-  color: var(--global-theme-color);
-}
-
-/*******************************************************************************
- * 3. 文章列表 (维持原始排版逻辑)
- ******************************************************************************/
-.post-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.post-list li {
-  border-bottom: 1px solid #f2f2f2; 
-  padding: 2.5rem 0;
-}
-
-.post-list li:last-child {
-  border-bottom: none;
-}
-
-.post-list .post-title {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--text-main);
-  display: block;
-}
-
-/* 标题悬停：也使用柠檬绿 */
-.post-list .post-title:hover {
-  color: var(--global-hover-color) !important;
-}
-
-.post-list .post-meta {
-  color: var(--global-dim-color);
-  font-size: 0.875rem;
-  margin-top: 0.8rem;
-}
-
-/* 封面图：维持不裁剪比例 */
-.card-img {
-  object-fit: contain; 
+/* 4. 规范化过滤逻辑 */
+#f-travel:checked ~ .blog-content .post-item:not([data-cat="travel"]),
+#f-finance:checked ~ .blog-content .post-item:not([data-cat="finance"]),
+#f-journal:checked ~ .blog-content .post-item:not([data-cat="journal"]),
+#f-thoughts:checked ~ .blog-content .post-item:not([data-cat="thoughts"]),
+#f-health:checked ~ .blog-content .post-item:not([data-cat="health"]) { 
+    display: none; 
 }

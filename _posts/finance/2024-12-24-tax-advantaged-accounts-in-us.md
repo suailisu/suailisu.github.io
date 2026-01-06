@@ -3,8 +3,7 @@ layout: post
 title: 美国税收优惠投资账户总结
 date: 2024-12-24 11:26:00
 description: 
-categories: 掷金钱
-languages: ["zh"]
+category: finance
 thumbnail: assets/images/finance/tax-advantaged-accounts/tax-advantaged-accounts.jpg
 pretty_table: true
 toc:

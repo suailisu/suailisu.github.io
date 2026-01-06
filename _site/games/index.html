@@ -15,27 +15,50 @@
     <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
 </head>
 <body>
-    <nav class="container py-4">
-        
-        
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle-input" style="display:none;">
+    
+    <label for="sidebar-toggle" class="content-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.2); z-index:1999;"></label>
 
-        <a href="/" class="me-4 ">爱力酥</a>
-        <a href="/blog/" class="me-4 ">青玉案</a>
-        <a href="/reading/" class="me-4 ">字字锦</a>
-        <a href="/screen/" class="me-4 ">苏幕遮</a>
-        <a href="/games/" class="me-4 active">破阵乐</a>  
-        <a href="/moments/" class="me-4 ">相见欢</a>  
-    </nav>
+    <label for="sidebar-toggle" class="mobile-sidebar-trigger d-md-none">
+        <i class="fa-solid fa-ellipsis"></i>
+    </label>
+    
+    <nav class="container py-4">
+    
+    
+
+    <a href="/" class="me-4 ">爱力酥</a>
+    <a href="/blog/" class="me-4 ">青玉案</a>
+    <a href="/reading/" class="me-4 ">字字锦</a>
+    <a href="/screen/" class="me-4 ">苏幕遮</a>
+    <a href="/games/" class="me-4 active">破阵乐</a>  
+    <a href="/moments/" class="me-4 ">相见欢</a>  
+</nav>
     
     <hr>
     
     <main class="container">
-        <link rel="stylesheet" href="/assets/css/games.css" />
+        <link rel="stylesheet" href="/assets/css/sidebar-shared.css" />
+
+<link rel="stylesheet" href="/assets/css/games.css" />
 
 <div class="games-container">
-  <input type="radio" name="filter" id="all" checked="" />
-  <input type="radio" name="filter" id="f-action" /><input type="radio" name="filter" id="f-strategy" />
-  <input type="radio" name="filter" id="f-narrative" /><input type="radio" name="filter" id="f-coop" />
+  
+    
+    <input type="radio" name="filter" id="all" checked="" />
+  
+    
+    <input type="radio" name="filter" id="f-action" />
+  
+    
+    <input type="radio" name="filter" id="f-strategy" />
+  
+    
+    <input type="radio" name="filter" id="f-narrative" />
+  
+    
+    <input type="radio" name="filter" id="f-coop" />
+  
 
   <main class="games-content">
     <div class="games-legend">
@@ -44,7 +67,6 @@
       <div class="legend-item"><span class="dot gold"></span><span class="txt">完美 Perfect</span></div>
       <div class="legend-item"><span class="dot grey"></span><span class="txt">挂起 Suspended</span></div>
     </div>
-
     <div class="game-grid">
       
       
@@ -52,15 +74,12 @@
           <a href="/games/%E8%83%A1%E9%97%B9%E5%8E%A8%E6%88%BF%E5%85%A8%E9%83%BD%E5%A5%BD%E5%90%83/" class="game-card-link">
             <div class="game-card">
               <div class="game-cover-wrapper">
-                <img src="/assets/images/games/xbox/%E8%83%A1%E9%97%B9%E5%8E%A8%E6%88%BF%E5%85%A8%E9%83%BD%E5%A5%BD%E5%90%83.jpeg" class="game-img" alt="胡闹厨房全都好吃" />
-                
+                <img src="/assets/images/games/xbox/%E8%83%A1%E9%97%B9%E5%8E%A8%E6%88%BF%E5%85%A8%E9%83%BD%E5%A5%BD%E5%90%83.jpeg" class="game-img" />
                 <div class="status-badge-floating" data-status="researching">
                   <span class="badge-score">5.0</span>
                 </div>
-
                 
               </div>
-              
               <div class="game-info-box-minimal">
                 <span class="game-title">胡闹厨房全都好吃</span>
                 <span class="platform-badge-tag" data-plat="xbox">xbox</span>
@@ -73,15 +92,12 @@
           <a href="/games/%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%E7%8E%8B%E5%9B%BD%E4%B9%8B%E6%B3%AA/" class="game-card-link">
             <div class="game-card">
               <div class="game-cover-wrapper">
-                <img src="/assets/images/games/switch/%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%E7%8E%8B%E5%9B%BD%E4%B9%8B%E6%B3%AA.jpg" class="game-img" alt="塞尔达传说王国之泪" />
-                
+                <img src="/assets/images/games/switch/%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%E7%8E%8B%E5%9B%BD%E4%B9%8B%E6%B3%AA.jpg" class="game-img" />
                 <div class="status-badge-floating" data-status="archived">
                   <span class="badge-score">5.0</span>
                 </div>
-
                 
               </div>
-              
               <div class="game-info-box-minimal">
                 <span class="game-title">塞尔达传说王国之泪</span>
                 <span class="platform-badge-tag" data-plat="switch">switch</span>
@@ -94,19 +110,12 @@
           <a href="/games/%E5%8F%8C%E5%BD%B1%E5%A5%87%E5%A2%83/" class="game-card-link">
             <div class="game-card">
               <div class="game-cover-wrapper">
-                <img src="/assets/images/games/xbox/%E5%8F%8C%E5%BD%B1%E5%A5%87%E5%A2%83.jpeg" class="game-img" alt="双影奇境" />
-                
+                <img src="/assets/images/games/xbox/%E5%8F%8C%E5%BD%B1%E5%A5%87%E5%A2%83.jpeg" class="game-img" />
                 <div class="status-badge-floating" data-status="archived">
                   <span class="badge-score">5.0</span>
                 </div>
-
-                
-                <div class="heart-badge-red">
-                  <svg viewBox="0 0 32 32" class="heart-icon-white"><path d="M16 28.5L14.1 26.8C7.3 20.6 2.8 16.5 2.8 11.5 2.8 7.4 6 4.2 10.1 4.2c2.3 0 4.5 1.1 5.9 2.8 1.4-1.7 3.6-2.8 5.9-2.8 4.1 0 7.3 3.2 7.3 7.3 0 5-4.5 9.1-11.3 15.3L16 28.5z" /></svg>
-                </div>
-                
+                <div class="heart-badge-red"><svg viewBox="0 0 32 32" style="fill:white;width:10px;"><path d="M16 28.5L14.1 26.8C7.3 20.6 2.8 16.5 2.8 11.5 2.8 7.4 6 4.2 10.1 4.2c2.3 0 4.5 1.1 5.9 2.8 1.4-1.7 3.6-2.8 5.9-2.8 4.1 0 7.3 3.2 7.3 7.3 0 5-4.5 9.1-11.3 15.3L16 28.5z" /></svg></div>
               </div>
-              
               <div class="game-info-box-minimal">
                 <span class="game-title">双影奇境</span>
                 <span class="platform-badge-tag" data-plat="xbox">xbox</span>
@@ -119,19 +128,12 @@
           <a href="/games/%E5%8F%8C%E4%BA%BA%E6%88%90%E8%A1%8C/" class="game-card-link">
             <div class="game-card">
               <div class="game-cover-wrapper">
-                <img src="/assets/images/games/xbox/%E5%8F%8C%E4%BA%BA%E6%88%90%E8%A1%8C.jpeg" class="game-img" alt="双人成行" />
-                
+                <img src="/assets/images/games/xbox/%E5%8F%8C%E4%BA%BA%E6%88%90%E8%A1%8C.jpeg" class="game-img" />
                 <div class="status-badge-floating" data-status="archived">
                   <span class="badge-score">5.0</span>
                 </div>
-
-                
-                <div class="heart-badge-red">
-                  <svg viewBox="0 0 32 32" class="heart-icon-white"><path d="M16 28.5L14.1 26.8C7.3 20.6 2.8 16.5 2.8 11.5 2.8 7.4 6 4.2 10.1 4.2c2.3 0 4.5 1.1 5.9 2.8 1.4-1.7 3.6-2.8 5.9-2.8 4.1 0 7.3 3.2 7.3 7.3 0 5-4.5 9.1-11.3 15.3L16 28.5z" /></svg>
-                </div>
-                
+                <div class="heart-badge-red"><svg viewBox="0 0 32 32" style="fill:white;width:10px;"><path d="M16 28.5L14.1 26.8C7.3 20.6 2.8 16.5 2.8 11.5 2.8 7.4 6 4.2 10.1 4.2c2.3 0 4.5 1.1 5.9 2.8 1.4-1.7 3.6-2.8 5.9-2.8 4.1 0 7.3 3.2 7.3 7.3 0 5-4.5 9.1-11.3 15.3L16 28.5z" /></svg></div>
               </div>
-              
               <div class="game-info-box-minimal">
                 <span class="game-title">双人成行</span>
                 <span class="platform-badge-tag" data-plat="xbox">xbox</span>
@@ -144,19 +146,12 @@
           <a href="/games/%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF/" class="game-card-link">
             <div class="game-card">
               <div class="game-cover-wrapper">
-                <img src="/assets/images/games/switch/%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF.jpg" class="game-img" alt="塞尔达传说旷野之息" />
-                
+                <img src="/assets/images/games/switch/%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF.jpg" class="game-img" />
                 <div class="status-badge-floating" data-status="archived">
                   <span class="badge-score">5.0</span>
                 </div>
-
-                
-                <div class="heart-badge-red">
-                  <svg viewBox="0 0 32 32" class="heart-icon-white"><path d="M16 28.5L14.1 26.8C7.3 20.6 2.8 16.5 2.8 11.5 2.8 7.4 6 4.2 10.1 4.2c2.3 0 4.5 1.1 5.9 2.8 1.4-1.7 3.6-2.8 5.9-2.8 4.1 0 7.3 3.2 7.3 7.3 0 5-4.5 9.1-11.3 15.3L16 28.5z" /></svg>
-                </div>
-                
+                <div class="heart-badge-red"><svg viewBox="0 0 32 32" style="fill:white;width:10px;"><path d="M16 28.5L14.1 26.8C7.3 20.6 2.8 16.5 2.8 11.5 2.8 7.4 6 4.2 10.1 4.2c2.3 0 4.5 1.1 5.9 2.8 1.4-1.7 3.6-2.8 5.9-2.8 4.1 0 7.3 3.2 7.3 7.3 0 5-4.5 9.1-11.3 15.3L16 28.5z" /></svg></div>
               </div>
-              
               <div class="game-info-box-minimal">
                 <span class="game-title">塞尔达传说旷野之息</span>
                 <span class="platform-badge-tag" data-plat="switch">switch</span>
@@ -171,11 +166,22 @@
   <nav class="topic-nav right-side">
     <div class="topic-label">CATEGORIES</div>
     <ul class="filter-menu">
-      <li><label for="all" class="lab-all">全部 <span>All</span></label></li>
-      <li><label for="f-action" class="lab-action">入破 <span>Action</span></label></li>
-      <li><label for="f-strategy" class="lab-strategy">筹海 <span>Strategy</span></label></li>
-      <li><label for="f-narrative" class="lab-narrative">游仙 <span>Narrative</span></label></li>
-      <li><label for="f-coop" class="lab-coop">合欢 <span>Co-op</span></label></li>
+      
+        
+        <li><label for="all" class="lab-all">全部 <span>All</span></label></li>
+      
+        
+        <li><label for="f-action" class="lab-action">入破 <span>Action</span></label></li>
+      
+        
+        <li><label for="f-strategy" class="lab-strategy">筹海 <span>Strategy</span></label></li>
+      
+        
+        <li><label for="f-narrative" class="lab-narrative">游仙 <span>Narrative</span></label></li>
+      
+        
+        <li><label for="f-coop" class="lab-coop">合欢 <span>Co-op</span></label></li>
+      
     </ul>
   </nav>
 </div>

@@ -3,8 +3,7 @@ layout: post
 title: 我的赛博编年史
 date: 2025-01-13
 description: 
-categories: 叨叨令
-languages: ["zh"]
+category: thoughts
 thumbnail: assets/images/thoughts/2025-01-03/qq.png
 ---
 

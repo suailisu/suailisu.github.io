@@ -4,8 +4,7 @@ title: 美国 FICA 税详解
 date: 2024-12-29 15:36:00
 description: 
 tags: 税务
-categories: 掷金钱
-languages: ["zh"]
+category: finance
 thumbnail: assets/images/finance/fica/fica.webp
 pretty_table: true
 toc:

@@ -1,0 +1,104 @@
+input[type="radio"] { display: none !important; }
+
+.topic-nav.right-side { width: 160px; position: sticky; top: 100px; height: fit-content; }
+.topic-label { font-size: 0.65rem; color: #bbb; letter-spacing: 2px; margin-bottom: 20px; padding-left: 15px; }
+.filter-menu { list-style: none; padding: 0; margin: 0; border-left: 1px solid #eee; }
+
+.filter-menu label {
+    display: block; padding: 12px 0 12px 18px;
+    color: #888; font-size: 0.9rem; cursor: pointer;
+    border-left: 2px solid transparent; margin-left: -1px; transition: 0.3s;
+}
+
+/* 英文：默认 0.4 透明度复刻 */
+.filter-menu label span { font-size: 0.7rem; opacity: 0.4; margin-left: 6px; font-weight: 400 !important; transition: 0.3s; }
+.filter-menu label:hover { color: #b7d12a; }
+.filter-menu label:hover span { opacity: 0.6; }
+
+/* 选中高亮逻辑：中文变蓝加粗 */
+#all:checked ~ .topic-nav .lab-all,
+#f-science:checked ~ .topic-nav .lab-science,
+#f-growth:checked ~ .topic-nav .lab-growth,
+#f-thinking:checked ~ .topic-nav .lab-thinking,
+#f-society:checked ~ .topic-nav .lab-society,
+#f-arts:checked ~ .topic-nav .lab-arts,
+#f-action:checked ~ .topic-nav .lab-action,
+#f-strategy:checked ~ .topic-nav .lab-strategy,
+#f-narrative:checked ~ .topic-nav .lab-narrative,
+#f-coop:checked ~ .topic-nav .lab-coop {
+    color: #0076df !important; font-weight: 700; border-left: 2px solid #0076df !important;
+}
+
+/* 选中时英文稍微变亮 */
+input:checked ~ .topic-nav label span { opacity: 0.7; }
+
+/* assets/css/sidebar-shared.css */
+input[type="radio"] { display: none !important; }
+
+/* 桌面端保持原样 */
+.topic-nav.right-side { width: 160px; position: sticky; top: 100px; height: fit-content; }
+
+/* 默认隐藏开关和遮罩 */
+.sidebar-toggle-input, .content-overlay { display: none; }
+
+/* 移动端 (768px 以下) 样式 */
+@media (max-width: 768px) {
+    /* 1. 侧边栏：变身为隐藏在右侧的抽屉 */
+    .topic-nav {
+        display: block !important;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 260px;
+        height: 100vh;
+        background: #fff;
+        z-index: 2000;
+        padding: 80px 20px;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+        /* 初始状态：完全推到屏幕右侧外 */
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* 2. 当开关被选中时，滑入侧边栏 */
+    #sidebar-toggle:checked ~ * .topic-nav {
+        transform: translateX(0);
+    }
+
+    /* 3. “三个点”悬浮按钮：彻底告别“方框”感 */
+    .mobile-sidebar-trigger {
+        display: flex !important;
+        position: fixed;
+        right: 20px;
+        bottom: 30px;
+        width: 50px;
+        height: 50px;
+        background-color: #0076df; /* 主题蓝 */
+        color: white !important;
+        border-radius: 50%; /* 变成圆形 */
+        align-items: center;
+        justify-content: center;
+        z-index: 2001;
+        box-shadow: 0 4px 12px rgba(0,118,223,0.4);
+        cursor: pointer;
+        border: none !important; /* 强制移除你看到的方框边框 */
+        outline: none !important;
+    }
+
+    /* 图标大小控制 */
+    .mobile-sidebar-trigger i {
+        font-size: 20px;
+    }
+
+    /* 4. 遮罩层：打开菜单时背景变暗，且点击可关闭 */
+    #sidebar-toggle:checked ~ .content-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.3);
+        z-index: 1999;
+    }
+}

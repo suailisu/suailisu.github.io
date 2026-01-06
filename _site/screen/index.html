@@ -23,17 +23,25 @@
     <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
 </head>
 <body>
-    <nav class="container py-4">
-        
-        
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle-input" style="display:none;">
+    
+    <label for="sidebar-toggle" class="content-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.2); z-index:1999;"></label>
 
-        <a href="/" class="me-4 ">爱力酥</a>
-        <a href="/blog/" class="me-4 ">青玉案</a>
-        <a href="/reading/" class="me-4 ">字字锦</a>
-        <a href="/screen/" class="me-4 active">苏幕遮</a>
-        <a href="/games/" class="me-4 ">破阵乐</a>  
-        <a href="/moments/" class="me-4 ">相见欢</a>  
-    </nav>
+    <label for="sidebar-toggle" class="mobile-sidebar-trigger d-md-none">
+        <i class="fa-solid fa-ellipsis"></i>
+    </label>
+    
+    <nav class="container py-4">
+    
+    
+
+    <a href="/" class="me-4 ">爱力酥</a>
+    <a href="/blog/" class="me-4 ">青玉案</a>
+    <a href="/reading/" class="me-4 ">字字锦</a>
+    <a href="/screen/" class="me-4 active">苏幕遮</a>
+    <a href="/games/" class="me-4 ">破阵乐</a>  
+    <a href="/moments/" class="me-4 ">相见欢</a>  
+</nav>
     
     <hr>
     
