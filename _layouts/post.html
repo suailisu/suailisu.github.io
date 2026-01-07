@@ -3,29 +3,73 @@ layout: default
 ---
 <link rel="stylesheet" href="{{ '/assets/css/post.css' | relative_url }}">
 
-<article class="post-main">
-  <header class="post-header" style="margin-bottom: 40px;">
-    <h1 style="font-size: 2.5rem; font-weight: 800;">{{ page.title }}</h1>
-    <div class="post-meta" style="color: #999;">
-      {{ page.date | date: "%Y年%m月%d日" }} &nbsp;&middot;&nbsp; {{ page.category | first }}
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<article class="container post-container">
+  <div class="row justify-content-center">
+    <div class="col-md-11 col-lg-10">
+      
+      <div class="back-link-top mb-4">
+        <a href="/blog/" class="back-link">← 返回青玉案</a>
+      </div>
+
+      <div class="post-detail-header d-flex flex-column flex-md-row align-items-start mb-5 pb-5 border-bottom">
+        {% if page.thumbnail %}
+        <div class="post-detail-cover me-md-5 mb-4 mb-md-0">
+          <img src="{{ page.thumbnail | relative_url }}" alt="{{ page.title }}" class="img-fluid shadow-sm rounded" data-zoomable>
+        </div>
+        {% endif %}
+
+        <div class="post-detail-info flex-grow-1">
+          <h1 class="post-title-main mb-3">{{ page.title }}</h1>
+          
+          <div class="post-meta-box">
+            <div class="meta-line">
+              <span class="label">日期:</span> 
+              <span class="meta-value">{{ page.date | date: "%Y年%m月%d日" }}</span>
+            </div>
+            <div class="meta-line">
+              <span class="label">分类:</span> 
+              <span class="meta-value">#{{ page.category }}</span>
+            </div>
+            {% if page.description %}
+            <div class="meta-line mt-3">
+              <p class="description-text">{{ page.description }}</p>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <div class="post-content-body">
+        {{ content }}
+      </div>
+
+      <div class="mt-5 pt-5 border-top">
+        <div class="giscus-container">
+          <script src="https://giscus.app/client.js"
+              data-repo="{{ site.giscus.repo }}"
+              data-repo-id="{{ site.giscus.repo_id }}"
+              data-category="{{ site.giscus.category }}"
+              data-category-id="{{ site.giscus.category_id }}"
+              data-mapping="pathname"
+              data-theme="light"
+              data-lang="zh-CN"
+              crossorigin="anonymous" async>
+          </script>
+        </div>
+      </div>
+
     </div>
-  </header>
-
-  <div class="post-content-body">
-    {{ content }}
-  </div>
-
-  <hr>
-  <div class="giscus-container">
-    <script src="https://giscus.app/client.js"
-        data-repo="{{ site.giscus.repo }}"
-        data-repo-id="{{ site.giscus.repo_id }}"
-        data-category="{{ site.giscus.category }}"
-        data-category-id="{{ site.giscus.category_id }}"
-        data-mapping="pathname"
-        data-theme="light"
-        data-lang="zh-CN"
-        crossorigin="anonymous" async>
-    </script>
   </div>
 </article>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.mediumZoom) {
+      mediumZoom('[data-zoomable]', { margin: 24, background: 'rgba(255, 255, 255, 0.9)' });
+    }
+  });
+</script>
