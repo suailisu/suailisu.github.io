@@ -11,6 +11,7 @@ games:
   - 入破:Action:action
   - 筹海:Strategy:strategy
   - 游仙:Narrative:narrative
+  - 判微:Puzzle:puzzle
   - 合欢:Co-op:coop
 
 blog:

@@ -36,6 +36,7 @@
 #f-action:checked ~ .games-content .game-item:not([data-cat="action"]),
 #f-strategy:checked ~ .games-content .game-item:not([data-cat="strategy"]),
 #f-narrative:checked ~ .games-content .game-item:not([data-cat="narrative"]),
+#f-puzzle:checked ~ .games-content .game-item:not([data-cat="puzzle"]),
 #f-coop:checked ~ .games-content .game-item:not([data-cat="coop"]) { 
     display: none; 
 }
