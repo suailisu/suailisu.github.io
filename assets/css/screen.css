@@ -195,6 +195,16 @@
     color: #bbb;
 }
 
+.stats-box {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 50px;
+    height: 300px; /* PC端高度 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
 /* 6. 响应式适配 */
 @media (max-width: 768px) {
     .screen-layout {
@@ -228,5 +238,11 @@
         transform: none;
         color: #0076df;
         border-bottom: 2px solid #0076df; /* 移动端用底边蓝线表示激活 */
+    }
+
+    .stats-box {
+        height: 240px; /* 移动端高度稍微减小 */
+        margin: 0 10px 40px 10px;
+        padding: 15px;
     }
 }

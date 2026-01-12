@@ -48,9 +48,15 @@
     <main class="container">
         
 <div class="screen-layout">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <nav class="year-nav">
     <div class="nav-title">时光机</div>
     <ul>
+      
+        
+        
+          <li><a href="#year-2026">2026</a></li>
+        
       
         
         
@@ -173,7 +179,47 @@
   </nav>
 
   <div class="screen-content">
+    <div class="stats-box">
+      <canvas id="movieChart"></canvas>
+    </div>
+
     
+    
+      
+      
+        <section id="year-2026" class="year-section">
+          <h2 class="year-sticky-title">2026</h2>
+          <div class="movie-grid">
+            
+            
+              
+
+
+
+<div class="movie-card">
+  <a href="/screen/%E9%81%93%E6%A0%BC%E6%8B%89%E6%96%AF%E8%A2%AB%E5%8F%96%E6%B6%88%E4%BA%86/">
+    <div class="poster-wrapper">
+      <img src="/assets/images/screen/2026/%E9%81%93%E6%A0%BC%E6%8B%89%E6%96%AF%E8%A2%AB%E5%8F%96%E6%B6%88%E4%BA%86.webp" alt="道格拉斯被取消了" loading="lazy" />
+      
+        <div class="rating-badge">
+          
+            ⭐ 5
+          
+        </div>
+      
+    </div>
+  </a>
+  <div class="movie-info">
+    <h3>道格拉斯被取消了</h3>
+    
+      <time>01-10</time>
+    
+  </div>
+</div>
+            
+          </div>
+        </section>
+      
     
       
       
@@ -303,6 +349,31 @@
     <h3>都是她的错</h3>
     
       <time>11-17</time>
+    
+  </div>
+</div>
+            
+              
+
+
+
+<div class="movie-card">
+  <a href="/screen/%E4%B9%94%E6%B2%BB%E5%92%8C%E6%9B%BC%E8%BF%AA%E7%9A%84%E5%A4%B4%E5%A9%9A%E7%94%9F%E6%B4%BB/">
+    <div class="poster-wrapper">
+      <img src="/assets/images/screen/2025/%E4%B9%94%E6%B2%BB%E5%92%8C%E6%9B%BC%E8%BF%AA%E7%9A%84%E5%A4%B4%E5%A9%9A%E7%94%9F%E6%B4%BB.webp" alt="乔治和曼迪的头婚生活" loading="lazy" />
+      
+        <div class="rating-badge">
+          
+            ⭐ 4
+          
+        </div>
+      
+    </div>
+  </a>
+  <div class="movie-info">
+    <h3>乔治和曼迪的头婚生活</h3>
+    
+      <time>10-29</time>
     
   </div>
 </div>
@@ -6983,6 +7054,11 @@
       <div class="movie-grid">
         
         
+          
+          
+        
+          
+          
         
           
           
@@ -8903,6 +8979,51 @@
     </section>
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const ctx = document.getElementById('movieChart').getContext('2d');
+    
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: [2019,2020,2021,2022,2023,2024,2025,2026],
+            datasets: [
+                {
+                    label: '电影',
+                    data: [5,12,30,14,72,34,9,0],
+                    borderColor: '#0076df',
+                    backgroundColor: 'rgba(0, 118, 223, 0.1)',
+                    borderWidth: 3,
+                    tension: 0.4,
+                    fill: true
+                },
+                {
+                    label: '剧集',
+                    data: [2,4,5,3,26,18,17,1],
+                    borderColor: '#b7d12a',
+                    backgroundColor: 'rgba(183, 209, 42, 0.1)',
+                    borderWidth: 3,
+                    tension: 0.4,
+                    fill: true
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { position: 'top', align: 'end' }
+            },
+            scales: {
+                y: { beginAtZero: true, grid: { color: '#f5f5f5' } },
+                x: { grid: { display: false } }
+            }
+        }
+    });
+});
+</script>
+
 
     </main>
 

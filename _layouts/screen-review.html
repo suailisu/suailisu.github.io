@@ -21,12 +21,11 @@ layout: default
           <h1 class="subject-title mb-3">{{ page.title }}</h1>
           
           <div class="subject-meta">
-            <div class="meta-line"><span class="label">类型:</span> {{ page.category }}</div>
-            <div class="meta-line"><span class="label">日期:</span> {{ page.date | date: "%Y-%m-%d" }}</div>
+            <!-- <div class="meta-line"><span class="label">类型:</span> {{ page.category }}</div>
+            <div class="meta-line"><span class="label">日期:</span> {{ page.date | date: "%Y-%m-%d" }}</div> -->
             
             {% if page.rating %}
             <div class="meta-line d-flex align-items-center mt-3">
-              <span class="label me-2">评分:</span>
               <span class="star-rating">
                 {% assign r = page.rating | plus: 0 %}
                 {% if r >= 6 %}
@@ -45,6 +44,8 @@ layout: default
             </div>
             {% endif %}
           </div>
+          <span class="me-2" style="color: var(--global-hover-color); font-weight: 600;">{{ page.category }}</span>
+          <span class="badge bg-light text-dark">{{ page.date | date: "%Y.%m.%d" }}</span>
         </div>
       </div>
 
