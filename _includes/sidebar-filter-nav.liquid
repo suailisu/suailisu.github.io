@@ -1,0 +1,30 @@
+{% comment %}
+  Renders sidebar filter navigation menu.
+  Use: {% include sidebar-filter-nav.liquid sidebar_key="blog" label="INDEX / 索引" %}
+  Or: {% include sidebar-filter-nav.liquid sidebar_key="games" label="CATEGORIES" %}
+{% endcomment %}
+{% assign items = site.data.sidebar[include.sidebar_key] %}
+{% assign use_all_id = false %}
+{% if include.sidebar_key == "games" or include.sidebar_key == "reading" %}
+  {% assign use_all_id = true %}
+{% endif %}
+
+<nav class="topic-nav right-side">
+  <div class="topic-label">{{ include.label }}</div>
+  <ul class="filter-menu">
+    {% for item in items %}
+      {% assign parts = item | split: ":" %}
+      {% assign slug = parts[2] %}
+      {% if use_all_id and slug == "all" %}
+        {% assign input_id = "all" %}
+      {% else %}
+        {% assign input_id = "f-" | append: slug %}
+      {% endif %}
+      <li>
+        <label for="{{ input_id }}" class="lab-{{ slug }}">
+          {{ parts[0] }} <span>{{ parts[1] }}</span>
+        </label>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

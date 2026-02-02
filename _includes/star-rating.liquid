@@ -1,0 +1,16 @@
+{% comment %}
+  Renders star rating display. Use with: {% include star-rating.liquid rating=page.rating %}
+  Optional: badge_class - extra classes for LIKED badge (e.g. "ms-2")
+{% endcomment %}
+{% assign r = include.rating | plus: 0 %}
+<span class="star-rating">
+  {% if r >= 6 %}
+    {% for i in (1..5) %}<i class="fas fa-star" style="color: var(--liked-red);"></i>{% endfor %}
+    <span class="badge-liked {{ include.badge_class | default: '' }}">LIKED</span>
+  {% else %}
+    {% for i in (1..5) %}
+      {% if i <= r %}<i class="fas fa-star" style="color: #ffb400;"></i>
+      {% else %}<i class="far fa-star text-muted"></i>{% endif %}
+    {% endfor %}
+  {% endif %}
+</span>

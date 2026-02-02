@@ -16,3 +16,53 @@
 #f-thinking:checked ~ .reading-content .book-item:not([data-cat="thinking"]),
 #f-society:checked ~ .reading-content .book-item:not([data-cat="society"]),
 #f-arts:checked ~ .reading-content .book-item:not([data-cat="arts"]) { display: none; }
+
+/* Reading detail page (reading-review layout) */
+.reading-detail .book-detail-cover {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.reading-detail .book-detail-cover img {
+  border: 1px solid #eee;
+  transition: transform 0.5s ease;
+}
+
+.reading-detail .book-detail-cover img:hover {
+  transform: rotate(-2deg) scale(1.02);
+}
+
+.reading-detail .book-detail-info h1 {
+  color: var(--global-theme-color);
+}
+
+.reading-detail .book-tags-list span {
+  color: var(--global-hover-color);
+  font-weight: 600;
+}
+
+.reading-detail .post-content-body {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.reading-detail .post-content-body h2 {
+  margin-top: 2rem;
+  font-weight: 700;
+  color: #333;
+  border-left: 4px solid var(--global-theme-color);
+  padding-left: 15px;
+}
+
+.reading-detail .post-content-body blockquote {
+  padding: 10px 20px;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  border-left: 4px solid var(--global-hover-color);
+  font-style: italic;
+}
+
+.reading-detail .reading-back-link {
+  color: var(--global-dim-color);
+  text-decoration: none;
+}

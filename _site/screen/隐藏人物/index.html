@@ -45,14 +45,14 @@
     <div class="col-md-11 col-lg-10">
       
       <div class="douban-subject-header d-flex flex-column flex-md-row">
-      <div class="subject-poster me-md-5 mb-4 mb-md-0">
-        <img 
-          src="/assets/images/screen/2023/yin_cang_ren_wu.webp" 
-          alt="隐藏人物" 
-          class="img-fluid rounded shadow-sm clickable-poster"
-          data-zoomable
-        >
-      </div>
+        <div class="subject-poster me-md-5 mb-4 mb-md-0">
+          <img
+            src="/assets/images/screen/2023/yin_cang_ren_wu.webp"
+            alt="隐藏人物"
+            class="img-fluid rounded shadow-sm clickable-poster"
+            data-zoomable
+          >
+        </div>
 
         <div class="subject-info flex-grow-1">
           <h1 class="subject-title mb-3">隐藏人物</h1>
@@ -63,34 +63,33 @@
             
             
             <div class="meta-line d-flex align-items-center mt-3">
-              <span class="star-rating">
-                
-                
-                  
-                    <i class="fas fa-star" style="color: #ffb400;"></i>
-                    
-                  
-                    <i class="fas fa-star" style="color: #ffb400;"></i>
-                    
-                  
-                    <i class="fas fa-star" style="color: #ffb400;"></i>
-                    
-                  
-                    <i class="fas fa-star" style="color: #ffb400;"></i>
-                    
-                  
-                    <i class="fas fa-star" style="color: #ffb400;"></i>
-                    
-                  
-                
-              </span>
-              <!-- <span class="ms-2 rating-num ">
-                5.0
-              </span> -->
+              
+
+<span class="star-rating">
+  
+    
+      <i class="fas fa-star" style="color: #ffb400;"></i>
+      
+    
+      <i class="fas fa-star" style="color: #ffb400;"></i>
+      
+    
+      <i class="fas fa-star" style="color: #ffb400;"></i>
+      
+    
+      <i class="fas fa-star" style="color: #ffb400;"></i>
+      
+    
+      <i class="fas fa-star" style="color: #ffb400;"></i>
+      
+    
+  
+</span>
+
             </div>
             
           </div>
-          <span class="me-2" style="color: var(--global-hover-color); font-weight: 600;">电影</span>
+          <span class="me-2 subject-category">电影</span>
           <span class="badge bg-light text-dark">2023.09.30</span>
         </div>
       </div>
@@ -110,18 +109,22 @@
   </div>
 </article>
 
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    mediumZoom('[data-zoomable]', {
-      margin: 24,
-      background: 'rgba(255, 255, 255, 0.9)',
-      scrollOffset: 0,
-    })
-  })
+    if (window.mediumZoom) {
+      mediumZoom('[data-zoomable]', {
+        margin: 24,
+        background: 'rgba(255, 255, 255, 0.9)',
+        scrollOffset: 0
+      });
+    }
+  });
 </script>
+
     </main>
 
-    <footer class="container" style="margin-top: 50px; color: #999; font-size: 0.8em; padding-bottom: 30px;">
+    <footer class="container site-footer">
         &copy; 2026 素爱力酥
     </footer>
 </body>

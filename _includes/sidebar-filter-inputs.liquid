@@ -1,0 +1,22 @@
+{% comment %}
+  Renders sidebar filter radio inputs.
+  Use: {% include sidebar-filter-inputs.liquid sidebar_key="blog" %}
+  sidebar_key: "blog" | "games" | "reading"
+  Blog uses f-{slug}; games/reading use "all" for all, f-{slug} for others.
+{% endcomment %}
+{% assign items = site.data.sidebar[include.sidebar_key] %}
+{% assign use_all_id = false %}
+{% if include.sidebar_key == "games" or include.sidebar_key == "reading" %}
+  {% assign use_all_id = true %}
+{% endif %}
+
+{% for item in items %}
+  {% assign parts = item | split: ":" %}
+  {% assign slug = parts[2] %}
+  {% if use_all_id and slug == "all" %}
+    {% assign input_id = "all" %}
+  {% else %}
+    {% assign input_id = "f-" | append: slug %}
+  {% endif %}
+  <input type="radio" name="filter" id="{{ input_id }}" {% if slug == 'all' %}checked{% endif %}>
+{% endfor %}

@@ -48,8 +48,16 @@ nav a.active {
 }
 
 /* 全局分隔线 */
-hr { 
-    border: 0; 
-    border-top: 1px solid #eee; 
-    margin: 1.5rem 0; 
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 1.5rem 0;
+}
+
+/* 页脚 */
+.site-footer {
+  margin-top: 50px;
+  color: #999;
+  font-size: 0.8em;
+  padding-bottom: 30px;
 }

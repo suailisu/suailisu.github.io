@@ -37,7 +37,12 @@
 }
 
 .subject-meta .label {
-    color: #999;
+  color: #999;
+}
+
+.subject-category {
+  color: var(--theme-green);
+  font-weight: 600;
 }
 
 /* LIKED 状态 */

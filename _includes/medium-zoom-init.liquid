@@ -1,0 +1,15 @@
+{% comment %}
+  Initializes medium-zoom on [data-zoomable] elements.
+  Requires medium-zoom to be loaded (in default layout head).
+{% endcomment %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.mediumZoom) {
+      mediumZoom('[data-zoomable]', {
+        margin: 24,
+        background: 'rgba(255, 255, 255, 0.9)',
+        scrollOffset: 0
+      });
+    }
+  });
+</script>
