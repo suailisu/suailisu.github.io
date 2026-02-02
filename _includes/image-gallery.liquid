@@ -1,9 +1,10 @@
 <style>
-    .image-gallery {overflow: auto; margin-left: -1%!important;}
-    .image-gallery img {width: 100%; float: left; display: block; margin: 0 0 1% 1%; width: 19%; text-align: center; text-decoration: none!important;}
+    .image-gallery { overflow: auto; margin-left: -1% !important; }
+    .image-gallery .image-gallery-item { width: 19%; float: left; margin: 0 0 1% 1%; }
+    .image-gallery img { width: 100%; display: block; text-align: center; text-decoration: none !important; }
   </style>
   
-  <div class="grid">
+  <div class="image-gallery">
   {% for file in site.static_files %}
     {% if file.path contains include.folder %}
       {% if file.extname == '.jpg' or 
@@ -13,7 +14,7 @@
         file.extname == '.png' or 
         file.extname == '.JPEG' %}
   
-        <div class="grid-item">
+        <div class="image-gallery-item">
         <img src="{{ file.path }}" alt="{{ filename }}" data-zoomable width="100%" loading="lazy"/>
         </div>  
       {% endif %}

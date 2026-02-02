@@ -8,14 +8,14 @@ layout: default
     <div class="col-md-11 col-lg-10">
       
       <div class="douban-subject-header d-flex flex-column flex-md-row">
-      <div class="subject-poster me-md-5 mb-4 mb-md-0">
-        <img 
-          src="{{ page.image | relative_url }}" 
-          alt="{{ page.title }}" 
-          class="img-fluid rounded shadow-sm clickable-poster"
-          data-zoomable
-        >
-      </div>
+        <div class="subject-poster me-md-5 mb-4 mb-md-0">
+          <img
+            src="{{ page.image | relative_url }}"
+            alt="{{ page.title }}"
+            class="img-fluid rounded shadow-sm clickable-poster"
+            data-zoomable
+          >
+        </div>
 
         <div class="subject-info flex-grow-1">
           <h1 class="subject-title mb-3">{{ page.title }}</h1>
@@ -26,25 +26,11 @@ layout: default
             
             {% if page.rating %}
             <div class="meta-line d-flex align-items-center mt-3">
-              <span class="star-rating">
-                {% assign r = page.rating | plus: 0 %}
-                {% if r >= 6 %}
-                  {% for i in (1..5) %}<i class="fas fa-star" style="color: #ff4d4f;"></i>{% endfor %}
-                  <span class="badge-liked ms-2">LIKED</span>
-                {% else %}
-                  {% for i in (1..5) %}
-                    {% if i <= r %}<i class="fas fa-star" style="color: #ffb400;"></i>
-                    {% else %}<i class="far fa-star text-muted"></i>{% endif %}
-                  {% endfor %}
-                {% endif %}
-              </span>
-              <!-- <span class="ms-2 rating-num {% if r >= 6 %}text-liked{% endif %}">
-                {% if r >= 6 %}6.0{% else %}{{ r }}.0{% endif %}
-              </span> -->
+              {% include star-rating.liquid rating=page.rating badge_class="ms-2" %}
             </div>
             {% endif %}
           </div>
-          <span class="me-2" style="color: var(--global-hover-color); font-weight: 600;">{{ page.category }}</span>
+          <span class="me-2 subject-category">{{ page.category }}</span>
           <span class="badge bg-light text-dark">{{ page.date | date: "%Y.%m.%d" }}</span>
         </div>
       </div>
@@ -63,12 +49,4 @@ layout: default
   </div>
 </article>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    mediumZoom('[data-zoomable]', {
-      margin: 24,
-      background: 'rgba(255, 255, 255, 0.9)',
-      scrollOffset: 0,
-    })
-  })
-</script>
+{% include medium-zoom-init.liquid %}

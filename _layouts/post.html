@@ -66,10 +66,4 @@ layout: default
   </div>
 </article>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    if (window.mediumZoom) {
-      mediumZoom('[data-zoomable]', { margin: 24, background: 'rgba(255, 255, 255, 0.9)' });
-    }
-  });
-</script>
+{% include medium-zoom-init.liquid %}

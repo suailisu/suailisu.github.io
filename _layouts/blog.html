@@ -5,11 +5,7 @@ layout: default
 <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
 
 <div class="blog-container">
-  {% for item in site.data.sidebar.blog %}
-    {% assign parts = item | split: ":" %}
-    {% assign slug = parts[2] %}
-    <input type="radio" name="filter" id="f-{{ slug }}" {% if slug == 'all' %}checked{% endif %}>
-  {% endfor %}
+  {% include sidebar-filter-inputs.liquid sidebar_key="blog" %}
 
   <main class="blog-content">
     <ul class="post-list">
@@ -38,18 +34,5 @@ layout: default
     </ul>
   </main>
 
-  <nav class="topic-nav right-side">
-    <div class="topic-label">INDEX / 索引</div>
-    <ul class="filter-menu">
-      {% for item in site.data.sidebar.blog %}
-        {% assign parts = item | split: ":" %}
-        {% assign slug = parts[2] %}
-        <li>
-          <label for="f-{{ slug }}" class="lab-{{ slug }}">
-            {{ parts[0] }} <span>{{ parts[1] }}</span>
-          </label>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
+  {% include sidebar-filter-nav.liquid sidebar_key="blog" label="INDEX / 索引" %}
 </div>

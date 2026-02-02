@@ -7,10 +7,7 @@ permalink: /reading/
 <link rel="stylesheet" href="{{ '/assets/css/reading.css' | relative_url }}">
 
 <div class="reading-container">
-  {% for item in site.data.sidebar.reading %}
-    {% assign parts = item | split: ":" %}
-    <input type="radio" name="filter" id="{% if parts[2] == 'all' %}all{% else %}f-{{ parts[2] }}{% endif %}" {% if parts[2] == 'all' %}checked{% endif %}>
-  {% endfor %}
+  {% include sidebar-filter-inputs.liquid sidebar_key="reading" %}
 
   <main class="reading-content">
     <div class="book-grid">
@@ -29,13 +26,5 @@ permalink: /reading/
     </div>
   </main>
 
-  <nav class="topic-nav right-side">
-    <div class="topic-label">CATEGORIES</div>
-    <ul class="filter-menu">
-      {% for item in site.data.sidebar.reading %}
-        {% assign parts = item | split: ":" %}
-        <li><label for="{% if parts[2] == 'all' %}all{% else %}f-{{ parts[2] }}{% endif %}" class="lab-{{ parts[2] }}">{{ parts[0] }} <span>{{ parts[1] }}</span></label></li>
-      {% endfor %}
-    </ul>
-  </nav>
+  {% include sidebar-filter-nav.liquid sidebar_key="reading" label="CATEGORIES" %}
 </div>

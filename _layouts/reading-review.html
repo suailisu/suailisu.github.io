@@ -3,7 +3,7 @@ layout: default
 ---
 <link rel="stylesheet" href="{{ '/assets/css/reading.css' | relative_url }}">
 
-<article class="container mt-5 mb-5">
+<article class="container mt-5 mb-5 reading-detail">
   <div class="row justify-content-center">
     <div class="col-md-10">
       <div class="book-detail-header d-flex flex-column flex-md-row align-items-start mb-5 pb-5 border-bottom">
@@ -13,7 +13,7 @@ layout: default
         </div>
 
         <div class="book-detail-info">
-          <h1 class="display-5 fw-bold mb-3" style="color: var(--global-theme-color);">{{ page.title }}</h1>
+          <h1 class="display-5 fw-bold mb-3">{{ page.title }}</h1>
           
           <div class="d-flex align-items-center mb-4">
             <span class="fs-5 text-secondary me-3">{{ page.authors | join: " / " }}</span>
@@ -22,50 +22,21 @@ layout: default
 
           <div class="book-tags-list">
             {% for tag in page.tags %}
-              <span class="me-2" style="color: var(--global-hover-color); font-weight: 600;">#{{ tag }}</span>
+              <span class="me-2">#{{ tag }}</span>
             {% endfor %}
           </div>
         </div>
       </div>
 
-      <div class="post-content-body" style="font-size: 1.1rem; line-height: 1.8;">
+      <div class="post-content-body">
         {{ content }}
       </div>
 
       <div class="mt-5 pt-4">
-        <a href="/reading/" class="text-decoration-none" style="color: var(--global-dim-color);">
+        <a href="/reading/" class="text-decoration-none reading-back-link">
           ← 返回字字锦
         </a>
       </div>
     </div>
   </div>
 </article>
-
-<style>
-  /* 针对详情页的额外微调 */
-  .book-detail-cover {
-    width: 200px;
-    flex-shrink: 0;
-  }
-  .book-detail-cover img {
-    border: 1px solid #eee;
-    transition: transform 0.5s ease;
-  }
-  .book-detail-cover img:hover {
-    transform: rotate(-2deg) scale(1.02);
-  }
-  .post-content-body h2 {
-    margin-top: 2rem;
-    font-weight: 700;
-    color: #333;
-    border-left: 4px solid var(--global-theme-color);
-    padding-left: 15px;
-  }
-  .post-content-body blockquote {
-    padding: 10px 20px;
-    margin: 20px 0;
-    background-color: #f9f9f9;
-    border-left: 4px solid var(--global-hover-color);
-    font-style: italic;
-  }
-</style>
