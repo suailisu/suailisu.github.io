@@ -2,9 +2,30 @@
 .reading-content { flex: 1; }
 .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 45px 35px; }
 .book-card { text-decoration: none !important; }
-.book-cover-wrapper { aspect-ratio: 1/1.45; box-shadow: 5px 10px 20px rgba(0,0,0,0.08); transition: 0.4s; overflow: hidden; }
+.book-cover-wrapper { position: relative; aspect-ratio: 1/1.45; box-shadow: 5px 10px 20px rgba(0,0,0,0.08); transition: 0.4s; overflow: hidden; background: #f4f4f4; }
 .book-card:hover .book-cover-wrapper { transform: translateY(-8px); }
 .book-img { width: 100%; height: 100%; object-fit: cover; }
+.book-status-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 8px;
+  border-bottom-left-radius: 6px;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.book-status-badge[data-status="reading"],
+.reading-status-pill[data-status="reading"] {
+  background: #0076df;
+}
+.book-status-badge[data-status="finished"],
+.reading-status-pill[data-status="finished"] {
+  background: #27ae60;
+}
 
 /* 书名：复位为 Serif 衬线字体 */
 .book-title { display: block; margin-top: 12px; font-size: 0.95rem; font-weight: 700; color: #333; font-family: "Noto Serif SC", serif; }
@@ -34,6 +55,17 @@
 
 .reading-detail .book-detail-info h1 {
   color: var(--global-theme-color);
+}
+
+.reading-detail .reading-status-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 1;
 }
 
 .reading-detail .book-tags-list span {
